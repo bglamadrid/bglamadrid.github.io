@@ -1,3 +1,7 @@
+:root {
+  --social-icon-size: 32px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +46,11 @@ body {
   display: grid;
   grid-gap: 16px;
   grid-auto-flow: column;
-  grid-auto-columns: max-content;
+  grid-auto-columns: var(--social-icon-size);
+}
+#social-bar .icon {
+  width: var(--social-icon-size);
+  height: var(--social-icon-size);
 }
 
 #content-table-wrapper {
