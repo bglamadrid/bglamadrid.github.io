@@ -1,0 +1,21 @@
+body {
+  background-color: #414;
+  color: white;
+}
+
+#page {
+  background-color: #737;
+}
+
+#header {
+  border: 4px solid white;
+}
+
+#social-bar .icon {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+#social-bar .icon:hover {
+  -webkit-filter: invert(85%);
+  filter: invert(85%);  
+}
