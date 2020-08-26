@@ -1,0 +1,8 @@
+.card-grid {
+  padding: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: stretch;
+  text-align: center;
+  grid-gap: 0.5rem;
+}

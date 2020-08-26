@@ -1,6 +1,13 @@
 body {
   background-color: #414;
-  color: white;
+  color: #eee;
+}
+
+a {
+  color: #ccc;
+}
+a:visited {
+  color: #999;
 }
 
 #page {
@@ -18,4 +25,31 @@ body {
 #social-bar .icon:hover {
   -webkit-filter: invert(85%);
   filter: invert(85%);  
+}
+
+#projects div {
+  border-color: grey;
+}
+
+div#this {
+  background-color: #414;
+}
+div#viridian {
+  background-color: #00825a;
+}
+div#viridian:hover {
+  background-color: #006647;
+}
+div#viridian a {
+  color: white;
+}
+div#viridian a:hover {
+  color: #00ffb3;
+}
+div#others {
+  background-color: black;
+}
+
+#tech div {
+  background-color: #eee;
 }

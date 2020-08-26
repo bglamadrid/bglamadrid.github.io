@@ -6,13 +6,14 @@
   <link rel="stylesheet" href="layout.css">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="card-grid.css">
   <title>BenjaminLaMadrid.cl</title>
 </head>
 <body>
   <div id="page">
     <div id="header">
       <h1>Benjamin Guillermo La Madrid Bañados</h1>
-      <p>Fullstack developer.</p>
+      <p>Fullstack developer</p>
       <div id="social-bar">
         <a href="https://github.com/bglamadrid">
           <img class="icon" src="simpleicons.org/github.svg" alt="My GitHub Profile" />
@@ -20,22 +21,44 @@
         <a href="https://www.linkedin.com/in/benjaminlamadrid">
           <img class="icon" src="simpleicons.org/linkedin.svg" alt="My LinkedIn Profile" />
         </a>
+        <a href="https://drive.google.com/file/d/1F2V8NVB-hcZaZHq9RQc-FIA4CF5Sg8-D/view">
+          <img class="icon" src="simpleicons.org/googledrive.svg" alt="(ES) My Curriculum Vitae" />
+        </a>
       </div>
     </div>
-    <div id="content-table-wrapper">
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              Item 1
-            </td>
-            <td>
-              Item 2
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <div id="content">
+      <h2>😁 Short Bio</h2>
+      <p id="bio">I'm an experienced Web and Software Developer, aspiring tech guru, and an avid gamer.</p>
+      <h2>🚀 What I'm currently working on</h2>
+      <div id="projects" class="card-grid">
+        <div id="this">
+          <span class="emoji">💼</span>
+          <span>This page</span>
+        </div>
+        <div id="viridian">
+          <a href="https://plataforma.forein.org">Viridian</a>
+          <a href="https://github.com/bglamadrid/ng-viridian">@GitHub</a>
+        </div>
+        <div id="others">
+          <span class="emoji">🛒</span>
+          <span>A store app</span>
+          <span>(Top Secret 💀)</span>
+        </div>
+      </div>
+      <h2>💘 Technologies I use</h2>
+      <div id="tech" class="card-grid">
+        <div id="angular">
+          <img class="icon" src="simpleicons.org/angular.svg" alt="Angular" />
+        </div>
+        <div id="java">
+          <img class="icon" src="simpleicons.org/java.svg" alt="Angular" />
+        </div>
+      </div>
+      <ul id="credits">
+        <li>Beautiful brand icons as seen on <a href="https://simpleicons.org">SimpleIcons.org</a></li>
+      </ul>
     </div>
   </div>
+
 </body>
 </html>
