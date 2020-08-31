@@ -27,29 +27,59 @@ a:visited {
   filter: invert(85%);  
 }
 
-#projects div {
+#projects > * {
   border-color: grey;
 }
-
-div#this {
+#this {
   background-color: #414;
 }
-div#viridian {
+#viridian {
   background-color: #00825a;
 }
-div#viridian:hover {
+#viridian:hover {
   background-color: #006647;
 }
-div#viridian a {
+#viridian {
   color: white;
 }
-div#viridian a:hover {
+#viridian:hover {
   color: #00ffb3;
 }
-div#others {
+#others {
   background-color: black;
 }
 
-#tech div {
+#tech > * {
   background-color: #eee;
+  color: black;
+}
+#tech #git {
+  background-color: #ccc;
+}
+#tech #git:hover {
+  background-color: #bbb;
+}
+#tech #angular {
+  background-color: #e55;
+}
+#tech #angular:hover {
+  background-color: #d44;
+}
+#tech #java {
+  background-color: #c80;
+}
+#tech #java:hover {
+  background-color: #b70;
+}
+#tech #github {
+  background-color: #ccc;
+}
+#tech #github:hover {
+  background-color: #bbb;
+}
+#tech #aws {
+  background-color: #fb0;
+}
+#tech #aws:hover {
+  background-color: #da0;
 }

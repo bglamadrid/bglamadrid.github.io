@@ -35,6 +35,7 @@ a {
 }
 
 #header {
+  max-width: 100%;
   border-radius: 4px;
   padding: 0.5rem;
 }
@@ -73,8 +74,7 @@ a {
 #projects {
   padding: 1rem 0;
 }
-#projects div {
-  padding: 8px;
+#projects > * {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -82,21 +82,30 @@ a {
   border-style: solid;
   border-radius: 6px;
 }
+#this, #others {
+  padding: 8px 0;
+}
 
 #tech {
   grid-auto-columns: 10rem;
-  grid-auto-rows: 5rem;
+  grid-auto-rows: 11rem;
   justify-content: center;
+  align-content: stretch;
   grid-gap: 1rem;
 }
-#tech div {
-  padding: 8px 0;
+#tech > a {
   border-radius: 6px;
+  padding: 6px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 #tech .icon {
   width: var(--tech-icon-size);
   height: var(--tech-icon-size);
+  margin: 1rem 0;
 }
+
 
 #credits {
   margin-top: auto;
