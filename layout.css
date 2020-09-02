@@ -87,8 +87,8 @@ a {
 }
 
 #tech {
-  grid-auto-columns: 10rem;
-  grid-auto-rows: 11rem;
+  grid-template-columns: repeat(3, 10rem);
+  grid-auto-flow: row;
   justify-content: center;
   align-content: stretch;
   grid-gap: 1rem;
