@@ -95,7 +95,7 @@ a {
 }
 #tech > a {
   border-radius: 6px;
-  padding: 6px;
+  padding: 1rem 6px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
