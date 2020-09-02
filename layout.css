@@ -87,10 +87,15 @@ a {
 }
 
 #tech {
-  grid-template-columns: repeat(auto-fit, 10rem);
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 100%));
   justify-content: center;
   align-content: stretch;
   grid-gap: 1rem;
+}
+@media(min-width: 800px) {
+  #tech {
+    grid-template-columns: repeat(auto-fit, 10rem);
+  }
 }
 #tech > a {
   border-radius: 6px;
