@@ -17,6 +17,13 @@ a:visited {
 #header {
   border: 4px solid white;
 }
+#my-cv {
+  color: #68f;
+}
+#my-cv:hover {
+  color: #79f;
+  font-weight: bold;
+}
 
 #social-bar .icon {
   -webkit-filter: invert(100%);
