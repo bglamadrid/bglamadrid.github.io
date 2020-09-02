@@ -72,6 +72,7 @@ a {
 }
 #projects {
   padding: 1rem 0;
+  grid-auto-rows: 6rem;
 }
 #projects > * {
   display: flex;
