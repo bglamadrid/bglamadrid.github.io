@@ -66,10 +66,10 @@ a:visited {
   background-color: #d44;
 }
 #tech #java {
-  background-color: #c80;
+  background-color: #c60;
 }
 #tech #java:hover {
-  background-color: #b70;
+  background-color: #b50;
 }
 #tech #github {
   background-color: #ccc;
@@ -82,4 +82,34 @@ a:visited {
 }
 #tech #aws:hover {
   background-color: #da0;
+}
+#tech #maven {
+  background-color: #dba;
+}
+#tech #maven:hover {
+  background-color: #ba9;
+}
+#tech #apache {
+  background-color: #fed;
+}
+#tech #apache:hover {
+  background-color: #edc;
+}
+#tech #vscode {
+  background-color: #38e;
+}
+#tech #vscode:hover {
+  background-color: #27d;
+}
+#tech #wordpress {
+  background-color: #49d;
+}
+#tech #wordpress:hover {
+  background-color: #38c;
+}
+#tech #eclipse {
+  background-color: #a5c;
+}
+#tech #eclipse:hover {
+  background-color: #94b;
 }
