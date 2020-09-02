@@ -86,8 +86,7 @@ a {
 }
 
 #tech {
-  grid-template-columns: repeat(3, 10rem);
-  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, 10rem);
   justify-content: center;
   align-content: stretch;
   grid-gap: 1rem;
