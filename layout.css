@@ -97,7 +97,7 @@ a {
   border-radius: 6px;
   padding: 6px;
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   align-items: center;
 }
 #tech .icon {
