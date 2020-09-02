@@ -54,10 +54,10 @@ a:visited {
   color: black;
 }
 #tech #git {
-  background-color: #ccc;
+  background-color: #eee;
 }
 #tech #git:hover {
-  background-color: #bbb;
+  background-color: #ddd;
 }
 #tech #angular {
   background-color: #e55;
@@ -72,10 +72,10 @@ a:visited {
   background-color: #b50;
 }
 #tech #github {
-  background-color: #ccc;
+  background-color: #bbb;
 }
 #tech #github:hover {
-  background-color: #bbb;
+  background-color: #aaa;
 }
 #tech #aws {
   background-color: #fb0;
