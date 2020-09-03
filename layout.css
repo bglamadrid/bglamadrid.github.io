@@ -45,12 +45,26 @@ a {
 }
 #header > p {
   margin: 1rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 0.5rem;
+}
+@media(min-width: 800px) {
+  #header > p {
+    padding: 0;
+  }
 }
 #social-bar {
   display: grid;
   grid-gap: 16px;
   grid-auto-flow: column;
   grid-auto-columns: var(--social-icon-size);
+  padding: 0 0.5rem 0.5rem;
+}
+@media(min-width: 800px) {
+  #social-bar {
+    padding: 0;
+  }
 }
 #social-bar .icon {
   width: var(--social-icon-size);
