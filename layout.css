@@ -29,7 +29,7 @@ a {
 @media(min-width: 800px) {
   #page {
     width: 800px;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem;
     grid-gap: 1rem;
   }
 }
@@ -140,4 +140,11 @@ a {
 }
 #credits a {
   text-decoration: underline;
+}
+
+#footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
 }
