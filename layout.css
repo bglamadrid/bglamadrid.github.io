@@ -87,7 +87,7 @@ a {
 }
 
 #tech {
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 100%));
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-content: stretch;
   grid-gap: 1rem;
@@ -108,6 +108,14 @@ a {
   width: var(--tech-icon-size);
   height: var(--tech-icon-size);
   margin: 1rem 0;
+}
+#tech span {
+  display: none;
+}
+@media(min-width: 800px) {
+  #tech span {
+    display: inline;
+  }
 }
 
 
