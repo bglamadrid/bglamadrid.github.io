@@ -61,24 +61,39 @@ a:visited {
   color: black;
 }
 #tech #git {
-  background-color: #eee;
+  background-color: #d53;
+  color: white;
 }
 #tech #git:hover {
-  background-color: #ddd;
+  background-color: #c42;
+}
+#git .icon {
+  -webkit-filter: invert(85%);
+  filter: invert(85%);  
 }
 
 #tech #angular {
-  background-color: #e55;
+  background-color: #b34;
+  color: white;
 }
 #tech #angular:hover {
-  background-color: #d44;
+  background-color: #a23;
+}
+#angular .icon {
+  -webkit-filter: invert(85%);
+  filter: invert(85%);  
 }
 
 #tech #java {
-  background-color: #c60;
+  background-color: #d73;
+  color: white;
 }
 #tech #java:hover {
-  background-color: #b50;
+  background-color: #b53;
+}
+#java .icon {
+  -webkit-filter: invert(85%);
+  filter: invert(85%);  
 }
 
 #tech #github {
@@ -96,25 +111,25 @@ a:visited {
 }
 
 #tech #maven {
-  background-color: #dba;
+  background-color: #fcc;
 }
 #tech #maven:hover {
-  background-color: #ba9;
+  background-color: #ebb;
 }
 
 #tech #apache {
-  background-color: #fed;
+  background-color: #dba;
 }
 #tech #apache:hover {
-  background-color: #edc;
+  background-color: #da9;
 }
 
 #tech #vscode {
-  background-color: #38e;
+  background-color: #27d;
   color: white;
 }
 #tech #vscode:hover {
-  background-color: #27d;
+  background-color: #16c;
 }
 #vscode .icon {
   -webkit-filter: invert(85%);
@@ -134,11 +149,11 @@ a:visited {
 }
 
 #tech #eclipse {
-  background-color: #a5c;
+  background-color: #94b;
   color: white;
 }
 #tech #eclipse:hover {
-  background-color: #94b;
+  background-color: #83a;
 }
 #eclipse .icon {
   -webkit-filter: invert(85%);
