@@ -66,57 +66,81 @@ a:visited {
 #tech #git:hover {
   background-color: #ddd;
 }
+
 #tech #angular {
   background-color: #e55;
 }
 #tech #angular:hover {
   background-color: #d44;
 }
+
 #tech #java {
   background-color: #c60;
 }
 #tech #java:hover {
   background-color: #b50;
 }
+
 #tech #github {
   background-color: #bbb;
 }
 #tech #github:hover {
   background-color: #aaa;
 }
+
 #tech #aws {
   background-color: #fb0;
 }
 #tech #aws:hover {
   background-color: #da0;
 }
+
 #tech #maven {
   background-color: #dba;
 }
 #tech #maven:hover {
   background-color: #ba9;
 }
+
 #tech #apache {
   background-color: #fed;
 }
 #tech #apache:hover {
   background-color: #edc;
 }
+
 #tech #vscode {
   background-color: #38e;
+  color: white;
 }
 #tech #vscode:hover {
   background-color: #27d;
 }
+#vscode .icon {
+  -webkit-filter: invert(85%);
+  filter: invert(85%);  
+}
+
 #tech #wordpress {
   background-color: #49d;
+  color: white;
 }
 #tech #wordpress:hover {
   background-color: #38c;
 }
+#wordpress .icon {
+  -webkit-filter: invert(85%);
+  filter: invert(85%);  
+}
+
 #tech #eclipse {
   background-color: #a5c;
+  color: white;
 }
 #tech #eclipse:hover {
   background-color: #94b;
+}
+#eclipse .icon {
+  -webkit-filter: invert(85%);
+  filter: invert(85%);  
 }
