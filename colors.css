@@ -159,3 +159,15 @@ a:visited {
   -webkit-filter: invert(85%);
   filter: invert(85%);  
 }
+
+#tech #spring {
+  background-color: #3b0;
+  color: white;
+}
+#tech #spring:hover {
+  background-color: #2a0;
+}
+#spring .icon {
+  -webkit-filter: invert(85%);
+  filter: invert(85%);  
+}
