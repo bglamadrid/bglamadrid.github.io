@@ -1,0 +1,21 @@
+#projects-grid > * {
+  border-color: grey;
+}
+#this {
+  background-color: #414;
+}
+#viridian {
+  background-color: #00825a;
+}
+#viridian:hover {
+  background-color: #006647;
+}
+#viridian {
+  color: white;
+}
+#viridian:hover {
+  color: #00ffb3;
+}
+#others {
+  background-color: black;
+}
