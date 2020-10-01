@@ -3,6 +3,7 @@
   color: black;
 }
 
+/* Git */
 .git.tech.card {
   background-color: #d53;
   color: white;
@@ -15,6 +16,7 @@
   filter: invert(85%);  
 }
 
+/* Angular */
 .angular.tech.card {
   background-color: #b34;
   color: white;
@@ -27,6 +29,7 @@
   filter: invert(85%);  
 }
 
+/* Java */
 .java.tech.card {
   background-color: #d73;
   color: white;
@@ -39,6 +42,7 @@
   filter: invert(85%);  
 }
 
+/* GitHub */
 .github.tech.card {
   background-color: #bbb;
 }
@@ -46,6 +50,7 @@
   background-color: #aaa;
 }
 
+/* Amazon WebServices */
 .aws.tech.card {
   background-color: #fb0;
 }
@@ -53,6 +58,7 @@
   background-color: #da0;
 }
 
+/* Maven */
 .maven.tech.card {
   background-color: #fcc;
 }
@@ -60,6 +66,7 @@
   background-color: #ebb;
 }
 
+/* Apache Web Server */
 .apache.tech.card {
   background-color: #dba;
 }
@@ -67,6 +74,7 @@
   background-color: #da9;
 }
 
+/* Visual Studio Code */
 .vscode.tech.card {
   background-color: #27d;
   color: white;
@@ -79,6 +87,7 @@
   filter: invert(85%);  
 }
 
+/* WordPress */
 .wordpress.tech.card {
   background-color: #49d;
   color: white;
@@ -91,6 +100,7 @@
   filter: invert(85%);  
 }
 
+/* Eclipse IDE */
 .eclipse.tech.card {
   background-color: #94b;
   color: white;
@@ -103,6 +113,7 @@
   filter: invert(85%);  
 }
 
+/* Spring Framework */
 .spring.tech.card {
   background-color: #3b0;
   color: white;
