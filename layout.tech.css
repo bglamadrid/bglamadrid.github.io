@@ -1,11 +1,11 @@
-div.tech {
+.tech.card-grid {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-content: stretch;
   grid-gap: 1rem;
 }
 @media(min-width: 800px) {
-  div.tech {
+  .tech.card-grid {
     grid-template-columns: repeat(auto-fit, 10rem);
   }
 }
