@@ -1,0 +1,15 @@
+#projects-grid {
+  padding: 1rem 0;
+  grid-auto-rows: 6rem;
+}
+#projects-grid > * {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6px;
+}
+#this, #others {
+  padding: 8px 0;
+}
