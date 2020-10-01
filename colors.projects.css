@@ -1,21 +1,21 @@
 div.projects > * {
   border-color: grey;
 }
-#this {
+.this.project {
   background-color: #414;
 }
-#viridian {
+.viridian.project {
   background-color: #00825a;
 }
-#viridian:hover {
+.viridian.project:hover {
   background-color: #006647;
 }
-#viridian {
+.viridian.project {
   color: white;
 }
-#viridian:hover {
+.viridian.project:hover {
   color: #00ffb3;
 }
-#others {
+.trebol.project {
   background-color: black;
 }
