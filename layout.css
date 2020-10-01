@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-#page {
+#main {
   width: 100%;
   display: grid;
   grid-template-rows: max-content auto;
@@ -24,7 +24,7 @@
   grid-gap: 0.5rem;
 }
 @media(min-width: 800px) {
-  #page {
+  #main {
     width: 800px;
     padding: 2rem 2rem 1rem;
     grid-gap: 1rem;
