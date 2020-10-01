@@ -1,15 +1,13 @@
-div.projects {
+.projects.card-grid {
   padding: 1rem 0;
   grid-auto-rows: 6rem;
 }
-div.projects > * {
+.project.card {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   border-width: 1px;
   border-style: solid;
   border-radius: 6px;
-}
-.project.card {
   padding: 8px;
 }
