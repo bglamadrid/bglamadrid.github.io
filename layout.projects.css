@@ -1,8 +1,8 @@
-#projects-grid {
+div.projects {
   padding: 1rem 0;
   grid-auto-rows: 6rem;
 }
-#projects-grid > * {
+div.projects > * {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

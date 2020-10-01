@@ -1,31 +1,31 @@
-#tech-grid {
+div.tech {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-content: stretch;
   grid-gap: 1rem;
 }
 @media(min-width: 800px) {
-  #tech-grid {
+  div.tech {
     grid-template-columns: repeat(auto-fit, 10rem);
   }
 }
-#tech-grid > a {
+div.tech > a {
   border-radius: 6px;
   padding: 1rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-#tech-grid .icon {
+div.tech .icon {
   width: var(--tech-icon-size);
   height: var(--tech-icon-size);
   margin: 1rem 0;
 }
-#tech-grid span {
+div.tech span {
   display: none;
 }
 @media(min-width: 800px) {
-  #tech-grid span {
+  div.tech span {
     display: inline;
   }
 }
