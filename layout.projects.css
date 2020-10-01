@@ -10,7 +10,6 @@ div.projects > * {
   border-style: solid;
   border-radius: 6px;
 }
-.this.project, 
-.trebol.project {
-  padding: 8px 0;
+.project.card {
+  padding: 8px;
 }
