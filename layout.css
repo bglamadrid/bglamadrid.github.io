@@ -19,7 +19,7 @@
 #main {
   width: 100%;
   display: grid;
-  grid-template-rows: max-content auto;
+  height: max-content;
   padding: 0.5rem;
   grid-gap: 0.5rem;
 }
