@@ -1,115 +1,116 @@
-div.tech > * {
+.tech.card-grid > * {
   background-color: #eee;
   color: black;
 }
-div.tech #git {
+
+.git.tech.card {
   background-color: #d53;
   color: white;
 }
-div.tech #git:hover {
+.git.tech.card:hover {
   background-color: #c42;
 }
-#git .icon {
+.git.tech.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);  
 }
 
-div.tech #angular {
+.angular.tech.card {
   background-color: #b34;
   color: white;
 }
-div.tech #angular:hover {
+.angular.tech.card:hover {
   background-color: #a23;
 }
-#angular .icon {
+.angular.tech.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);  
 }
 
-div.tech #java {
+.java.tech.card {
   background-color: #d73;
   color: white;
 }
-div.tech #java:hover {
+.java.tech.card:hover {
   background-color: #b53;
 }
-#java .icon {
+.java.tech.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);  
 }
 
-div.tech #github {
+.github.tech.card {
   background-color: #bbb;
 }
-div.tech #github:hover {
+.github.tech.card:hover {
   background-color: #aaa;
 }
 
-div.tech #aws {
+.aws.tech.card {
   background-color: #fb0;
 }
-div.tech #aws:hover {
+.aws.tech.card:hover {
   background-color: #da0;
 }
 
-div.tech #maven {
+.maven.tech.card {
   background-color: #fcc;
 }
-div.tech #maven:hover {
+.maven.tech.card:hover {
   background-color: #ebb;
 }
 
-div.tech #apache {
+.apache.tech.card {
   background-color: #dba;
 }
-div.tech #apache:hover {
+.apache.tech.card:hover {
   background-color: #da9;
 }
 
-div.tech #vscode {
+.vscode.tech.card {
   background-color: #27d;
   color: white;
 }
-div.tech #vscode:hover {
+.vscode.tech.card:hover {
   background-color: #16c;
 }
-#vscode .icon {
+.vscode.tech.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);  
 }
 
-div.tech #wordpress {
+.wordpress.tech.card {
   background-color: #49d;
   color: white;
 }
-div.tech #wordpress:hover {
+.wordpress.tech.card:hover {
   background-color: #38c;
 }
-#wordpress .icon {
+.wordpress.tech.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);  
 }
 
-div.tech #eclipse {
+.eclipse.tech.card {
   background-color: #94b;
   color: white;
 }
-div.tech #eclipse:hover {
+.eclipse.tech.card:hover {
   background-color: #83a;
 }
-#eclipse .icon {
+.eclipse.tech.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);  
 }
 
-div.tech #spring {
+.spring.tech.card {
   background-color: #3b0;
   color: white;
 }
-div.tech #spring:hover {
+.spring.tech.card:hover {
   background-color: #2a0;
 }
-#spring .icon {
+.spring.tech.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);  
 }

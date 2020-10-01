@@ -9,23 +9,23 @@
     grid-template-columns: repeat(auto-fit, 10rem);
   }
 }
-div.tech > a {
+a.tech.card {
   border-radius: 6px;
   padding: 1rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
-div.tech .icon {
+.tech.card .icon {
   width: var(--tech-icon-size);
   height: var(--tech-icon-size);
   margin: 1rem 0;
 }
-div.tech span {
+.tech.card span {
   display: none;
 }
 @media(min-width: 800px) {
-  div.tech span {
+  .tech.card span {
     display: inline;
   }
 }
