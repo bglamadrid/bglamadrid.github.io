@@ -1,4 +1,4 @@
-#projects-grid > * {
+div.projects > * {
   border-color: grey;
 }
 #this {
