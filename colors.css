@@ -4,10 +4,7 @@ body {
 }
 
 a {
-  color: #ccc;
-}
-a:visited {
-  color: #999;
+  color: #acf;
 }
 
 #langpicker {
@@ -15,14 +12,6 @@ a:visited {
 }
 #main {
   background-color: #737;
-}
-
-#profile-links a {
-  color: #acF;
-}
-#profile-links a:hover {
-  color: #bdf;
-  font-weight: bold;
 }
 
 #profile-links .icon {
