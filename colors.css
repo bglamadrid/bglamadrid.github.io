@@ -14,11 +14,21 @@ a {
   background-color: #737;
 }
 
+#profile-links a {
+  background-color: #414;
+}
+@media(min-width: 800px) {
+  #profile-links a {
+    background: none;
+  }
+}
+
+
 #profile-links .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
+  -webkit-filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);
+  filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);
 }
 #profile-links a:hover .icon {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);  
+  -webkit-filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);
+  filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);  
 }

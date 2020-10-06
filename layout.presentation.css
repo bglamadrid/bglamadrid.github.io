@@ -14,11 +14,19 @@
   padding: 1rem;
 }
 #profile-links li {
-  line-height: 1.5rem;
+  font-size: 1.25rem;
+  padding: 0.25rem 0;
+}
+#profile-links a {
+  display: inline-flex;
+  align-items: center;
+  width: 15rem;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 @media(min-width: 800px) {
   #profile-links {
-    padding: 2rem 0 0 0;
+    padding: 2rem 0 0.5rem 0;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -26,6 +34,11 @@
   }
   #profile-links li {
     display: inline;
+    padding: 0;
+  }
+  #profile-links a {
+    width: auto;
+    padding: 0;
   }
 }
 #profile-links .icon {
