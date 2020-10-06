@@ -30,27 +30,6 @@ body {
   }
 }
 
-#header {
-  border-radius: 4px;
-  padding: 0.5rem;
-}
-@media(min-width: 800px) {
-  #header {
-    padding: 1rem;
-  }
-}
-#header > p {
-  margin: 1rem 0;
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 0 0.5rem;
-}
-@media(min-width: 800px) {
-  #header > p {
-    padding: 0;
-  }
-}
-
 #content {
   display: flex;
   flex-flow: column nowrap;
