@@ -10,6 +10,9 @@ a:visited {
   color: #999;
 }
 
+#langpicker {
+  background-color: #737;
+}
 #main {
   background-color: #737;
 }
