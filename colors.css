@@ -18,10 +18,10 @@ a:visited {
   border: 4px solid white;
 }
 #my-cv {
-  color: #68f;
+  color: #acF;
 }
 #my-cv:hover {
-  color: #79f;
+  color: #bdf;
   font-weight: bold;
 }
 
