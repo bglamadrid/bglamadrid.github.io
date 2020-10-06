@@ -1,0 +1,17 @@
+#langpicker {
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+}
+
+@media(min-width: 800px) {
+  #langpicker {
+    width: auto;
+    padding: 4px 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: right;
+    border-bottom-left-radius: 8px;
+  }
+}
