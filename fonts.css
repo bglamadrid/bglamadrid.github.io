@@ -27,3 +27,7 @@ h1 {
 #tech a {
   font-size: 1rem;
 }
+
+#credits a {
+  text-decoration: underline;
+}
