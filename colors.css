@@ -17,22 +17,19 @@ a:visited {
   background-color: #737;
 }
 
-#header {
-  border: 4px solid white;
-}
-#my-cv {
+#profile-links a {
   color: #acF;
 }
-#my-cv:hover {
+#profile-links a:hover {
   color: #bdf;
   font-weight: bold;
 }
 
-#social-bar .icon {
-  -webkit-filter: invert(100%);
-  filter: invert(100%);
-}
-#social-bar .icon:hover {
+#profile-links .icon {
   -webkit-filter: invert(85%);
-  filter: invert(85%);  
+  filter: invert(85%);
+}
+#profile-links a:hover .icon {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);  
 }
