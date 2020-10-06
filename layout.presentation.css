@@ -11,20 +11,22 @@
 
 #profile-links {
   list-style: none;
-  padding-left: 1rem;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-@media(min-width: 800px) {
-  #profile-links {
-    padding: 0;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-  }
+  padding: 1rem;
 }
 #profile-links li {
   line-height: 1.5rem;
+}
+@media(min-width: 800px) {
+  #profile-links {
+    padding: 2rem 0 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #profile-links li {
+    display: inline;
+  }
 }
 #profile-links .icon {
   width: 1.25rem;
