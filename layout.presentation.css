@@ -11,12 +11,14 @@
 
 #profile-links {
   list-style: none;
+  padding-left: 1rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 @media(min-width: 800px) {
   #profile-links {
+    padding: 0;
     flex-flow: row nowrap;
     justify-content: space-around;
   }
