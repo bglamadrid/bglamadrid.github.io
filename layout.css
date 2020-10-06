@@ -11,7 +11,8 @@
 body {
   overflow: auto;
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;  
 }
 
 #main {
