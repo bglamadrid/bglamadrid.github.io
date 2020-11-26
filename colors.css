@@ -1,6 +1,6 @@
 body {
-  background-color: #414;
-  color: #eee;
+  background-color: #aaa;
+  color: #444;
 }
 
 a {
@@ -30,5 +30,5 @@ a {
 }
 #profile-links a:hover .icon {
   -webkit-filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);
-  filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);  
+  filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);
 }
