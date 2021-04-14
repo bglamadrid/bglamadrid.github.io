@@ -1,0 +1,9 @@
+#credits {
+  margin-top: auto;
+  list-style: none;
+  text-align: center;
+}
+
+#credits a {
+  text-decoration: underline;
+}

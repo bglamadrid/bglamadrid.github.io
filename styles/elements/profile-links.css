@@ -1,0 +1,45 @@
+.profile-links {
+  list-style: none;
+  padding: 1rem;
+}
+.profile-links li {
+  font-size: 1.25rem;
+  padding: 0.25rem 0;
+}
+.profile-links a {
+  display: inline-flex;
+  align-items: center;
+  width: 15rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #414;
+}
+.profile-links a > .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);
+  filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);
+}
+.profile-links a:hover > .icon {
+  -webkit-filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);
+  filter: invert(75%) sepia(28%) saturate(746%) hue-rotate(189deg) brightness(101%) contrast(102%);
+}
+
+@media(min-width: 800px) {
+  .profile-links {
+    padding: 2rem 0 0.5rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .profile-links li {
+    display: inline;
+    padding: 0;
+  }
+  .profile-links a {
+    width: auto;
+    padding: 0;
+    background: none;
+  }
+}

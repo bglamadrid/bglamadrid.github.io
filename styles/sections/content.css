@@ -1,0 +1,14 @@
+#content {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem 0.5rem;
+}
+@media(min-width: 800px) {
+  #content {
+    padding: 0.5rem 2rem;
+  }
+}
+
+#content p.bio {
+  padding: 1rem;
+}
