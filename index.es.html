@@ -4,20 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portafolio web de un desarrollador fullstack en Chile">
-  <link rel="stylesheet" href="layout.css">
-  <link rel="stylesheet" href="layout.langpicker.css">
-  <link rel="stylesheet" href="layout.presentation.css">
-  <link rel="stylesheet" href="layout.tech.css">
-  <link rel="stylesheet" href="layout.projects.css">
-  <link rel="stylesheet" href="fonts.css">
-  <link rel="stylesheet" href="colors.css">
-  <link rel="stylesheet" href="colors.projects.css">
-  <link rel="stylesheet" href="colors.tech.css">
-  <link rel="stylesheet" href="card-grid.css">
+  <link rel="stylesheet" href="styles/base/document.css">
+  <link rel="stylesheet" href="styles/base/headings.css">
+  <link rel="stylesheet" href="styles/base/links.css">
+  <link rel="stylesheet" href="styles/elements/card-grid.css">
+  <link rel="stylesheet" href="styles/elements/langpicker.css">
+  <link rel="stylesheet" href="styles/elements/profile-links.css">
+  <link rel="stylesheet" href="styles/sections/main.css">
+  <link rel="stylesheet" href="styles/sections/presentation.css">
+  <link rel="stylesheet" href="styles/sections/content.css">
+  <link rel="stylesheet" href="styles/sections/projects.css">
+  <link rel="stylesheet" href="styles/sections/tech.css">
+  <link rel="stylesheet" href="styles/sections/credits.css">
+  <link rel="stylesheet" href="styles/sections/footer.css">
   <title>Benjamin La Madrid</title>
 </head>
 <body>
-  <div id="langpicker">
+  <div class="langpicker">
     <b>Lenguaje del sitio: Español</b><br/>
     <a href="index.html">View English site</a>
   </div>
@@ -25,7 +28,7 @@
     <div id="presentation">
       <h1>Benjamin Guillermo La Madrid Bañados</h1>
       <p>Desarrollador fullstack en Chile</p>
-      <ul id="profile-links">
+      <ul class="profile-links">
         <li>
           <a id="my-cv" href="https://drive.google.com/file/d/1F2V8NVB-hcZaZHq9RQc-FIA4CF5Sg8-D/view" target="_blank" rel="noopener">
             <img class="icon" src="simpleicons.org/googledrive.svg" alt="Google Drive" />&nbsp;

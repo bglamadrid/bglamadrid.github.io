@@ -1,0 +1,15 @@
+#main {
+  width: 100%;
+  display: grid;
+  height: max-content;
+  padding: 0.5rem;
+  grid-gap: 0.5rem;
+  background-color: #737;
+}
+@media(min-width: 800px) {
+  #main {
+    width: 800px;
+    padding: 2rem 2rem 1rem;
+    grid-gap: 1rem;
+  }
+}
