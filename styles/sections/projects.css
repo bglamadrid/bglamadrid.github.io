@@ -13,20 +13,12 @@
   padding: 8px;
   border-color: grey;
 }
-.this.project.card {
-  background-color: #414;
-}
-.viridian.project.card {
-  background-color: #00825a;
-}
-.viridian.project.card:hover {
-  background-color: #006647;
-}
-.viridian.project.card {
+.company.project.card {
+  background-color: #0ebf04;
   color: white;
 }
-.viridian.project.card:hover {
-  color: #00ffb3;
+.this.project.card {
+  background-color: #414;
 }
 .trebol.project.card {
   background-color: black;
