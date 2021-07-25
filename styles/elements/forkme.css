@@ -1,0 +1,12 @@
+#forkme {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  #forkme {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
