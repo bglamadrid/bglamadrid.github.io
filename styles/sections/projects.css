@@ -1,17 +1,12 @@
-#projects.card-grid {
-  padding: 1rem 0;
-  grid-auto-rows: 6rem;
+.projects.card-grid {
+  align-items: stretch;
 }
 
 .project.card {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
   border-width: 1px;
   border-style: solid;
-  border-radius: 6px;
-  padding: 8px;
-  border-color: grey;
+  border-color: rgba(32, 32, 32, 0.25);
+  width: 100%;
 }
 .company.project.card {
   background-color: #0ebf04;
