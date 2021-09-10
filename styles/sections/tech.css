@@ -136,6 +136,19 @@
   filter: invert(85%);
 }
 
+/* IntelliJ IDEA */
+.intellij-idea.tech.card {
+  background-color: #b49;
+  color: white;
+}
+.intellij-idea.tech.card:hover {
+  background-color: #a38;
+}
+.intellij-idea.tech.card .icon {
+  -webkit-filter: invert(85%);
+  filter: invert(85%);
+}
+
 /* Spring Framework */
 .spring.tech.card {
   background-color: #3b0;
