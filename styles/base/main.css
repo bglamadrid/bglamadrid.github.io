@@ -1,8 +1,9 @@
 main {
   background-color: #737;
-  width: 100%;
-  height: max-content;
+  /* width: 100%; */
+  /* height: max-content; */
   padding: 0.5rem;
+  margin: 0.5rem;
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.5rem;
@@ -13,6 +14,7 @@ main {
   main {
     width: 800px;
     padding: 2rem 2rem 1rem;
+    margin: 0;
     gap: 1rem;
   }
 }

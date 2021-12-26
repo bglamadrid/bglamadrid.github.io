@@ -1,6 +1,46 @@
 footer {
   margin-top: 1.5rem;
-  text-align: center;
   display: flex;
   flex-flow: column nowrap;
+  padding: 0.5rem !important;
+  text-align: center;
+}
+
+footer > * {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul > li {
+  margin-bottom: 0.5rem;
+}
+
+@media(max-width: 640px) {
+  footer .lower {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 1rem;
+  }
+}
+
+@media(min-width: 641px) {
+  footer {
+    padding: 2rem 0 !important;
+  }
+
+  footer > .upper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  footer > .upper > * {
+    padding: 0 1rem;
+  }
 }

@@ -8,22 +8,14 @@
   border-color: rgba(32, 32, 32, 0.25);
   width: 100%;
 }
-.company.project.card {
+#projects .company.card {
   background-color: #0ebf04;
-  color: white;
+  color: black;
 }
-.this.project.card {
+#projects .this.card {
   background-color: #414;
 }
-.trebol.project.card {
+#projects .trebol.card {
   background-color: #1f5214;
   color: white;
-}
-
-
-#projects * {
-  font-family: 'Lucida Console';
-}
-#projects .card {
-  font-size: 1.15rem;
 }
