@@ -1,8 +1,8 @@
-.projects.card-grid {
+#projects .card-grid {
   align-items: stretch;
 }
 
-.project.card {
+#projects .card {
   border-width: 1px;
   border-style: solid;
   border-color: rgba(32, 32, 32, 0.25);
@@ -24,6 +24,6 @@
 #projects * {
   font-family: 'Lucida Console';
 }
-#projects div {
+#projects .card {
   font-size: 1.15rem;
 }

@@ -1,0 +1,6 @@
+#tech .apache2.card {
+  background-color: #dba;
+}
+#tech .apache2.card:hover {
+  background-color: #da9;
+}
