@@ -1,9 +1,9 @@
-#credits {
+ul.credits {
   margin-top: auto;
   list-style: none;
   text-align: center;
 }
 
-#credits a {
+ul.credits a {
   text-decoration: underline;
 }

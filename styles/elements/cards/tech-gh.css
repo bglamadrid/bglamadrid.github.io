@@ -1,0 +1,6 @@
+#tech .github.card {
+  background-color: #bbb;
+}
+#tech .github.card:hover {
+  background-color: #aaa;
+}

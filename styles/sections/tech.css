@@ -1,165 +1,33 @@
-.tech.card {
+#tech .card {
   margin: 16px;
   border-radius: 8px;
   width: 6rem;
   box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
 }
-.tech.card .icon {
+
+#tech .card .icon {
   width: var(--tech-icon-size);
   height: var(--tech-icon-size);
   margin: 1rem 0;
 }
-.tech.card span {
+
+#tech .card span {
   display: none;
 }
+
 @media(min-width: 641px) {
-  .tech.card span {
+  #tech .card span {
     display: inline;
   }
-  .tech.card {
+
+  #tech .card {
     width: 8rem;
   }
 }
 
-.tech.card-grid > * {
+#tech .card-grid > * {
   background-color: #eee;
   color: black;
-}
-
-/* Git */
-.git.tech.card {
-  background-color: #d53;
-  color: white;
-}
-.git.tech.card:hover {
-  background-color: #c42;
-}
-.git.tech.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
-}
-
-/* Angular */
-.angular.tech.card {
-  background-color: #b34;
-  color: white;
-}
-.angular.tech.card:hover {
-  background-color: #a23;
-}
-.angular.tech.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
-}
-
-/* Java */
-.java.tech.card {
-  background-color: #d73;
-  color: white;
-}
-.java.tech.card:hover {
-  background-color: #b53;
-}
-.java.tech.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
-}
-
-/* GitHub */
-.github.tech.card {
-  background-color: #bbb;
-}
-.github.tech.card:hover {
-  background-color: #aaa;
-}
-
-/* Amazon WebServices */
-.aws.tech.card {
-  background-color: #fb0;
-}
-.aws.tech.card:hover {
-  background-color: #da0;
-}
-
-/* Maven */
-.maven.tech.card {
-  background-color: #fcc;
-}
-.maven.tech.card:hover {
-  background-color: #ebb;
-}
-
-/* Apache Web Server */
-.apache.tech.card {
-  background-color: #dba;
-}
-.apache.tech.card:hover {
-  background-color: #da9;
-}
-
-/* Visual Studio Code */
-.vscode.tech.card {
-  background-color: #27d;
-  color: white;
-}
-.vscode.tech.card:hover {
-  background-color: #16c;
-}
-.vscode.tech.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
-}
-
-/* WordPress */
-.wordpress.tech.card {
-  background-color: #49d;
-  color: white;
-}
-.wordpress.tech.card:hover {
-  background-color: #38c;
-}
-.wordpress.tech.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
-}
-
-/* Eclipse IDE */
-.eclipse.tech.card {
-  background-color: #94b;
-  color: white;
-}
-.eclipse.tech.card:hover {
-  background-color: #83a;
-}
-.eclipse.tech.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
-}
-
-/* IntelliJ IDEA */
-.intellij-idea.tech.card {
-  background-color: #b49;
-  color: white;
-}
-.intellij-idea.tech.card:hover {
-  background-color: #a38;
-}
-.intellij-idea.tech.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
-}
-
-/* Spring Framework */
-.spring.tech.card {
-  background-color: #3b0;
-  color: white;
-}
-.spring.tech.card:hover {
-  background-color: #2a0;
-}
-.spring.tech.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
 }
 
 

@@ -3,24 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A fullstack developer based in Chile's portfolio website">
+  <meta name="description" content="Portfolio of bilingual developer based in Chile">
 
   <link rel="stylesheet" href="styles/base/document.css">
-  <link rel="stylesheet" href="styles/base/headings.css">
-  <link rel="stylesheet" href="styles/base/links.css">
+  <link rel="stylesheet" href="styles/base/footer.css">
+  <link rel="stylesheet" href="styles/base/header.css">
   <link rel="stylesheet" href="styles/base/main.css">
+  <link rel="stylesheet" href="styles/base/text.css">
 
   <link rel="stylesheet" href="styles/elements/card-grid.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-apache2.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-aws.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-eclipse.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-gh.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-git.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-intellij-idea.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-java.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-mvn.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-ng.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-spring.css">
+  <link rel="stylesheet" href="styles/elements/cards/tech-vscode.css">
+  <link rel="stylesheet" href="styles/elements/credits-list.css">
   <link rel="stylesheet" href="styles/elements/forkme.css">
   <link rel="stylesheet" href="styles/elements/langpicker.css">
   <link rel="stylesheet" href="styles/elements/profile-links.css">
 
-  <link rel="stylesheet" href="styles/sections/presentation.css">
-  <link rel="stylesheet" href="styles/sections/content.css">
   <link rel="stylesheet" href="styles/sections/projects.css">
   <link rel="stylesheet" href="styles/sections/tech.css">
-  <link rel="stylesheet" href="styles/sections/credits.css">
-  <link rel="stylesheet" href="styles/sections/footer.css">
 
   <title>Benjamin La Madrid</title>
 </head>
@@ -38,102 +47,104 @@
       data-recalc-dims="1">
   </a>
   <main>
-    <div id="presentation">
+    <header>
       <h1>Benjamin Guillermo La Madrid Bañados</h1>
       <p>Bilingual developer based in Chile</p>
-      <ul class="profile-links">
-        <li>
-          <a id="my-github" href="https://github.com/bglamadrid" target="_blank" rel="noopener">
-            <img class="icon" src="assets/simpleicons.org/github.svg" alt="GitHub" />&nbsp;
-            GitHub Profile
-          </a>
-        </li>
-        <li>
-          <a id="my-linkedin" href="https://www.linkedin.com/in/benjaminlamadrid" target="_blank" rel="noopener">
-            <img class="icon" src="assets/simpleicons.org/linkedin.svg" alt="LinkedIn" />&nbsp;
-            LinkedIn Profile
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div id="content">
-      <h2 class="bio">😁 My Bio</h2>
-      <p class="bio">
-        I'm an experienced Web and Software Developer. I love singing, cycling and Doritos (for better or worse). I love the philosophy behind open-source, and I wish companies took it into their business.<br/>
-        At a young age I've been learning by doing and building things within a computer, and I've always had an obsession for videogames.<br/>
-        First I learned to write HTML and CSS thanks to the tutorials shared at <a href="https://comocreartuweb.com" target="_blank" rel="noopener">ComoCrearTuWeb.com</a>.
-        Years later, I stumbled upon the <a href="https://mtasa.com" target="_blank" rel="noopener">MTA</a> mod and its enormous and friendly user community. And thanks to the Lua scripting environment designed by its authors, I ventured into creating programming logic for the first time.
-        I once even hosted this tiny RPG-like gamemode in a server for a couple weeks.
-        It's been many years since all that happened, I was 13 when I started scripting in Lua for the sake of playing MTA with custom stuff.<br/>
-        To be continued...?
-      </p>
-      <h2 class="projects">🚀 My today stuff</h2>
-      <div class="projects card-grid">
-        <a class="company project card" href="https://agencia33.cl" target="_blank" rel="noopener">
+      <nav class="profile-links">
+        <a class="github" href="https://github.com/bglamadrid" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/github.svg" alt="GitHub" />&nbsp;
+          GitHub Profile
+        </a>
+        <a class="linkedin" href="https://www.linkedin.com/in/benjaminlamadrid" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/linkedin.svg" alt="LinkedIn" />&nbsp;
+          LinkedIn Profile
+        </a>
+      </nav>
+    </header>
+    <section id="bio">
+      <h2>😁 About me</h2>
+      <p>I'm a web and software developer leading chilean startup Agencia 33. I sing, play videogames and go cycling. I contribute to open-source as a philosophical, selfless effort. At a young age I've gotten used to learning by doing and building things, and I've always had an obsession for computers and videogames.</p>
+      <!-- <p>At 11, thanks to the superb free courses at <a href="https://comocreartuweb.com" target="_blank">ComoCrearTuWeb.com</a>, I learned to read and write HTML and some CSS.</p>
+      <p>Years later, I got into <a href="https://mtasa.com" target="_blank">Multi Theft Auto San Andreas</a>, met its nice, friendly community. Their authors created a Lua scripting environment, with which I ventured into learning to write code; first editing stuff word by word in an effort to understand the meaning behind (barely knowing any English), until I started writing stuff on my own.</p>
+      <p>At this point I got interested in game development; I managed to write an entire RPG zombie gamemode, though it never got big in the community.</p>
+      <p>I got Game Maker (not an adult yet) to learn to create games. Eventually I got into Object Orientation without realizing!</p>
+      <p>When I finished high school, I took on a Computer Engineering career for the duration of 3 years, in the middle of which I got an undergrad job, and stepping up from part-time to full-time with indefinite contract, eventually studying and working at the same time. Then I finished my career.</p>
+      <p>I have professional experience both as IT Consultant and Angular Developer.</p> -->
+    </section>
+    <section id="projects">
+      <h2>🚀 My today stuff</h2>
+      <div class="card-grid">
+        <a class="company card" href="https://agencia33.cl" target="_blank" rel="noopener">
           <span>Agencia 33 SpA</span>
           <span>Marketing & software development startup</span>
         </a>
-        <a class="trebol project card" href="https://trebol-ecommerce.github.io/ngx-trebol-frontend" target="_blank" rel="noopener">
+        <a class="trebol card" href="https://trebol-ecommerce.github.io/ngx-trebol-frontend" target="_blank" rel="noopener">
           <span>Trebol (spanish for 'Clover')</span>
           <span>An eCommerce solution with an user-friendly web interface</span>
         </a>
-        <div class="this project card">
+        <div class="this card">
           <span>This site</span>
           <span>Putting that design & CSS I've learned over the years, into practice</span>
         </div>
       </div>
-      <h2 class="tech">💘 Tools I use the most</h2>
-      <div class="tech card-grid">
-        <a class="git tech card" href="https://git-scm.com/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/git.svg" alt="Git logo" />
+    </section>
+    <section id="tech">
+      <h2>💘 Tools I use the most</h2>
+      <div class="card-grid">
+        <a class="git card" href="https://git-scm.com/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/git.svg" alt="Git logo" />
           <span>GOAT version control system</span>
         </a>
-        <a class="github tech card" href="https://github.com/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/github.svg" alt="GitHub logo" />
+        <a class="gh card" href="https://github.com/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/github.svg" alt="GitHub logo" />
           <span>Where I host my code and this page is served from</span>
         </a>
-        <a class="angular tech card" href="https://angular.io/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/angular.svg" alt="Angular logo" />
+        <a class="ng card" href="https://angular.io/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/angular.svg" alt="Angular logo" />
           <span>Powerful web application framework</span>
         </a>
-        <a class="java tech card" href="https://java.com/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/java.svg" alt="Java logo" />
+        <a class="java card" href="https://java.com/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/java.svg" alt="Java logo" />
           <span>Platform and programming language</span>
         </a>
-        <a class="vscode tech card" href="https://code.visualstudio.com/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/visualstudiocode.svg" alt="VS Code logo" />
+        <a class="vscode card" href="https://code.visualstudio.com/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/visualstudiocode.svg" alt="VS Code logo" />
           <span>Superb lightweight IDE for TypeScript, Markdown & multi-cursor editing</span>
         </a>
-        <a class="intellij-idea tech card" href="https://eclipse.org/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/intellijidea.svg" alt="IntelliJ IDEA logo" />
+        <a class="intellij-idea card" href="https://eclipse.org/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/intellijidea.svg" alt="IntelliJ IDEA logo" />
           <span>My go-to IDE for Java development</span>
         </a>
-        <a class="spring tech card" href="https://spring.io/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/spring.svg" alt="Spring Framework logo" />
+        <a class="spring card" href="https://spring.io/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/spring.svg" alt="Spring Framework logo" />
           <span>Great Java framework</span>
         </a>
-        <a class="maven tech card" href="https://maven.apache.org/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/apachemaven.svg" alt="Apache Maven logo" />
+        <a class="maven card" href="https://maven.apache.org/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/apachemaven.svg" alt="Apache Maven logo" />
           <span>Robust tool for managing Java projects</span>
         </a>
-        <a class="apache tech card" href="https://httpd.apache.org/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/apache.svg" alt="Apache HTTP Server logo" />
+        <a class="apache card" href="https://httpd.apache.org/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/apache.svg" alt="Apache HTTP Server logo" />
           <span>Solid & standard web server solution</span>
         </a>
-        <a class="aws tech card" href="https://aws.amazon.com/" target="_blank" rel="noopener">
-          <img class="icon" src="assets/simpleicons.org/amazonaws.svg" alt="Amazon AWS logo" />
+        <a class="aws card" href="https://aws.amazon.com/" target="_blank" rel="noopener">
+          <img class="icon" src="vendor/simpleicons.org/amazonaws.svg" alt="Amazon AWS logo" />
           <span>Amazon's cloud platform</span>
         </a>
       </div>
-      <ul id="credits">
-        <li>Beautiful brand icons as seen on <a href="https://simpleicons.org" target="_blank" rel="noopener">SimpleIcons.org</a></li>
-      </ul>
-      <p id="footer">
+    </section>
+    <footer>
+      <div class="upper">
+        <ul class="credits-list">
+          <li>Beautiful brand icons as seen on <a href="https://simpleicons.org" target="_blank" rel="noopener">SimpleIcons.org</a></li>
+        </ul>
+      </div>
+      <div class="lower">
         <span>This site does not use cookies, and it does not collect any personal information.</span>
         <span>Built using pure HTML and CSS. Last Updated on 2021-12-26</span>
         <span>Code licensed under MIT (<a href="LICENSE">click to download the license text 📜</a>)</span>
-      </p>
-    </div>
+      </div>
+    </footer>
   </main>
 </body>
 </html>

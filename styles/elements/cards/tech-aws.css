@@ -1,0 +1,6 @@
+#tech .aws.card {
+  background-color: #fb0;
+}
+#tech .aws.card:hover {
+  background-color: #da0;
+}

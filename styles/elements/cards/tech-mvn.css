@@ -1,0 +1,6 @@
+#tech .mvn.card {
+  background-color: #fcc;
+}
+#tech .mvn.card:hover {
+  background-color: #ebb;
+}
