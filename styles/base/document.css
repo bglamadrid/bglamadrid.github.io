@@ -13,6 +13,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  background-color: #414;
+  background: #441144;
+  background: linear-gradient(180deg, #441144 0%, #441144 35%, #100010 100%);
   color: #eee;
 }
