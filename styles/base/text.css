@@ -1,12 +1,24 @@
 * {
-  font-family: sans-serif;
+  font-family: 'Work Sans';
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: Calibri, Verdana;
+  font-size: 1.75rem;
 }
 
 a {
   color: #acf;
   text-decoration: none;
+}
+
+@media(max-width: 640px) {
+  h2 {
+    text-align: center;
+    margin-right: 1.5rem;
+  }
 }

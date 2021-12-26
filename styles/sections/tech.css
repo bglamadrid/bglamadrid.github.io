@@ -1,5 +1,11 @@
+#tech .card-grid {
+  font-size: 1.15rem;
+}
+
 #tech .card {
   margin: 16px;
+  background-color: #eee;
+  color: black;
   border-radius: 8px;
   width: 6rem;
   box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
@@ -18,22 +24,11 @@
 @media(min-width: 641px) {
   #tech .card span {
     display: inline;
+    font-family: 'Ubuntu Mono';
+    /* font-weight: bold; */
   }
 
   #tech .card {
     width: 8rem;
   }
-}
-
-#tech .card-grid > * {
-  background-color: #eee;
-  color: black;
-}
-
-
-#tech * {
-  font-family: sans-serif;
-}
-#tech a {
-  font-size: 1rem;
 }
