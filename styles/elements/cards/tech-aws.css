@@ -4,3 +4,7 @@
 #tech .aws.card:hover {
   background-color: #da0;
 }
+
+#tech .aws.card span {
+  color: black;
+}
