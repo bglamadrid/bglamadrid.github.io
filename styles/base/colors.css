@@ -1,0 +1,23 @@
+:root {
+  --color-primary: hsl(204, 69%, 50%);
+  --color-primary-light: hsl(204, 98%, 63%);
+  --color-primary-dark: hsl(204, 80%, 30%);
+  --color-background: hsl(300, 60%, 17%);
+  --color-background-light: hsl(300, 62%, 29%);
+  --color-background-dark: hsl(300, 100%, 3%);
+  --color-text: #eeeeee;
+  --color-text-inverted: #2a2a2a;
+}
+
+@media(prefers-color-scheme: light) {
+  :root {
+    --color-primary: hsl(204, 69%, 50%);
+    --color-primary-light: hsl(204, 98%, 63%);
+    --color-primary-dark: hsl(204, 80%, 30%);
+    --color-background: hsl(276, 64%, 68%);
+    --color-background-light: hsl(276, 91%, 78%);
+    --color-background-dark: hsl(300, 100%, 3%);
+    --color-text: #2a2a2a;
+    --color-text-inverted: #eeeeee;
+  }
+}
