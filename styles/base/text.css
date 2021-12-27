@@ -1,5 +1,6 @@
 * {
   font-family: 'Work Sans';
+  color: var(--color-text);
 }
 
 h1 {
@@ -12,8 +13,17 @@ h2 {
 }
 
 a {
-  color: #acf;
+  color: var(--color-primary-light);
   text-decoration: none;
+}
+a:hover {
+  color: var(--color-primary);
+}
+@media(prefers-color-scheme: light) {
+  a {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+  }
 }
 
 @media(max-width: 640px) {

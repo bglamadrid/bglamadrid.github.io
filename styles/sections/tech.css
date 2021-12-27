@@ -1,3 +1,7 @@
+:root {
+  --tech-icon-size: 48px;
+}
+
 #tech .card-grid {
   font-size: 1.15rem;
 }
