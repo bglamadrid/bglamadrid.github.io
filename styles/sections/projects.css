@@ -1,5 +1,7 @@
 #projects .card-grid {
   align-items: stretch;
+  padding: 0;
+  margin: 1rem;
 }
 
 #projects .card {
@@ -10,12 +12,26 @@
 }
 #projects .company.card {
   background-color: #0ebf04;
-  color: black;
 }
 #projects .this.card {
   background-color: #414;
 }
 #projects .trebol.card {
   background-color: #1f5214;
+}
+
+@media(max-width: 640px) {
+  #projects .card {
+    padding: 2rem 1rem;
+  }
+}
+
+#projects .company.card span {
   color: white;
+}
+
+@media(min-width: 641px) {
+  #projects .card-grid {
+    margin: 2rem 1rem 1rem;
+  }
 }

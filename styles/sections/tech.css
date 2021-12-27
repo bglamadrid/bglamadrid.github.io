@@ -4,10 +4,13 @@
 
 #tech .card-grid {
   font-size: 1.15rem;
+  padding: 0;
+  margin: 3rem 0 1rem;
+  gap: 1.5rem;
 }
 
 #tech .card {
-  margin: 16px;
+  margin: 0;
   background-color: #eee;
   color: black;
   border-radius: 8px;
@@ -29,7 +32,7 @@
   #tech .card span {
     display: inline;
     font-family: 'Ubuntu Mono';
-    /* font-weight: bold; */
+    font-weight: bold;
   }
 
   #tech .card {
