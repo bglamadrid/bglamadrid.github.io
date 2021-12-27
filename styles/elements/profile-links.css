@@ -9,8 +9,6 @@
   align-items: center;
   width: 15rem;
   padding: 0.5rem;
-  border-radius: 4px;
-  background-color: #414;
 }
 
 .profile-links a > .icon {
@@ -46,6 +44,5 @@
   .profile-links a {
     width: auto;
     padding: 0;
-    background: none;
   }
 }
