@@ -20,9 +20,9 @@
     --color-accent: hsl(204, 69%, 50%);
     --color-accent-light: hsl(204, 98%, 63%);
     --color-accent-dark: hsl(204, 100%, 25%);
-    --color-background: hsl(276, 64%, 68%);
-    --color-background-light: hsl(276, 91%, 78%);
-    --color-background-dark: hsl(276, 100%, 90%);
+    --color-background: hsl(276, 60%, 75%);
+    --color-background-light: hsl(276, 91%, 85%);
+    --color-background-dark: hsl(276, 56%, 61%);
     --color-text: #2a2a2a;
     --color-text-inverted: #eeeeee;
   }

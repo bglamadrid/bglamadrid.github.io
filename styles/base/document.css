@@ -16,3 +16,12 @@ body {
     var(--color-background-dark) 100%);
   color: var(--color-text-inverted);
 }
+@media(prefers-color-scheme: light) {
+  body {
+    background: linear-gradient(
+      180deg,
+      var(--color-background) 0%,
+      var(--color-background) 35%,
+      var(--color-background-light) 100%);
+  }
+}
