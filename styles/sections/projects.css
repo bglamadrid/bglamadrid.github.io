@@ -11,13 +11,17 @@
   width: 100%;
 }
 #projects .company.card {
-  background-color: #0ebf04;
+  background-color: rgba(14, 191, 4, 0.8);
 }
 #projects .this.card {
-  background-color: #414;
+  background-color: rgba(69, 17, 69, 0.8);
 }
 #projects .trebol.card {
-  background-color: #1f5214;
+  background-color: rgba(31, 82, 20, 0.8);
+}
+
+#projects .card span {
+  color: white;
 }
 
 @media(max-width: 640px) {

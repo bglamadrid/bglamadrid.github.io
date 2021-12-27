@@ -10,8 +10,13 @@ main {
 main > * {
   padding: 1rem;
   border-radius: 8px;
-  background-color: #737;
+  background-color: var(--color-primary);
   box-shadow: 0 0 32px 10px rgba(0, 0, 0, 0.5);
+}
+@media(prefers-color-scheme: light) {
+  main > * {
+    background-color: transparent;
+  }
 }
 
 @media(min-width: 800px) {

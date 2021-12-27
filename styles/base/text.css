@@ -13,16 +13,18 @@ h2 {
 }
 
 a {
-  color: var(--color-primary-light);
+  color: var(--color-accent-light);
   text-decoration: none;
 }
 a:hover {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 @media(prefers-color-scheme: light) {
   a {
+    color: var(--color-accent-dark);
+  }
+  a:hover {
     color: var(--color-primary-dark);
-    text-decoration: none;
   }
 }
 
