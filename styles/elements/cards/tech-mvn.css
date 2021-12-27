@@ -1,8 +1,8 @@
 #tech .mvn.card {
-  background-color: #fcc;
+  background-color: rgba(255, 204, 204, 0.9);
 }
 #tech .mvn.card:hover {
-  background-color: #ebb;
+  background-color: rgba(238, 187, 187, 0.9);
 }
 
 #tech .mvn.card span {

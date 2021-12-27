@@ -1,11 +1,14 @@
 #tech .spring.card {
-  background-color: #3b0;
-  color: white;
+  background-color: rgba(51, 170, 0, 0.9);
 }
 #tech .spring.card:hover {
-  background-color: #2a0;
+  background-color: rgba(50, 189, 0, 0.9);
 }
 #tech .spring.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);
+}
+
+#tech .spring.card span {
+  color: white;
 }

@@ -1,11 +1,15 @@
 #tech .eclipse.card {
-  background-color: #94b;
-  color: white;
+  background-color: rgba(153, 68, 187, 0.9);
 }
 #tech .eclipse.card:hover {
-  background-color: #83a;
+  background-color: rgba(136, 51, 170, 0.9);
 }
+
 #tech .eclipse.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);
+}
+
+#tech .eclipse.card span {
+  color: white;
 }

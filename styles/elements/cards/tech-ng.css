@@ -1,11 +1,14 @@
 #tech .ng.card {
-  background-color: #b34;
-  color: white;
+  background-color: rgba(187, 51, 68, 0.9);
 }
 #tech .ng.card:hover {
-  background-color: #a23;
+  background-color: rgba(170, 34, 51, 0.9);
 }
 #tech .ng.card .icon {
   -webkit-filter: invert(85%);
   filter: invert(85%);
+}
+
+#tech .ng.card span {
+  color: white;
 }
