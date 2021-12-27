@@ -1,8 +1,8 @@
 #tech .apache2.card {
-  background-color: #dba;
+  background-color: rgba(221, 187, 170, 0.9);
 }
 #tech .apache2.card:hover {
-  background-color: #da9;
+  background-color: rgba(221, 170, 153, 0.9);
 }
 
 #tech .apache2.card span {
