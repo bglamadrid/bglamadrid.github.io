@@ -44,3 +44,15 @@ footer ul > li {
     padding: 0 1rem;
   }
 }
+
+@media(prefers-color-scheme: light) {
+  footer {
+    background-color: var(--color-primary) !important;
+  }
+
+  footer p,
+  footer li,
+  footer span {
+    color: white;
+  }
+}
