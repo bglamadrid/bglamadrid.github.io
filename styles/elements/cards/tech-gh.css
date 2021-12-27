@@ -1,6 +1,10 @@
-#tech .github.card {
-  background-color: #bbb;
+#tech .gh.card {
+  background-color: #ddd;
 }
-#tech .github.card:hover {
-  background-color: #aaa;
+#tech .gh.card:hover {
+  background-color: #fff;
+}
+
+#tech .gh.card span {
+  color: black;
 }

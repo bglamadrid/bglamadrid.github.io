@@ -4,3 +4,7 @@
 #tech .apache2.card:hover {
   background-color: #da9;
 }
+
+#tech .apache2.card span {
+  color: black;
+}
