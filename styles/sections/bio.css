@@ -1,10 +1,16 @@
 
 #bio p {
+  margin: 1rem;
+}
+#bio ul {
   margin: 1rem 2rem;
 }
 
 @media(min-width: 641px) {
   #bio p {
+    margin: 1rem 3rem;
+  }
+  #bio ul {
     margin: 1rem 4rem;
   }
 }
