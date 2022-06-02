@@ -5,29 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portafolio de desarrollador bilingüe en Chile">
 
-  <link rel="stylesheet" href="styles/base/colors.css">
-  <link rel="stylesheet" href="styles/base/document.css">
-  <link rel="stylesheet" href="styles/base/footer.css">
-  <link rel="stylesheet" href="styles/base/header.css">
-  <link rel="stylesheet" href="styles/base/main.css">
-  <link rel="stylesheet" href="styles/base/text.css">
+  <link rel="stylesheet" href="styles/colors.css">
+  <link rel="stylesheet" href="styles/document.css">
 
-  <link rel="stylesheet" href="styles/elements/card-grid.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-apache2.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-aws.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-eclipse.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-gh.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-git.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-intellij-idea.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-java.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-mvn.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-ng.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-spring.css">
-  <link rel="stylesheet" href="styles/elements/cards/tech-vscode.css">
-  <link rel="stylesheet" href="styles/elements/credits-list.css">
-  <link rel="stylesheet" href="styles/elements/forkme.css">
-  <link rel="stylesheet" href="styles/elements/langpicker.css">
-  <link rel="stylesheet" href="styles/elements/profile-links.css">
+  <link rel="stylesheet" href="styles/elements/footer.css">
+  <link rel="stylesheet" href="styles/elements/header.css">
+  <link rel="stylesheet" href="styles/elements/text.css">
+
+  <link rel="stylesheet" href="styles/classes/card-grid.css">
+  <link rel="stylesheet" href="styles/classes/credits-list.css">
+  <link rel="stylesheet" href="styles/classes/forkme.css">
+  <link rel="stylesheet" href="styles/classes/langpicker.css">
+  <link rel="stylesheet" href="styles/classes/profile-links.css">
 
   <link rel="stylesheet" href="styles/fonts/ubuntu-mono.css">
   <link rel="stylesheet" href="styles/fonts/work-sans.css">
@@ -35,6 +24,17 @@
   <link rel="stylesheet" href="styles/sections/bio.css">
   <link rel="stylesheet" href="styles/sections/projects.css">
   <link rel="stylesheet" href="styles/sections/tech.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/angular.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/apache2.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/aws.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/eclipse.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/git.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/github.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/intellij.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/java.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/mvn.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/spring.css">
+  <link rel="stylesheet" href="styles/sections/tech-cards/vscode.css">
 
   <title>Benjamin La Madrid</title>
 </head>
@@ -43,14 +43,6 @@
     <b>Lenguaje del sitio: Español</b><br/>
     <a href="index.html">View English site</a>
   </div>
-  <a id="forkme" href="https://github.com/bglamadrid/bglamadrid.github.io">
-    <img src="https://github.blog/wp-content/uploads/2008/12/forkme_left_green_007200.png?resize=149%2C149"
-      width="149"
-      height="149"
-      alt="Fork me on GitHub"
-      loading="lazy"
-      data-recalc-dims="1">
-  </a>
   <main>
     <header>
       <h1>Benjamin Guillermo La Madrid Bañados</h1>
@@ -67,87 +59,93 @@
       </nav>
     </header>
     <section id="bio">
-      <h2>😁 Acerca de mí</h2>
-      <p>¡Soy un desarrollador de web y software! Tengo tres grandes hobbies:</p>
-      <ul>
-        <li>cantar,</li>
-        <li>videojuegos e</li>
-        <li>ir en bicicleta</li>
-      </ul>
-      <p>Además escribo código para el open-source y predico su filosofía.<br/>¡Compartir es poder!</p>
-      <p>Desde temprana edad me he interesado por aprender creando y construyendo cosas, y siempre he tenido un interés obsesivo con la computación y los videojuegos.</p>
-      <!-- <p>A los 11 años, gracias a los notables y simpáticos cursos de <a href="https://comocreartuweb.com" target="_blank">ComoCrearTuWeb.com</a>, aprendí a leer y escribir HTML y algo de CSS.</p>
-      <p>Unos años después, conocí el mod <a href="https://mtasa.com" target="_blank">Multi Theft Auto San Andreas</a>, y su inmensa y amigable comunidad. Fue gracias al entorno de scripting en Lua que los autores diseñaron, me aventuré a aprender a escribir código; primero editando pieza por pieza lo que otros escribían hasta entender el significado de cada cosa, hasta que poco a poco logré avanzar por cuenta propia.</p>
-      <p>Fue aquí que me interesé en el diseño de videojuegos; llegué a montar un pequeño modo de juego tipo RPG zombie durante algunas semanas.</p>
-      <p>Usé Game Maker sin licencia durante un tiempo para aprender algo que me acercara a hacer videojuegos. ¡Como resultado aprendí el paradigma de Orientación a Objetos sin saberlo!</p>
-      <p>Eventualmente cursé una carrera técnica de 3 años en un instituto profesional, iniciando mi práctica profesional a mitad de camino, pasando a contratación a plazo, indefinido y finalmente manteniendo ambas cosas, estudio y trabajo, hasta completar mi carrera.</p>
-      <p>Poseo experiencia concreta como Consultor de TI y Desarrollador Angular a tiempo completo.</p> -->
+      <div class="container">
+        <h2>😁 Acerca de mí</h2>
+        <p>¡Soy un desarrollador de web y software! Tengo tres grandes hobbies:</p>
+        <ul>
+          <li>cantar,</li>
+          <li>videojuegos e</li>
+          <li>ir en bicicleta</li>
+        </ul>
+        <p>Además escribo código para el open-source y predico su filosofía.<br/>¡Compartir es poder!</p>
+        <p>Desde temprana edad me he interesado por aprender creando y construyendo cosas, y siempre he tenido un interés obsesivo con la computación y los videojuegos.</p>
+        <!-- <p>A los 11 años, gracias a los notables y simpáticos cursos de <a href="https://comocreartuweb.com" target="_blank">ComoCrearTuWeb.com</a>, aprendí a leer y escribir HTML y algo de CSS.</p>
+        <p>Unos años después, conocí el mod <a href="https://mtasa.com" target="_blank">Multi Theft Auto San Andreas</a>, y su inmensa y amigable comunidad. Fue gracias al entorno de scripting en Lua que los autores diseñaron, me aventuré a aprender a escribir código; primero editando pieza por pieza lo que otros escribían hasta entender el significado de cada cosa, hasta que poco a poco logré avanzar por cuenta propia.</p>
+        <p>Fue aquí que me interesé en el diseño de videojuegos; llegué a montar un pequeño modo de juego tipo RPG zombie durante algunas semanas.</p>
+        <p>Usé Game Maker sin licencia durante un tiempo para aprender algo que me acercara a hacer videojuegos. ¡Como resultado aprendí el paradigma de Orientación a Objetos sin saberlo!</p>
+        <p>Eventualmente cursé una carrera técnica de 3 años en un instituto profesional, iniciando mi práctica profesional a mitad de camino, pasando a contratación a plazo, indefinido y finalmente manteniendo ambas cosas, estudio y trabajo, hasta completar mi carrera.</p>
+        <p>Poseo experiencia concreta como Consultor de TI y Desarrollador Angular a tiempo completo.</p> -->
+      </div>
     </section>
     <section id="projects">
-      <h2>🚀 Proyectos actuales</h2>
-      <div class="card-grid">
-        <a class="company card" href="https://agencia33.cl" target="_blank" rel="noopener">
-          <span>Agencia 33</span>
-          <span>Microempresa de publicidad y desarrollo de software</span>
-        </a>
-        <a class="trebol card" href="https://trebol-ecommerce.github.io/ngx-trebol-frontend" target="_blank" rel="noopener">
-          <span>Trébol</span>
-          <span>Una solución de eCommerce con una interfaz web amigable</span>
-        </a>
-        <div class="this card">
-          <span>Este sitio</span>
-          <span>Remodelo y pongo en práctica el diseño y CSS a medida que aprendo</span>
+      <div class="container">
+        <h2>🚀 Proyectos actuales</h2>
+        <div class="card-grid">
+          <a class="company card" href="https://agencia33.cl" target="_blank" rel="noopener">
+            <span>Agencia 33</span>
+            <span>Microempresa de publicidad y desarrollo de software</span>
+          </a>
+          <a class="trebol card" href="https://trebol-ecommerce.github.io/ngx-trebol-frontend" target="_blank" rel="noopener">
+            <span>Trébol</span>
+            <span>Una solución de eCommerce con una interfaz web amigable</span>
+          </a>
+          <div class="this card">
+            <span>Este sitio</span>
+            <span>Remodelo y pongo en práctica el diseño y CSS a medida que aprendo</span>
+          </div>
         </div>
       </div>
     </section>
     <section id="tech">
-      <h2>🔨 Mis herramientas</h2>
-      <div class="card-grid">
-        <a class="git card" href="https://git-scm.com/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/git.svg" alt="Git logo" />
-          <span>Sistema de control de versiones definitivo</span>
-        </a>
-        <a class="gh card" href="https://github.com/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/github.svg" alt="GitHub logo" />
-          <span>Plataforma donde alojo mi código y esta página reside</span>
-        </a>
-        <a class="ng card" href="https://angular.io/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/angular.svg" alt="Angular logo" />
-          <span>Poderoso framework para aplicaciones web</span>
-        </a>
-        <a class="java card" href="https://java.com/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/java.svg" alt="Java logo" />
-          <span>Plataforma y lenguaje de programación</span>
-        </a>
-        <a class="vscode card" href="https://code.visualstudio.com/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/visualstudiocode.svg" alt="VS Code logo" />
-          <span>IDE ligero, genial para TypeScript y Markdown</span>
-        </a>
-        <a class="intellij-idea card" href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/intellijidea.svg" alt="IntelliJ IDEA logo" />
-          <span>Mi IDE de elección para Java</span>
-        </a>
-        <a class="spring card" href="https://spring.io/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/spring.svg" alt="Spring Framework logo" />
-          <span>Genial framework de Java</span>
-        </a>
-        <a class="mvn card" href="https://maven.apache.org/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/apachemaven.svg" alt="Apache Maven logo" />
-          <span>Herramienta robusta para proyectos Java</span>
-        </a>
-        <a class="apache2 card" href="https://httpd.apache.org/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/apache.svg" alt="Apache HTTP Server logo" />
-          <span>Solución clásica y sólida de servidores web</span>
-        </a>
-        <a class="aws card" href="https://aws.amazon.com/" target="_blank" rel="noopener">
-          <img class="icon" src="vendor/simpleicons.org/amazonaws.svg" alt="Amazon AWS logo" />
-          <span>La plataforma en la nube de Amazon</span>
-        </a>
+      <div class="container">
+        <h2>🔨 Mis herramientas</h2>
+        <div class="card-grid">
+          <a class="git card" href="https://git-scm.com/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/git.svg" alt="Git logo" />
+            <span>Sistema de control de versiones definitivo</span>
+          </a>
+          <a class="gh card" href="https://github.com/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/github.svg" alt="GitHub logo" />
+            <span>Plataforma donde alojo mi código y esta página reside</span>
+          </a>
+          <a class="ng card" href="https://angular.io/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/angular.svg" alt="Angular logo" />
+            <span>Poderoso framework para aplicaciones web</span>
+          </a>
+          <a class="java card" href="https://java.com/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/java.svg" alt="Java logo" />
+            <span>Plataforma y lenguaje de programación</span>
+          </a>
+          <a class="vscode card" href="https://code.visualstudio.com/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/visualstudiocode.svg" alt="VS Code logo" />
+            <span>IDE ligero, genial para TypeScript y Markdown</span>
+          </a>
+          <a class="intellij-idea card" href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/intellijidea.svg" alt="IntelliJ IDEA logo" />
+            <span>Mi IDE de elección para Java</span>
+          </a>
+          <a class="spring card" href="https://spring.io/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/spring.svg" alt="Spring Framework logo" />
+            <span>Genial framework de Java</span>
+          </a>
+          <a class="mvn card" href="https://maven.apache.org/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/apachemaven.svg" alt="Apache Maven logo" />
+            <span>Herramienta robusta para proyectos Java</span>
+          </a>
+          <a class="apache2 card" href="https://httpd.apache.org/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/apache.svg" alt="Apache HTTP Server logo" />
+            <span>Solución clásica y sólida de servidores web</span>
+          </a>
+          <a class="aws card" href="https://aws.amazon.com/" target="_blank" rel="noopener">
+            <img class="icon" src="vendor/simpleicons.org/amazonaws.svg" alt="Amazon AWS logo" />
+            <span>La plataforma en la nube de Amazon</span>
+          </a>
+        </div>
       </div>
     </section>
     <footer>
       <div class="upper">
-        <ul id="credits-list">
+        <ul class="credits-list">
           <li>Hermosos iconos de marca creados por <a href="https://simpleicons.org" target="_blank" rel="noopener">SimpleIcons.org</a></li>
           <li>Bellas fuentes
             <a href="https://fonts.google.com/specimen/Work+Sans" target="_blank" rel="noopener">Work Sans</a> y
@@ -164,5 +162,13 @@
       </div>
     </footer>
   </main>
+  <a id="forkme" href="https://github.com/bglamadrid/bglamadrid.github.io">
+    <img src="https://github.blog/wp-content/uploads/2008/12/forkme_left_green_007200.png?resize=149%2C149"
+      width="149"
+      height="149"
+      alt="Fork me on GitHub"
+      loading="lazy"
+      data-recalc-dims="1">
+  </a>
 </body>
 </html>
