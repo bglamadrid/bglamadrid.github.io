@@ -18,22 +18,18 @@
   box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
 }
 
-#tech .card .icon {
+#tech .card > :last-child {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#tech .card > .icon {
   width: var(--tech-icon-size);
   height: var(--tech-icon-size);
   margin: 1rem 0;
 }
 
-#tech .card span {
-  display: none;
-}
-
 @media(min-width: 641px) {
-  #tech .card span {
-    display: inline;
-    font-weight: bold;
-  }
-
   #tech .card {
     width: 8rem;
   }
