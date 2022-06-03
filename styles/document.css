@@ -63,6 +63,7 @@ main section > .container > :last-child {
 
   main > * {
     background-color: transparent;
+    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.5);
   }
 }
 
