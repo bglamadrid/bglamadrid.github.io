@@ -1,37 +1,24 @@
-#projects .card-grid {
+#projects > .container > .card-grid {
   align-items: stretch;
   padding: 0;
   margin: 1rem;
 }
 
-#projects .card {
+#projects .card-grid > .card {
   border-width: 1px;
   border-style: solid;
   border-color: rgba(32, 32, 32, 0.25);
   width: 100%;
 }
-#projects .company.card {
-  background-color: rgba(14, 191, 4, 0.8);
-}
-#projects .this.card {
-  background-color: rgba(69, 17, 69, 0.8);
-}
-#projects .trebol.card {
-  background-color: rgba(31, 82, 20, 0.8);
-}
 
-#projects .card span {
-  color: white;
+#projects .card-grid > .card > * {
+  color: inherit;
 }
 
 @media(max-width: 640px) {
   #projects .card {
     padding: 2rem 1rem;
   }
-}
-
-#projects .company.card span {
-  color: white;
 }
 
 @media(min-width: 641px) {
