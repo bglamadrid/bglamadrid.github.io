@@ -10,12 +10,14 @@
 
 #tech .card {
   margin: 0;
-  background-color: #eee;
-  color: black;
   border-radius: 8px;
   width: 6rem;
   justify-content: space-evenly;
   box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+#tech .card > * {
+  color: inherit;
 }
 
 #tech .card > :last-child {

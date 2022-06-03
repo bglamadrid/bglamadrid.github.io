@@ -1,10 +1,7 @@
-#tech .gh.card {
+#tech .github.card {
   background-color: rgba(221, 221, 221, 0.9);
-}
-#tech .gh.card:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-#tech .gh.card span {
   color: black;
+}
+#tech .github.card:hover {
+  background-color: rgba(255, 255, 255, 0.9);
 }
