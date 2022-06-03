@@ -1,14 +1,11 @@
 #tech .java.card {
   background-color: rgba(221, 119, 51, 0.9);
+  color: white;
 }
 #tech .java.card:hover {
   background-color: rgba(187, 85, 51, 0.9);
 }
-#tech .java.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
-}
 
-#tech .java.card span {
-  color: white;
+#tech .java.card .icon {
+  filter: invert(100%);
 }

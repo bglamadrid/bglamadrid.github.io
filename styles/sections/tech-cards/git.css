@@ -1,15 +1,11 @@
 #tech .git.card {
   background-color: rgba(221, 85, 51, 0.9);
+  color: white;
 }
 #tech .git.card:hover {
   background-color: rgba(204, 68, 34, 0.9);
 }
 
 #tech .git.card .icon {
-  -webkit-filter: invert(85%);
-  filter: invert(85%);
-}
-
-#tech .git.card span {
-  color: white;
+  filter: invert(100%);
 }
