@@ -1,17 +1,7 @@
 .card-grid {
   padding: 1rem;
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: auto;
   justify-content: center;
-}
-
-.card-grid .card {
-  margin: 8px;
-  border-radius: 6px;
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
-  padding: 8px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  text-align: center;
+  justify-items: stretch;
 }

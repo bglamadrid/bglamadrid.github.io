@@ -1,0 +1,10 @@
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+}
+
+.card > * {
+  color: inherit;
+}
