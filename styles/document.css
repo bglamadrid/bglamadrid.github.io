@@ -77,10 +77,3 @@ main section > .container > :last-child {
     gap: 3rem;
   }
 }
-
-@media(min-width: 1008px) {
-  main > * {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}

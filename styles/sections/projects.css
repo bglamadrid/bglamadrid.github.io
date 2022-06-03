@@ -1,22 +1,22 @@
-#projects > .container > .card-grid {
-  align-items: stretch;
+#projects .card-grid {
+  grid-template-columns: auto;
   padding: 0;
-  margin: 1rem;
-}
-
-#projects .card-grid > .card {
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(32, 32, 32, 0.25);
+  margin-top: 2rem;
+  gap: 1rem;
   width: 100%;
 }
 
-#projects .card-grid > .card > * {
-  color: inherit;
+#projects .card-grid > .card {
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(32, 32, 32, 0.25);
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 8px;
 }
 
 @media(max-width: 640px) {
-  #projects .card {
+  #projects .card-grid > .card {
     padding: 2rem 1rem;
   }
 }
