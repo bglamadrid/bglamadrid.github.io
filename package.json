@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/bglamadrid/bglamadrid.github.io#readme",
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "pug": "^3.0.2",
     "pug-plugin": "^2.7.2",
     "webpack": "^5.73.0",
