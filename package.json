@@ -1,0 +1,19 @@
+{
+  "name": "bglamadrid.github.io",
+  "version": "1.0.0",
+  "description": "bglamadrid's static website",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bglamadrid/bglamadrid.github.io.git"
+  },
+  "author": "bglamadrid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bglamadrid/bglamadrid.github.io/issues"
+  },
+  "homepage": "https://github.com/bglamadrid/bglamadrid.github.io#readme"
+}
