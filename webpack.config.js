@@ -1,10 +1,46 @@
 const path = require('path');
+const PugPlugin = require('pug-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: './src/index.js',
-  output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+  entry: {
+    index: './src/views/index.pug'
   },
+  output: {
+    filename: 'scripts/[name].[contenthash:8].js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+    clean: true
+  },
+  plugins: [
+    new PugPlugin({
+      modules: [
+        PugPlugin.extractCss({
+          filename: 'styles/[name].[contenthash:8].css'
+        })
+      ]
+    })
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.pug$/,
+        loader: PugPlugin.loader,
+        options: {
+          method: 'render'
+        }
+      },
+      {
+        test: /\.(css)$/,
+        use: ['css-loader']
+      },
+      {
+        test: /favicon\.ico/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'favicon.ico'
+        }
+      }
+    ]
+  }
 };

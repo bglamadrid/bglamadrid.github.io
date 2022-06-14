@@ -1,0 +1,67 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    link(href=require('../favicon.ico') rel='icon' type='image/x-icon')
+
+    link(href=require('./styles/colors.css') reL='stylesheet')
+    link(href=require('./styles/document.css') reL='stylesheet')
+    link(href=require('./styles/fonts.css') reL='stylesheet')
+    link(href=require('./styles/elements/footer.css') reL='stylesheet')
+    link(href=require('./styles/elements/header.css') reL='stylesheet')
+    link(href=require('./styles/elements/text.css') reL='stylesheet')
+    link(href=require('./styles/classes/card.css') reL='stylesheet')
+    link(href=require('./styles/classes/card-grid.css') reL='stylesheet')
+    link(href=require('./styles/classes/credits-list.css') reL='stylesheet')
+    link(href=require('./styles/classes/forkme.css') reL='stylesheet')
+    link(href=require('./styles/classes/icon.css') reL='stylesheet')
+    link(href=require('./styles/classes/langpicker.css') reL='stylesheet')
+    link(href=require('./styles/classes/profile-links.css') reL='stylesheet')
+
+    link(href=require('./styles/sections/bio.css') reL='stylesheet')
+    link(href=require('./styles/sections/projects.css') reL='stylesheet')
+    link(href=require('./styles/sections/projects-cards/agencia33.css') reL='stylesheet')
+    link(href=require('./styles/sections/projects-cards/this.css') reL='stylesheet')
+    link(href=require('./styles/sections/projects-cards/trebol.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/angular.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/apache2.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/aws.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/eclipse.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/git.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/github.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/intellij.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/java.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/mvn.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/spring.css') reL='stylesheet')
+    link(href=require('./styles/sections/tech-cards/vscode.css') reL='stylesheet')
+
+    link(href='https://fonts.googleapis.com' rel='preconnect')
+    link(href='https://fonts.gstatic.com' rel='preconnect' crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Work+Sans&display=swap' rel='stylesheet')
+
+    title Benjamin La Madrid
+  body
+    div.langpicker
+      b Site language: English#[br]
+      a(href='index.es.html') Ver sitio en Español
+    main
+      header
+        h1 Benjamin Guillermo La Madrid Bañados
+        p Bilingual developer based in Chile
+        nav.profile-links
+          include profile-links.pug
+      section#bio
+        div.container
+          include bio.pug
+      section#projects
+        div.container
+          include projects.pug
+      section#tech
+        div.container
+          include tech.pug
+      footer
+        include footer.pug
