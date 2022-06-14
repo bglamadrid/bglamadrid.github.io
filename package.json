@@ -1,7 +1,8 @@
 {
-  "name": "pugtail",
-  "version": "1.1.2",
-  "description": "A Pug/TailwindCSS JAMStack template for quickly building awesome static websites",
+  "name": "bglamadrid.github.io",
+  "version": "1.0.0",
+  "description": "bglamadrid's static website",
+  "private": true,
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "dev": "webpack serve --config webpack.config.dev.js --port 80",
@@ -10,15 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bglamadrid/pugtail.git"
+    "url": "git+https://github.com/bglamadrid/bglamadrid.github.io.git"
   },
   "keywords": [],
   "author": "bglamadrid",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bglamadrid/pugtail/issues"
-  },
-  "homepage": "https://github.com/bglamadrid/pugtail#readme",
+  "homepage": "https://bglamadrid.github.io",
   "devDependencies": {
     "css-loader": "^6.7.1",
     "postcss": "^8.4.14",
