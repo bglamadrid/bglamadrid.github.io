@@ -1,3 +1,5 @@
+include mixins/footer-content.pug
+
 doctype html
 html(lang='en')
   head
@@ -34,4 +36,4 @@ html(lang='en')
         div.container
           include tech.pug
       footer
-        include footer.pug
+        +footer-content()
