@@ -1,5 +1,6 @@
 include mixins/footer-content.pug
 include mixins/simple-icon.pug
+include mixins/tech-card.pug
 
 -
   const data = require('../data.json');
@@ -69,10 +70,6 @@ html(lang='en')
           p These ain't the -only- ones I've used, just the 'my-most-frequently' ones.
           div.card-grid
             each t in data.tech
-              a.card(class=t.shortName href=t.url
-              target='_blank' rel='noopener')
-                img.icon(src=t.iconSrc aria-hidden='true')
-                strong=t.name
-                span=t.description
+              +tech-card(t.shortName, t.name, t.description, t.url, t.iconSrc)
       footer
         +footer-content()
