@@ -25,7 +25,16 @@ html(lang='en')
         h1 Benjamin Guillermo La Madrid Bañados
         p Bilingual developer based in Chile
         nav.profile-links
-          include profile-links.pug
+          a.github(href='https://github.com/bglamadrid'
+          target='_blank' rel='noopener')
+            img.icon(src='https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg'
+            alt='' aria-hidden='true')
+            span GitHub Profile
+          a.linkedin(href='https://www.linkedin.com/in/benjaminlamadrid'
+          target='_blank' rel='noopener')
+            img.icon(src='https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/linkedin.svg'
+            alt='' aria-hidden='true')
+            span LinkedIn Profile
       section#bio
         div.container
           include bio.pug
