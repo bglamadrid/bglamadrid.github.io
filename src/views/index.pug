@@ -1,6 +1,9 @@
 include mixins/footer-content.pug
 include mixins/simple-icon.pug
 
+-
+  const data = require('../data.json');
+
 doctype html
 html(lang='en')
   head
@@ -62,6 +65,14 @@ html(lang='en')
               span As I learn, I redesign & put my CSS & design knowledge into practice
       section#tech
         div.container
-          include tech.pug
+          h2 🔨 Tools I use
+          p These ain't the -only- ones I've used, just the 'my-most-frequently' ones.
+          div.card-grid
+            each t in data.tech
+              a.card(class=t.shortName href=t.url
+              target='_blank' rel='noopener')
+                img.icon(src=t.iconSrc aria-hidden='true')
+                strong=t.name
+                span=t.description
       footer
         +footer-content()

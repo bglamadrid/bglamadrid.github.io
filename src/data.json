@@ -1,174 +1,74 @@
 {
-  "site": {
-    "locale": "en",
-    "navigation": {
-      "enabled": false,
-      "links": [
-        {
-          "url": "#",
-          "title": "Home"
-        },
-        {
-          "url": "#about",
-          "title": "About Us"
-        },
-        {
-          "url": "#services",
-          "title": "Services"
-        },
-        {
-          "url": "https://google.com",
-          "title": "Google"
-        }
-      ]
+  "tech": [
+    {
+      "shortName": "git",
+      "name": "Git",
+      "description": "GOAT version control system",
+      "url": "https://git-scm.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/git.svg"
     },
-    "extensions": {
-      "google": {
-        "maps": [
-          {
-            "usage": "iframe-embed",
-            "queryParams": {
-              "pb": ""
-            },
-            "title": "Google Maps location"
-          }
-        ],
-        "drive": [
-          {
-            "usage": "iframe-embed",
-            "queryParams": {
-              "id": ""
-            },
-            "title": "Google Drive folder"
-          }
-        ]
-      }
+    {
+      "shortName": "github",
+      "name": "GitHub",
+      "description": "Where I host my code and this page is served from",
+      "url": "https://github.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/git.svg"
+    },
+    {
+      "shortName": "angular",
+      "name": "Angular",
+      "description": "Powerful web application framework",
+      "url": "https://angular.io/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/angular.svg"
+    },
+    {
+      "shortName": "java",
+      "url": "https://java.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/java.svg",
+      "name": "Java",
+      "description": "Platform and programming language"
+    },
+    {
+      "shortName": "vscode",
+      "name": "VS Code",
+      "description": "Superb lightweight & extensible IDE",
+      "url": "https://code.visualstudio.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/visualstudiocode.svg"
+    },
+    {
+      "shortName": "intellij",
+      "name": "IntelliJ",
+      "description": "My go-to IDE for Java development",
+      "url": "https://www.jetbrains.com/idea/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/intellijidea.svg"
+    },
+    {
+      "shortName": "spring",
+      "name": "Spring",
+      "description": "Great Java framework",
+      "url": "https://spring.io/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/spring.svg"
+    },
+    {
+      "shortName": "maven",
+      "name": "Maven",
+      "description": "Robust tool for managing Java projects",
+      "url": "https://maven.apache.org/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/apachemaven.svg"
+    },
+    {
+      "shortName": "apache2",
+      "name": "Apache2",
+      "description": "Solid & standard web server solution",
+      "url": "https://httpd.apache.org/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/apache.svg"
+    },
+    {
+      "shortName": "aws",
+      "name": "AWS",
+      "description": "Amazon\"s cloud platform",
+      "url": "https://aws.amazon.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazonaws.svg"
     }
-  },
-  "business": {
-    "name": "{{ Brand name }}",
-    "about": {
-      "identity": {
-        "title": "About Us",
-        "paragraphs": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non erat a lectus faucibus varius. Praesent id sapien eget neque hendrerit malesuada efficitur nec mi. Etiam dapibus pretium est, in commodo quam venenatis sed. Curabitur ut elementum libero. Sed in suscipit mauris. Nam at dui cursus, mattis lacus ut, volutpat massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-        ],
-        "icon": {
-          "source": "fontawesome",
-          "name": "users"
-        }
-      },
-      "mission": {
-        "title": "Mission",
-        "paragraphs": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non erat a lectus faucibus varius. Praesent id sapien eget neque hendrerit malesuada efficitur nec mi. Etiam dapibus pretium est, in commodo quam venenatis sed. Curabitur ut elementum libero. Sed in suscipit mauris. Nam at dui cursus, mattis lacus ut, volutpat massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-        ],
-        "icon": {
-          "source": "fontawesome",
-          "name": "thumbs-up"
-        }
-      },
-      "vision": {
-        "title": "Vision",
-        "paragraphs": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non erat a lectus faucibus varius. Praesent id sapien eget neque hendrerit malesuada efficitur nec mi. Etiam dapibus pretium est, in commodo quam venenatis sed. Curabitur ut elementum libero. Sed in suscipit mauris. Nam at dui cursus, mattis lacus ut, volutpat massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-        ],
-        "icon": {
-          "source": "fontawesome",
-          "name": "flag"
-        }
-      }
-    },
-    "logo": {
-      "default": {
-        "aliasedUrl": "",
-        "absoluteUrl": "https://fakeimg.pl/100x100"
-      }
-    },
-    "contact": {
-      "whatsapp": [
-        {
-          "rawNumber": "56999999999",
-          "prettifiedNumber": "+569 9999 9999",
-          "description": ""
-        }
-      ],
-      "phone": [
-        {
-          "rawNumber": "299999999",
-          "prettifiedNumber": "2 9999 9999",
-          "description": ""
-        }
-      ],
-      "email": [
-        "lorem@ipsum.com"
-      ]
-    },
-    "socialLinks": {
-      "facebook": [
-        {
-          "id": "some-facebook-id",
-          "elementClasses": [
-          ]
-        }
-      ],
-      "instagram": [
-        {
-          "id": "some-instagram-id",
-          "elementClasses": [
-          ]
-        }
-      ]
-    },
-    "services": {
-      "service-a": {
-        "name": "Item A",
-        "thumb": {
-          "aliasedUrl": "",
-          "absoluteUrl": "https://fakeimg.pl/200x200",
-          "description": ""
-        }
-      },
-      "service-b": {
-        "name": "Item B",
-        "thumb": {
-          "aliasedUrl": "",
-          "absoluteUrl": "https://fakeimg.pl/200x200",
-          "description": ""
-        }
-      },
-      "service-c": {
-        "name": "Item C",
-        "thumb": {
-          "aliasedUrl": "",
-          "absoluteUrl": "https://fakeimg.pl/200x200",
-          "description": ""
-        }
-      },
-      "service-d": {
-        "name": "Item D",
-        "thumb": {
-          "aliasedUrl": "",
-          "absoluteUrl": "https://fakeimg.pl/200x200",
-          "description": ""
-        }
-      },
-      "service-e": {
-        "name": "Item E",
-        "thumb": {
-          "aliasedUrl": "",
-          "absoluteUrl": "https://fakeimg.pl/200x200",
-          "description": ""
-        }
-      },
-      "service-f": {
-        "name": "Item F",
-        "thumb": {
-          "aliasedUrl": "",
-          "absoluteUrl": "https://fakeimg.pl/200x200",
-          "description": ""
-        }
-      }
-    }
-  }
+  ]
 }
