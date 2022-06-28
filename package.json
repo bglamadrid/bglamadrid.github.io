@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
+    "develop": "webpack serve --port 80 -c webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "deploy": "gh-pages -d dist -b static",
