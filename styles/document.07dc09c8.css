@@ -1,0 +1,33 @@
+:root {
+  --content-width: 800px;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  overflow: auto;
+}
+
+main section > .container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+main section > .container > * {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+main section > .container > :first-child {
+  margin-top: 4rem;
+}
+main section > .container > :last-child {
+  margin-bottom: 4rem;
+}

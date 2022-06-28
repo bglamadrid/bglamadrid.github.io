@@ -1,11 +1,3 @@
-footer {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 0.5rem !important;
-  text-align: center;
-}
-
 footer > * {
   margin: 1rem 0;
   display: flex;
