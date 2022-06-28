@@ -10,8 +10,13 @@ main {
   overflow: auto;
 }
 
-main section > .container {
+main > header,
+main section > .container,
+main > footer {
   max-width: var(--content-width);
+}
+
+main section > .container {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
