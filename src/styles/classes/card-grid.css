@@ -1,7 +1,6 @@
 .card-grid {
-  padding: 1rem;
   display: grid;
-  grid-template-columns: auto;
   justify-content: center;
-  justify-items: stretch;
+  align-items: stretch;
+  gap: 1rem;
 }

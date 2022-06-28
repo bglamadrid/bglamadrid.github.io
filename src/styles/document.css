@@ -1,82 +1,33 @@
+:root {
+  --content-width: 800px;
+}
+
 body {
   margin: 0;
-  background-color: var(--color-background);
-  background-image: linear-gradient(
-    180deg,
-    var(--color-background) 0%,
-    var(--color-background) 35%,
-    var(--color-background-dark) 100%
-  );
-  background-attachment: fixed;
-  color: var(--color-text-inverted);
-  text-align: center;
 }
 
 main {
-  max-width: 800px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-main > :first-child {
-  margin-top: 1rem;
-}
-main > :last-child {
-  margin-bottom: 1rem;
-}
-
-main > * {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  padding: 1rem;
-  border-radius: 8px;
-  background-color: var(--color-primary);
-  box-shadow: 0 0 32px 10px rgba(0, 0, 0, 0.5);
+  overflow: auto;
 }
 
 main section > .container {
+  max-width: var(--content-width);
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  align-content: center;
   gap: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 main section > .container > * {
-  margin: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
 main section > .container > :first-child {
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 main section > .container > :last-child {
-  margin-bottom: 1rem;
-}
-
-@media(prefers-color-scheme: light) {
-  body {
-    background-image: linear-gradient(
-      180deg,
-      var(--color-background) 0%,
-      var(--color-background) 35%,
-      var(--color-background-light) 100%);
-  }
-
-  main > * {
-    background-color: transparent;
-    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.5);
-  }
-}
-
-@media(max-width: 640px) {
-  main {
-    gap: 1rem 0.5rem;
-  }
-}
-
-@media(min-width: 641px) {
-  main {
-    gap: 3rem;
-  }
+  margin-bottom: 4rem;
 }
