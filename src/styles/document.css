@@ -14,10 +14,11 @@ main > header,
 main section > .container,
 main > footer {
   max-width: var(--content-width);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main section > .container {
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
