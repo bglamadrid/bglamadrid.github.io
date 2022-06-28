@@ -1,0 +1,77 @@
+include mixins/footer-content.pug
+include mixins/simple-icon.pug
+include mixins/tech-card.pug
+
+-
+  const data = require('../data.json');
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
+    link(href=require('../favicon.ico') rel='icon' type='image/x-icon')
+
+    include ../includes/styles.pug
+
+    link(href=require('./index.css') rel='stylesheet')
+
+    link(href='https://fonts.googleapis.com' rel='preconnect')
+    link(href='https://fonts.gstatic.com' rel='preconnect' crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Work+Sans&display=swap' rel='stylesheet')
+
+    title Benjamin La Madrid
+  body
+    div.langpicker
+      b Site language: English#[br]
+      a(href='index.es.html') Ver sitio en Español
+    main
+      header
+        h1 Benjamin Guillermo La Madrid Bañados
+        p Bilingual developer based in Chile
+        nav.profile-links
+          a.github(href='https://github.com/bglamadrid'
+          target='_blank' rel='noopener')
+            +simple-icon('github')
+            span GitHub Profile
+          a.linkedin(href='https://www.linkedin.com/in/benjaminlamadrid'
+          target='_blank' rel='noopener')
+            +simple-icon('linkedin')
+            span LinkedIn Profile
+      section#bio
+        div.container
+          h2 😁 About me
+          p I'm a web and software developer! I like three things in life:
+          ul
+            li singing,
+            li playing videogames and
+            li going cycling
+          p There's also that I write code in, and advocate for, open-source. Sharing is where it's at.
+          p At a young age I've gotten used to learning by doing and building things, and I've always had an obsession for computers and videogames.
+      section#projects
+        div.container
+          h2 🚀 Ongoing projects
+          p These are the things that keep me busy.
+          div.card-grid
+            a.agencia33.card(href='https://agencia33.cl'
+            target='_blank' rel='noopener')
+              span Agencia 33
+              span Marketing & software development business
+            a.trebol.card(href='https://trebol-ecommerce.github.io/ngx-trebol-frontend'
+            target='_blank' rel='noopener')
+              span Trebol (spanish for 'Clover')
+              span An eCommerce solution with an user-friendly web interface
+            div.this.card
+              span This site
+              span As I learn, I redesign & put my CSS & design knowledge into practice
+      section#tech
+        div.container
+          h2 🔨 Tools I use
+          p These ain't the -only- ones I've used, just the 'my-most-frequently' ones.
+          div.card-grid
+            each t in data.tech
+              +tech-card(t.shortName, t.name, t.description, t.url, t.iconSrc)
+      footer
+        +footer-content()

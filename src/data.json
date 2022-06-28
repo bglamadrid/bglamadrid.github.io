@@ -1,0 +1,74 @@
+{
+  "tech": [
+    {
+      "shortName": "git",
+      "name": "Git",
+      "description": "GOAT version control system",
+      "url": "https://git-scm.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/git.svg"
+    },
+    {
+      "shortName": "github",
+      "name": "GitHub",
+      "description": "Where I host my code and this page is served from",
+      "url": "https://github.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/git.svg"
+    },
+    {
+      "shortName": "angular",
+      "name": "Angular",
+      "description": "Powerful web application framework",
+      "url": "https://angular.io/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/angular.svg"
+    },
+    {
+      "shortName": "java",
+      "url": "https://java.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/java.svg",
+      "name": "Java",
+      "description": "Platform and programming language"
+    },
+    {
+      "shortName": "vscode",
+      "name": "VS Code",
+      "description": "Superb lightweight & extensible IDE",
+      "url": "https://code.visualstudio.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/visualstudiocode.svg"
+    },
+    {
+      "shortName": "intellij",
+      "name": "IntelliJ",
+      "description": "My go-to IDE for Java development",
+      "url": "https://www.jetbrains.com/idea/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/intellijidea.svg"
+    },
+    {
+      "shortName": "spring",
+      "name": "Spring",
+      "description": "Great Java framework",
+      "url": "https://spring.io/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/spring.svg"
+    },
+    {
+      "shortName": "maven",
+      "name": "Maven",
+      "description": "Robust tool for managing Java projects",
+      "url": "https://maven.apache.org/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/apachemaven.svg"
+    },
+    {
+      "shortName": "apache2",
+      "name": "Apache2",
+      "description": "Solid & standard web server solution",
+      "url": "https://httpd.apache.org/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/apache.svg"
+    },
+    {
+      "shortName": "aws",
+      "name": "AWS",
+      "description": "Amazon\"s cloud platform",
+      "url": "https://aws.amazon.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazonaws.svg"
+    }
+  ]
+}
