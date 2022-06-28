@@ -23,6 +23,7 @@
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "pug": "^3.0.2",
     "pug-plugin": "^2.7.2",
