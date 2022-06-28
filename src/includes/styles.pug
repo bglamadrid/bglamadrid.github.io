@@ -1,30 +1,36 @@
-link(href=require('../styles/colors.css') rel='stylesheet')
-link(href=require('../styles/document.css') rel='stylesheet')
-link(href=require('../styles/fonts.css') rel='stylesheet')
-link(href=require('../styles/elements/footer.css') rel='stylesheet')
-link(href=require('../styles/elements/header.css') rel='stylesheet')
-link(href=require('../styles/elements/text.css') rel='stylesheet')
-link(href=require('../styles/classes/card.css') rel='stylesheet')
-link(href=require('../styles/classes/card-grid.css') rel='stylesheet')
-link(href=require('../styles/classes/credits-list.css') rel='stylesheet')
-link(href=require('../styles/classes/forkme.css') rel='stylesheet')
-link(href=require('../styles/classes/icon.css') rel='stylesheet')
-link(href=require('../styles/classes/langpicker.css') rel='stylesheet')
-link(href=require('../styles/classes/profile-links.css') rel='stylesheet')
-link(href=require('../styles/sections/bio.css') rel='stylesheet')
-link(href=require('../styles/sections/projects.css') rel='stylesheet')
-link(href=require('../styles/sections/projects-cards/agencia33.css') rel='stylesheet')
-link(href=require('../styles/sections/projects-cards/this.css') rel='stylesheet')
-link(href=require('../styles/sections/projects-cards/trebol.css') rel='stylesheet')
-link(href=require('../styles/sections/tech.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/angular.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/apache2.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/aws.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/eclipse.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/git.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/github.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/intellij.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/java.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/mvn.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/spring.css') rel='stylesheet')
-link(href=require('../styles/sections/tech-cards/vscode.css') rel='stylesheet')
+-
+  const stylesheetPaths = [
+    'colors.css',
+    'document.css',
+    'fonts.css',
+    'elements/footer.css',
+    'elements/header.css',
+    'elements/text.css',
+    'classes/card.css',
+    'classes/card-grid.css',
+    'classes/credits-list.css',
+    'classes/forkme.css',
+    'classes/icon.css',
+    'classes/langpicker.css',
+    'classes/profile-links.css',
+    'sections/bio.css',
+    'sections/projects.css',
+    'sections/projects-cards/agencia33.css',
+    'sections/projects-cards/this.css',
+    'sections/projects-cards/trebol.css',
+    'sections/tech.css',
+    'sections/tech-cards/angular.css',
+    'sections/tech-cards/apache2.css',
+    'sections/tech-cards/aws.css',
+    'sections/tech-cards/eclipse.css',
+    'sections/tech-cards/git.css',
+    'sections/tech-cards/github.css',
+    'sections/tech-cards/intellij.css',
+    'sections/tech-cards/java.css',
+    'sections/tech-cards/mvn.css',
+    'sections/tech-cards/spring.css',
+    'sections/tech-cards/vscode.css'
+  ];
+
+each s in stylesheetPaths
+  link(href=require(`../styles/${s}`) rel='stylesheet')
