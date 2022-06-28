@@ -4,17 +4,12 @@
 
 #tech .card-grid {
   grid-template-columns: repeat(2, 1fr);
-  padding: 0;
-  margin-top: 2rem;
   gap: 1.5rem;
-  width: 100%;
 }
 
 #tech .card-grid > .card {
   border-radius: 8px;
   box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 8px;
-  margin: 0;
   justify-content: space-evenly;
 }
 
