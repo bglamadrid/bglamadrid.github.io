@@ -8,7 +8,9 @@
     "dev": "webpack serve --config webpack.config.dev.js --port 80",
     "watch": "webpack --watch --config webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "gh-pages -d dist -b static",
+    "stage": "npm run build && npm run deploy"
   },
   "repository": {
     "type": "git",
