@@ -1,11 +1,11 @@
-#tech .intellij-idea.card {
+#tech .intellij.card {
   background-color: rgba(187, 68, 153, 0.9);
   color: white;
 }
-#tech .intellij-idea.card:hover {
+#tech .intellij.card:hover {
   background-color: rgba(170, 51, 136, 0.9);
 }
 
-#tech .intellij-idea.card .icon {
+#tech .intellij.card .icon {
   filter: invert(100%);
 }
