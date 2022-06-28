@@ -25,6 +25,7 @@
     "postcss": "^8.4.14",
     "postcss-loader": "^7.0.0",
     "postcss-preset-env": "^7.7.2",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "pug": "^3.0.2",
     "pug-plugin": "^4.3.0",
