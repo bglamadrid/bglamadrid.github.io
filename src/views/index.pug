@@ -27,8 +27,8 @@ html(lang='en')
     div.langpicker
       b Site language: English#[br]
       a(href='index.es.html') Ver sitio en Español
-    main.grid.grid-cols-1.gap-4
-      header
+    main.container.mx-auto.grid.grid-cols-1.gap-4.justify-items-center
+      header.grid.grid-cols-1.gap-4.place-content-center.mx-4.mt-4
         h1 Benjamin Guillermo La Madrid Bañados
         p Bilingual developer based in Chile
         nav.profile-links
@@ -40,8 +40,8 @@ html(lang='en')
           target='_blank' rel='noopener')
             +simple-icon('linkedin')
             span LinkedIn Profile
-      section#bio
-        div.container
+      section#bio.max-w-screen-lg.mx-4
+        .container.grid.grid-cols-1.gap-4.justify-items-center.content-center
           h2 😁 About me
           p I'm a web and software developer! I like three things in life:
           ul.w-60
@@ -50,8 +50,8 @@ html(lang='en')
             li going cycling
           p There's also that I write code in, and advocate for, open-source. Sharing is where it's at.
           p At a young age I've gotten used to learning by doing and building things, and I've always had an obsession for computers and videogames.
-      section#projects
-        div.container
+      section#projects.max-w-screen-lg.mx-4
+        .container.grid.grid-cols-1.gap-4.justify-items-center.content-center
           h2 🚀 Ongoing projects
           p These are the things that keep me busy.
           .grid
@@ -66,12 +66,12 @@ html(lang='en')
             div.this.card
               span This site
               span Currently undergoing an upgrade from a #[i static website] to a [Jamstack](https://jamstack.org/what-is-jamstack/).
-      section#tech
-        div.container
+      section#tech.max-w-screen-lg.mx-4
+        .container.grid.grid-cols-1.gap-4.justify-items-center.content-center
           h2 🔨 Tools I use
           p These ain't the -only- ones I've used, just the 'my-most-frequently' ones.
           .grid
             each t in data.tech
               +tech-card(t)
-      footer
+      footer.max-w-screen-lg.mx-4.mb-4
         +footer-content()
