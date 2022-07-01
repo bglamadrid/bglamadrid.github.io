@@ -32,7 +32,19 @@ module.exports = {
       },
       {
         test: /\.(css)$/,
-        use: ['css-loader']
+        use: [
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              postcssOptions: {
+                plugins: [
+                  'postcss-preset-env'
+                ]
+              }
+            }
+          }
+        ]
       },
       {
         test: /favicon\.ico/,
