@@ -30,11 +30,6 @@ main > footer {
     0 0 32px 10px rgba(0, 0, 0, 0.5);
 }
 
-main section > .container > * {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 @media(prefers-color-scheme: light) {
   body {
     background-image: linear-gradient(
