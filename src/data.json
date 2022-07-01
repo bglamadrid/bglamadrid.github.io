@@ -23,10 +23,10 @@
     },
     {
       "shortName": "java",
-      "url": "https://java.com/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/java.svg",
       "name": "Java",
-      "description": "Platform and programming language"
+      "description": "Platform and programming language",
+      "url": "https://java.com/",
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/java.svg"
     },
     {
       "shortName": "vscode",
