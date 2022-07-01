@@ -10,17 +10,6 @@ body {
   color: var(--color-text-inverted);
 }
 
-main > * {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-main > :first-child {
-  margin-top: 1rem;
-}
-main > :last-child {
-  margin-bottom: 1rem;
-}
-
 main > header,
 main section > .container,
 main > footer {
