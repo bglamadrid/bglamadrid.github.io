@@ -1,6 +1,13 @@
 mixin tech-card(t)
-  a.card(class=t.shortName href=t.url
+  -
+    const elementStyle = `background-color: ${t.colors.default.bg}; color: ${t.colors.default.text}`;
+    const iconStyle = `filter: ${t.colors.default.text === 'white' ? 'invert(100%)' : 'none'};`;
+  a.card(href=t.url
+  class=t.shortName
+  style=elementStyle
   target='_blank' rel='noopener')
-    img.icon(src=t.iconSrc aria-hidden='true')
+    img.icon(src=t.iconSrc
+    style=iconStyle
+    aria-hidden='true')
     strong=t.name
     span=t.description
