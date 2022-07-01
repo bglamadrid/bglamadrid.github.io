@@ -72,6 +72,6 @@ html(lang='en')
           p These ain't the -only- ones I've used, just the 'my-most-frequently' ones.
           .grid
             each t in data.tech
-              +tech-card(t.shortName, t.name, t.description, t.url, t.iconSrc)
+              +tech-card(t)
       footer
         +footer-content()

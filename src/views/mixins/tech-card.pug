@@ -1,6 +1,6 @@
-mixin tech-card(shortName, name, description, url, iconSrc)
-  a.card(class=shortName href=url
+mixin tech-card(t)
+  a.card(class=t.shortName href=t.url
   target='_blank' rel='noopener')
-    img.icon(src=iconSrc aria-hidden='true')
-    strong=name
-    span=description
+    img.icon(src=t.iconSrc aria-hidden='true')
+    strong=t.name
+    span=t.description
