@@ -10,13 +10,6 @@ body {
   color: var(--color-text-inverted);
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-}
-
-
 main > * {
   margin-left: 1rem;
   margin-right: 1rem;
