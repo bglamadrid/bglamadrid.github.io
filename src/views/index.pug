@@ -54,7 +54,7 @@ html(lang='en')
         div.container
           h2 🚀 Ongoing projects
           p These are the things that keep me busy.
-          div.card-grid
+          .grid
             a.agencia33.card(href='https://agencia33.cl'
             target='_blank' rel='noopener')
               span Agencia 33
@@ -70,7 +70,7 @@ html(lang='en')
         div.container
           h2 🔨 Tools I use
           p These ain't the -only- ones I've used, just the 'my-most-frequently' ones.
-          div.card-grid
+          .grid
             each t in data.tech
               +tech-card(t.shortName, t.name, t.description, t.url, t.iconSrc)
       footer
