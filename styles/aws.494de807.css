@@ -1,7 +1,0 @@
-#tech .aws.card {
-  background-color: rgba(255, 187, 0, 0.9);
-  color: black;
-}
-#tech .aws.card:hover {
-  background-color: rgba(221, 170, 0, 0.9);
-}
