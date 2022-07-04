@@ -1,4 +1,48 @@
 {
+  "projects": [
+    {
+      "name": "Agencia 33",
+      "description": "My small digital marketing & software development business.",
+      "url": "https://agencia33.cl",
+      "elementClasses": {
+        "card": [
+          "bg-[#0ebf04]"
+        ],
+        "name": [
+          "text-white",
+          "hover:text-slate-100",
+          "active:text-white"
+        ],
+        "description": [
+          "text-white"
+        ],
+        "icon": [
+          "invert"
+        ]
+      }
+    },
+    {
+      "name": "Trebol (spanish for 'Clover')",
+      "description": "An eCommerce solution with an user-friendly web interface",
+      "url": "https://trebol-ecommerce.github.io/ngx-trebol-frontend",
+      "elementClasses": {
+        "card": [
+          "bg-[#1f5214]"
+        ],
+        "name": [
+          "text-white",
+          "hover:text-slate-100",
+          "active:text-white"
+        ],
+        "description": [
+          "text-white"
+        ],
+        "icon": [
+          "invert"
+        ]
+      }
+    }
+  ],
   "tech": [
     {
       "shortName": "git",
@@ -6,11 +50,21 @@
       "description": "GOAT version control system",
       "url": "https://git-scm.com/",
       "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/git.svg",
-      "colors": {
-        "default": {
-          "bg": "#dd5533",
-          "text": "white"
-        }
+      "elementClasses": {
+        "card": [
+          "bg-[#dd5533]"
+        ],
+        "name": [
+          "text-white",
+          "hover:text-slate-100",
+          "active:text-white"
+        ],
+        "description": [
+          "text-white"
+        ],
+        "icon": [
+          "invert"
+        ]
       }
     },
     {
@@ -18,12 +72,22 @@
       "name": "GitHub",
       "description": "Where I host my code and this page is served from",
       "url": "https://github.com/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/git.svg",
-      "colors": {
-        "default": {
-          "bg": "#dddddd",
-          "text": "black"
-        }
+      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg",
+      "elementClasses": {
+        "card": [
+          "bg-gray-700"
+        ],
+        "name": [
+          "text-white",
+          "hover:text-slate-100",
+          "active:text-white"
+        ],
+        "description": [
+          "text-white"
+        ],
+        "icon": [
+          "invert"
+        ]
       }
     },
     {
@@ -32,11 +96,21 @@
       "description": "Powerful web application framework",
       "url": "https://angular.io/",
       "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/angular.svg",
-      "colors": {
-        "default": {
-          "bg": "#bb3344",
-          "text": "white"
-        }
+      "elementClasses": {
+        "card": [
+          "bg-[#bb3344]"
+        ],
+        "name": [
+          "text-white",
+          "hover:text-slate-100",
+          "active:text-white"
+        ],
+        "description": [
+          "text-white"
+        ],
+        "icon": [
+          "invert"
+        ]
       }
     },
     {
@@ -45,11 +119,21 @@
       "description": "Platform and programming language",
       "url": "https://java.com/",
       "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/java.svg",
-      "colors": {
-        "default": {
-          "bg": "#dd7733",
-          "text": "white"
-        }
+      "elementClasses": {
+        "card": [
+          "bg-orange-500"
+        ],
+        "name": [
+          "text-white",
+          "hover:text-slate-100",
+          "active:text-white"
+        ],
+        "description": [
+          "text-white"
+        ],
+        "icon": [
+          "invert"
+        ]
       }
     },
     {
@@ -58,11 +142,21 @@
       "description": "Superb lightweight & extensible IDE",
       "url": "https://code.visualstudio.com/",
       "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/visualstudiocode.svg",
-      "colors": {
-        "default": {
-          "bg": "#2277dd",
-          "text": "white"
-        }
+      "elementClasses": {
+        "card": [
+          "bg-[#2277dd]"
+        ],
+        "name": [
+          "text-white",
+          "hover:text-slate-100",
+          "active:text-white"
+        ],
+        "description": [
+          "text-white"
+        ],
+        "icon": [
+          "invert"
+        ]
       }
     },
     {
@@ -71,11 +165,21 @@
       "description": "My go-to IDE for Java development",
       "url": "https://www.jetbrains.com/idea/",
       "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/intellijidea.svg",
-      "colors": {
-        "default": {
-          "bg": "#bb4499",
-          "text": "white"
-        }
+      "elementClasses": {
+        "card": [
+          "bg-[#bb4499]"
+        ],
+        "name": [
+          "text-white",
+          "hover:text-slate-100",
+          "active:text-white"
+        ],
+        "description": [
+          "text-white"
+        ],
+        "icon": [
+          "invert"
+        ]
       }
     },
     {
@@ -84,11 +188,21 @@
       "description": "Great Java framework",
       "url": "https://spring.io/",
       "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/spring.svg",
-      "colors": {
-        "default": {
-          "bg": "#33aa00",
-          "text": "white"
-        }
+      "elementClasses": {
+        "card": [
+          "bg-[#33aa00]"
+        ],
+        "name": [
+          "text-white",
+          "hover:text-slate-100",
+          "active:text-white"
+        ],
+        "description": [
+          "text-white"
+        ],
+        "icon": [
+          "invert"
+        ]
       }
     },
     {
@@ -97,11 +211,21 @@
       "description": "Robust tool for managing Java projects",
       "url": "https://maven.apache.org/",
       "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/apachemaven.svg",
-      "colors": {
-        "default": {
-          "bg": "#ffcccc",
-          "text": "black"
-        }
+      "elementClasses": {
+        "card": [
+          "bg-[#ffcccc]"
+        ],
+        "name": [
+          "text-black",
+          "hover:text-slate-800",
+          "active:text-black"
+        ],
+        "description": [
+          "text-black"
+        ],
+        "icon": [
+          "invert-0"
+        ]
       }
     },
     {
@@ -110,11 +234,21 @@
       "description": "Solid & standard web server solution",
       "url": "https://httpd.apache.org/",
       "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/apache.svg",
-      "colors": {
-        "default": {
-          "bg": "#ddbbaa",
-          "text": "black"
-        }
+      "elementClasses": {
+        "card": [
+          "bg-white"
+        ],
+        "name": [
+          "text-black",
+          "hover:text-slate-800",
+          "active:text-black"
+        ],
+        "description": [
+          "text-black"
+        ],
+        "icon": [
+          "invert-0"
+        ]
       }
     },
     {
@@ -123,11 +257,21 @@
       "description": "Amazon\"s cloud platform",
       "url": "https://aws.amazon.com/",
       "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazonaws.svg",
-      "colors": {
-        "default": {
-          "bg": "#ffbb00",
-          "text": "black"
-        }
+      "elementClasses": {
+        "card": [
+          "bg-[#ffbb00]"
+        ],
+        "name": [
+          "text-black",
+          "hover:text-slate-800",
+          "active:text-black"
+        ],
+        "description": [
+          "text-black"
+        ],
+        "icon": [
+          "invert-0"
+        ]
       }
     }
   ]

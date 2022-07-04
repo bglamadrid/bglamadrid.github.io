@@ -1,4 +1,3 @@
-include mixins/footer-content.pug
 include mixins/simple-icon.pug
 include mixins/tech-card.pug
 
@@ -20,58 +19,77 @@ html(lang='en')
 
     link(href='https://fonts.googleapis.com' rel='preconnect')
     link(href='https://fonts.gstatic.com' rel='preconnect' crossorigin)
-    link(href='https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Work+Sans&display=swap' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap' rel='stylesheet')
 
     title Benjamin La Madrid
-  body
-    div.langpicker
+  body.text-center(class='bg-[#c799e6] text-[#2a2a2a] dark:bg-[#451145] dark:text-white')
+    .langpicker
       b Site language: English#[br]
       a(href='index.es.html') Ver sitio en Español
-    main.container.mx-auto.grid.grid-cols-1.gap-4.justify-items-center
-      header.grid.grid-cols-1.gap-4.place-content-center.mx-4.mt-4.ring.p-2(class='md:p-4')
-        h1 Benjamin Guillermo La Madrid Bañados
-        p Bilingual developer based in Chile
-        nav.profile-links
-          a.github(href='https://github.com/bglamadrid'
-          target='_blank' rel='noopener')
-            +simple-icon('github')
+    main(class='container mx-auto grid grid-cols-1 gap-x-4 gap-y-2 justify-items-center md:gap-6')
+      header(class='grid grid-cols-1 gap-4 shadow rounded max-w-screen-lg mt-4 mx-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
+        h1(class='font-bold text-2xl mt-4 mx-4') Benjamin Guillermo La Madrid Bañados
+        p(class='mx-4') Bilingual developer based in Chile
+        nav(class='flex flex-col w-50 mb-4 mx-auto text-left md:w-full md:flex-row md:justify-evenly')
+          a.github(class='grid grid-flow-col items-center gap-x-3'
+          href='https://github.com/bglamadrid')
+            +simple-icon('github')(class='w-8 dark:invert')
             span GitHub Profile
-          a.linkedin(href='https://www.linkedin.com/in/benjaminlamadrid'
-          target='_blank' rel='noopener')
-            +simple-icon('linkedin')
+          a.linkedin(class='grid grid-flow-col items-center gap-x-3'
+          href='https://www.linkedin.com/in/benjaminlamadrid')
+            +simple-icon('linkedin')(class='w-8 dark:invert')
             span LinkedIn Profile
-      section#bio.max-w-screen-lg.mx-4
-        .container.grid.grid-cols-1.gap-4.justify-items-center.content-center
-          h2 😁 About me
-          p I'm a web and software developer! I like three things in life:
-          ul.w-60
-            li singing,
-            li playing videogames and
-            li going cycling
-          p There's also that I write code in, and advocate for, open-source. Sharing is where it's at.
-          p At a young age I've gotten used to learning by doing and building things, and I've always had an obsession for computers and videogames.
-      section#projects.max-w-screen-lg.mx-4
-        .container.grid.grid-cols-1.gap-4.justify-items-center.content-center
-          h2 🚀 Ongoing projects
-          p These are the things that keep me busy.
-          .grid
-            a.agencia33.card(href='https://agencia33.cl'
-            target='_blank' rel='noopener')
-              span Agencia 33
-              span Marketing & software development business
-            a.trebol.card(href='https://trebol-ecommerce.github.io/ngx-trebol-frontend'
-            target='_blank' rel='noopener')
-              span Trebol (spanish for 'Clover')
-              span An eCommerce solution with an user-friendly web interface
-            div.this.card
-              span This site
-              span Currently undergoing an upgrade from a #[i static website] to a [Jamstack](https://jamstack.org/what-is-jamstack/).
-      section#tech.max-w-screen-lg.mx-4
-        .container.grid.grid-cols-1.gap-4.justify-items-center.content-center
-          h2 🔨 Tools I use
-          p These ain't the -only- ones I've used, just the 'my-most-frequently' ones.
-          .grid
+      section#bio(class='shadow rounded max-w-screen-lg mx-4 md:w-full')
+        .section(class='grid grid-cols-1 gap-4.justify-items-center bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
+          h2(class='font-bold text-xl mt-4 mx-4') 😁 About me
+          p(class='mx-4') I'm a web and software developer! I love three things in life:
+          ul(class='w-60 mx-auto text-left list-disc')
+            li 🎤 singing,
+            li 🎮 playing videogames, and
+            li 🍻 good beers
+          p(class='mb-4 mx-4 md:mx-16') At a young age I've gotten used to learning by doing and building things. I still do, actually. This site is proof of that.
+      section#projects(class='shadow rounded max-w-screen-lg mx-4 md:w-full')
+        .section(class='grid grid-cols-1 gap-4 justify-items-center bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
+          h2(class='font-bold text-xl mt-4 mx-4') 🚀 Ongoing projects
+          .projects(class='grid grid-cols-1 gap-4 mb-4 mx-4 md:grid-cols-3')
+            each p in data.projects
+              .project(class='shadow rounded py-2 px-4 ' + p.elementClasses.card.join(' '))
+                h3(class='font-bold mt-4 mb-auto')
+                  a(href=p.url class=p.elementClasses.name)=p.name
+                p(class='mb-4 ' + p.elementClasses.description.join(' '))=p.description
+            .project(class='shadow rounded py-2 px-4 bg-indigo-700 text-white')
+              h3(class='font-bold mt-4 mb-auto') This site
+              p(class='mb-2') Currently undergoing an upgrade from a #[i static website] to a #[a(href='https://jamstack.org/what-is-jamstack/') Jamstack].
+              p(class='mb-4') Now using #[a(class='font-bold underline underline-offset-2 decoration-dotted' href='https://tailwindcss.com') TailwindCSS]!
+      section#tech(class='shadow rounded max-w-screen-lg mx-4 md:w-full')
+        .section(class='grid grid-cols-1 gap-4 justify-items-center bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
+          h2(class='font-bold text-xl mt-4 mx-4') 🔨 Favorite tools
+          .tech(class='grid grid-cols-2 gap-4 mb-4 mx-4 md:grid-cols-5 md:gap-6')
             each t in data.tech
-              +tech-card(t)
-      footer.max-w-screen-lg.mx-4.mb-4
-        +footer-content()
+              a(href=t.url
+              class='block shadow rounded px-2 md:px-4 ' + t.elementClasses.card.join(' ')
+              target='_blank' rel='noopener')
+                img(src=t.iconSrc
+                class='block w-12 mt-8 mb-4 mx-auto ' + t.elementClasses.icon.join(' ')
+                aria-hidden='true')
+                h3(class='font-bold ' + t.elementClasses.name.join(' '))=t.name
+                p(class='mb-4 ' + t.elementClasses.description.join(' '))=t.description
+      footer(class='grid grid-cols-1 gap-4 shadow rounded max-w-screen-lg mx-4 mb-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
+        .upper(class='mt-4')
+          ul.credits
+            li
+              | Beautiful brand icons as seen on
+              |
+              a(class='underline underline-offset-2 decoration-dotted decoration-gray-700' href='https://simpleicons.org') SimpleIcons.org
+            li
+              a(class='underline underline-offset-2 decoration-dotted decoration-gray-700' href='https://fonts.google.com/specimen/Ubuntu+Mono') Ubuntu Mono
+              |
+              | is loaded from
+              |
+              a(class='underline underline-offset-2 decoration-dotted decoration-gray-700' href='https://fonts.google.com') Google Fonts
+              |
+              | CDN
+        .lower(class='mb-4')
+          p This site DOES NOT use cookies and DOES NOT collect ANY personal information
+          p Built with Webpack, Pug and TailwindCSS [Updated on #{new Date().toUTCString()}]
+          p Code #[a(href='/LICENSE' type='text/plain') licensed under MIT]

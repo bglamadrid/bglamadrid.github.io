@@ -27,21 +27,4 @@ main > footer {
       var(--color-background) 35%,
       var(--color-background-light) 100%);
   }
-
-  main > * {
-    background-color: transparent;
-    box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.5);
-  }
-}
-
-@media(max-width: 640px) {
-  main {
-    gap: 1rem 0.5rem;
-  }
-}
-
-@media(min-width: 641px) {
-  main {
-    gap: 3rem;
-  }
 }

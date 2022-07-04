@@ -1,28 +1,28 @@
 :root {
-  --color-primary: hsl(300, 40%, 33%);
-  --color-primary-light: hsl(300, 40%, 50%);
-  --color-primary-dark: hsl(300, 40%, 20%);
-  --color-accent: hsl(204, 69%, 50%);
-  --color-accent-light: hsl(204, 98%, 63%);
-  --color-accent-dark: hsl(204, 80%, 30%);
-  --color-background: hsl(300, 60%, 17%);
-  --color-background-light: hsl(300, 62%, 29%);
-  --color-background-dark: hsl(300, 100%, 3%);
+  --color-primary: #763276;
+  --color-primary-light: #b34db3;
+  --color-primary-dark: #471f47;
+  --color-accent: #2891d7;
+  --color-accent-light: #44b3fd;
+  --color-accent-dark: #0f598a;
+  --color-background: #451145;
+  --color-background-light: #781c78;
+  --color-background-dark: #0f000f;
   --color-text: #eeeeee;
   --color-text-inverted: #2a2a2a;
 }
 
 @media(prefers-color-scheme: light) {
   :root {
-    --color-primary: hsl(300, 40%, 64%);
-    --color-primary-light: hsl(300, 40%, 70%);
-    --color-primary-dark: hsl(300, 29%, 30%);
-    --color-accent: hsl(204, 69%, 50%);
-    --color-accent-light: hsl(204, 98%, 63%);
-    --color-accent-dark: hsl(204, 100%, 25%);
-    --color-background: hsl(276, 60%, 75%);
-    --color-background-light: hsl(276, 91%, 85%);
-    --color-background-dark: hsl(276, 56%, 61%);
+    --color-primary: #c87ec8;
+    --color-primary-light: #d194d1;
+    --color-primary-dark: #633663;
+    --color-accent: #2891d7;
+    --color-accent-light: #44b3fd;
+    --color-accent-dark: #004d80;
+    --color-background: #c799e6;
+    --color-background-light: #e0b6fc;
+    --color-background-dark: #a764d3;
     --color-text: #2a2a2a;
     --color-text-inverted: #eeeeee;
   }

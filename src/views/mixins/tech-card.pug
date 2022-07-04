@@ -1,13 +1,9 @@
 mixin tech-card(t)
-  -
-    const elementStyle = `background-color: ${t.colors.default.bg}; color: ${t.colors.default.text}`;
-    const iconStyle = `filter: ${t.colors.default.text === 'white' ? 'invert(100%)' : 'none'};`;
-  a.card(href=t.url
-  class=t.shortName
-  style=elementStyle
+  a.shadow.rounded.px-2(href=t.url
+  class=t.elementClasses.card
   target='_blank' rel='noopener')
-    img.icon(src=t.iconSrc
-    style=iconStyle
+    img.block.w-12.mt-8.mb-4.mx-auto(src=t.iconSrc
+    class=t.elementClasses.icon
     aria-hidden='true')
-    strong=t.name
-    span=t.description
+    h3.font-bold(class=t.elementClasses.name)=t.name
+    p.mb-4(class=t.elementClasses.description)=t.description

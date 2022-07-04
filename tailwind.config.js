@@ -14,7 +14,7 @@ module.exports = {
   theme: {
     fontFamily: {
       // sourced from `/src/includes/googlefonts.pug`
-      sans: ['Work Sans', 'sans-serif']
+      sans: ['Ubuntu Mono', 'sans-serif'],
     },
     extend: {
       height: {
