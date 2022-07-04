@@ -13,4 +13,3 @@ My website. Currently undergoing migration to a npm/Webpack/Pug project.
 - Localize to spanish
 - Support static & scripted language switch
 - Introduce task to build & deploy the site parallel on english and spanish locales
-- Refactor existing styles using TailwindCSS

@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: {
-    files: ['./src/views/**/*.pug']
+    files: [
+      './src/views/**/*.pug',
+      './src/data.json'
+    ]
   },
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Ubuntu Mono', 'sans-serif'],
+    },
   },
   plugins: [],
 }
