@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  a.external {
+    @apply underline underline-offset-2 decoration-dotted decoration-gray-400 hover:decoration-gray-300 active:decoration-white;
+  }
+}

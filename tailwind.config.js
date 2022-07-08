@@ -28,6 +28,8 @@ module.exports = {
   plugins: [
     plugin(function({ addBase, theme }) {
       addBase({
+        '*': { textAlign: 'inherit' },
+        'body': { textAlign: 'center' },
         'section:target': { scrollMarginTop: theme('height.header') },
         'h1': { fontSize: theme('fontSize.4xl') },
         'h2': { fontSize: theme('fontSize.2xl') },
