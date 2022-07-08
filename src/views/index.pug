@@ -75,11 +75,11 @@ html(lang='en')
                 p(class='mb-4 ' + t.elementClasses.description.join(' '))=t.description
       footer(class='grid grid-cols-1 gap-4 shadow rounded max-w-screen-lg mx-4 mb-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
         .upper(class='mt-4')
-          p
+          p.simpleicons
             | Beautiful brand icons as seen on
             |
             a(class='external' href='https://simpleicons.org') SimpleIcons.org
-          p
+          p.googlefonts
             | Font
             |
             a(class='external' href='https://fonts.google.com/specimen/Ubuntu+Mono') Ubuntu Mono
@@ -90,8 +90,8 @@ html(lang='en')
             |
             | CDN
         .lower(class='mb-4 border-t-1 border-t-indigo-900')
-          p This site DOES NOT use cookies and DOES NOT collect ANY personal information
-          p
+          p.cookies This site DOES NOT use cookies and DOES NOT collect ANY personal information
+          p.stack
             | Written using
             |
             a(class='external' href='https://webpack.js.org') Webpack
@@ -102,5 +102,5 @@ html(lang='en')
             | and
             |
             a(class='external' href='https://tailwindcss.com') TailwindCSS
-          p Latest website iteration built on #{new Date().toUTCString()}
-          p Code #[a(class='external' href='/LICENSE' type='text/plain') licensed under MIT]
+          p.build Latest website iteration built on #{new Date().toUTCString()}
+          p.license Code #[a(class='external' href='/LICENSE' type='text/plain') licensed under MIT]
