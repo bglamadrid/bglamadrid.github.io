@@ -7,6 +7,18 @@ module.exports = Object.assign(
     devtool: 'inline-source-map',
     devServer: {
       static: './dist',
-    }
+    },
+    output: {
+      filename: 'scripts/[name].[contenthash:8].js'
+    },
+    plugins: [
+      new PugPlugin({
+        modules: [
+          PugPlugin.extractCss({
+            filename: 'styles/[name].[contenthash:8].css'
+          })
+        ]
+      })
+    ],
   }
 );
