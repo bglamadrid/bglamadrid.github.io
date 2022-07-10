@@ -47,12 +47,12 @@ html(lang='en')
         .section(class='grid grid-cols-1 gap-4 justify-items-center bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
           h2(class='font-bold text-xl mt-4 mx-4') 🚀 Ongoing projects
           .projects(class='grid grid-cols-1 gap-4 mb-4 mx-4 md:grid-cols-3')
-            each p in data.projects
-              .project(class='shadow rounded py-2 px-4 ' + p.elementClasses.card.join(' '))
+            each project, shortName in data.projects
+              .project(class='shadow rounded py-2 px-4 ' + shortName + ' ' + project.elementClasses.card.join(' '))
                 h3(class='font-bold mt-4 mb-auto')
-                  a(class=p.elementClasses.name
-                  href=p.url)=p.name
-                p(class='mb-4 ' + p.elementClasses.description.join(' '))=p.description
+                  a(class=project.elementClasses.name
+                  href=project.url)=project.name
+                p(class='mb-4 ' + project.elementClasses.description.join(' '))=project.description
             .project(class='shadow rounded py-2 px-4 bg-indigo-700 text-white')
               h3(class='font-bold mt-4 mb-auto') This site
               p(class='mb-2') Currently undergoing an upgrade from a #[i static website] to a #[a(href='https://jamstack.org/what-is-jamstack/') Jamstack].
@@ -61,15 +61,15 @@ html(lang='en')
         .section(class='grid grid-cols-1 gap-4 justify-items-center bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
           h2(class='font-bold text-xl mt-4 mx-4') 🔨 Favorite tools
           .tech(class='grid grid-cols-2 gap-4 mb-4 mx-4 md:grid-cols-5 md:gap-6')
-            each t in data.tech
-              a(class='block shadow rounded px-2 md:px-4 ' + t.elementClasses.card.join(' ')
-              href=t.url
+            each tech, shortName in data.tech
+              a(class='block shadow rounded px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
+              href=tech.url
               target='_blank' rel='noopener')
-                img(class='block w-12 mt-8 mb-4 mx-auto ' + t.elementClasses.icon.join(' ')
-                src=t.iconSrc
+                img(class='block w-12 mt-8 mb-4 mx-auto ' + tech.elementClasses.icon.join(' ')
+                src=tech.iconSrc
                 aria-hidden='true')
-                h3(class='font-bold ' + t.elementClasses.name.join(' '))=t.name
-                p(class='mb-4 ' + t.elementClasses.description.join(' '))=t.description
+                h3(class='font-bold ' + tech.elementClasses.name.join(' '))=tech.name
+                p(class='mb-4 ' + tech.elementClasses.description.join(' '))=tech.description
       footer(class='grid grid-cols-1 gap-4 shadow rounded max-w-screen-lg mx-4 mb-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
         .upper(class='mt-4')
           p.simpleicons

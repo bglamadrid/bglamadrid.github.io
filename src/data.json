@@ -1,6 +1,6 @@
 {
-  "projects": [
-    {
+  "projects": {
+    "agencia33": {
       "name": "Agencia 33",
       "description": "My small digital marketing & software development business.",
       "url": "https://agencia33.cl",
@@ -21,7 +21,7 @@
         ]
       }
     },
-    {
+    "trebol": {
       "name": "Trebol (spanish for 'Clover')",
       "description": "An eCommerce solution with an user-friendly web interface",
       "url": "https://trebol-ecommerce.github.io/ngx-trebol-frontend",
@@ -42,10 +42,9 @@
         ]
       }
     }
-  ],
-  "tech": [
-    {
-      "shortName": "git",
+  },
+  "tech": {
+    "git": {
       "name": "Git",
       "description": "GOAT version control system",
       "url": "https://git-scm.com/",
@@ -67,8 +66,7 @@
         ]
       }
     },
-    {
-      "shortName": "github",
+    "github": {
       "name": "GitHub",
       "description": "Where I host my code and this page is served from",
       "url": "https://github.com/",
@@ -90,8 +88,7 @@
         ]
       }
     },
-    {
-      "shortName": "angular",
+    "angular": {
       "name": "Angular",
       "description": "Powerful web application framework",
       "url": "https://angular.io/",
@@ -113,8 +110,7 @@
         ]
       }
     },
-    {
-      "shortName": "java",
+    "java": {
       "name": "Java",
       "description": "Platform and programming language",
       "url": "https://java.com/",
@@ -136,8 +132,7 @@
         ]
       }
     },
-    {
-      "shortName": "vscode",
+    "vscode": {
       "name": "VS Code",
       "description": "Superb lightweight & extensible IDE",
       "url": "https://code.visualstudio.com/",
@@ -159,8 +154,7 @@
         ]
       }
     },
-    {
-      "shortName": "intellij",
+    "intellij": {
       "name": "IntelliJ",
       "description": "My go-to IDE for Java development",
       "url": "https://www.jetbrains.com/idea/",
@@ -182,8 +176,7 @@
         ]
       }
     },
-    {
-      "shortName": "spring",
+    "spring": {
       "name": "Spring",
       "description": "Great Java framework",
       "url": "https://spring.io/",
@@ -205,8 +198,7 @@
         ]
       }
     },
-    {
-      "shortName": "maven",
+    "maven": {
       "name": "Maven",
       "description": "Robust tool for managing Java projects",
       "url": "https://maven.apache.org/",
@@ -228,8 +220,7 @@
         ]
       }
     },
-    {
-      "shortName": "apache2",
+    "apache2": {
       "name": "Apache2",
       "description": "Solid & standard web server solution",
       "url": "https://httpd.apache.org/",
@@ -251,8 +242,7 @@
         ]
       }
     },
-    {
-      "shortName": "aws",
+    "aws": {
       "name": "AWS",
       "description": "Amazon\"s cloud platform",
       "url": "https://aws.amazon.com/",
@@ -274,5 +264,5 @@
         ]
       }
     }
-  ]
+  }
 }
