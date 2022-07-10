@@ -1,4 +1,22 @@
 {
+  "socialLinks": {
+    "github": {
+      "url": "https://github.com/bglamadrid",
+      "description": "GitHub Profile",
+      "icon": {
+        "source": "simple-icons",
+        "name": "github"
+      }
+    },
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/benjaminlamadrid",
+      "description": "LinkedIn Profile",
+      "icon": {
+        "source": "simple-icons",
+        "name": "linkedin"
+      }
+    }
+  },
   "projects": {
     "agencia33": {
       "name": "Agencia 33",
