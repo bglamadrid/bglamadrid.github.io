@@ -7,7 +7,7 @@ module.exports = {
     index: './src/views/index.pug'
   },
   output: {
-    filename: 'scripts/[name].[contenthash:8].js',
+    filename: 'scripts/[name].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
     clean: true
@@ -16,7 +16,7 @@ module.exports = {
     new PugPlugin({
       modules: [
         PugPlugin.extractCss({
-          filename: 'styles/[name].[contenthash:8].css'
+          filename: 'styles/[name].css'
         })
       ]
     })
