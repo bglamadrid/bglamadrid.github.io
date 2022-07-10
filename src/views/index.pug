@@ -85,9 +85,8 @@ html(lang='en')
               a(class='block shadow rounded px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
               href=tech.url
               target='_blank' rel='noopener')
-                img(class='block w-12 mt-8 mb-4 mx-auto ' + tech.elementClasses.icon.join(' ')
-                src=tech.iconSrc
-                aria-hidden='true')
+                if (tech.icon.source === 'simple-icons')
+                  +simple-icon(tech.icon.name, tech.icon.version || '7')(class='block w-12 mt-8 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
                 h3(class='font-bold ' + tech.elementClasses.name.join(' '))=tech.name
                 p(class='mb-4 ' + tech.elementClasses.description.join(' '))=tech.description
       footer(class='grid grid-cols-1 gap-4 shadow rounded max-w-screen-lg mx-4 mb-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')

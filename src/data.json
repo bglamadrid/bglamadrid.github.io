@@ -66,7 +66,10 @@
       "name": "Git",
       "description": "GOAT version control system",
       "url": "https://git-scm.com/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/git.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "git"
+      },
       "elementClasses": {
         "card": [
           "bg-[#dd5533]"
@@ -88,7 +91,10 @@
       "name": "GitHub",
       "description": "Where I host my code and this page is served from",
       "url": "https://github.com/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/github.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "github"
+      },
       "elementClasses": {
         "card": [
           "bg-gray-700"
@@ -110,7 +116,10 @@
       "name": "Angular",
       "description": "Powerful web application framework",
       "url": "https://angular.io/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/angular.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "angular"
+      },
       "elementClasses": {
         "card": [
           "bg-[#bb3344]"
@@ -132,7 +141,11 @@
       "name": "Java",
       "description": "Platform and programming language",
       "url": "https://java.com/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/java.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "java",
+        "version": "6"
+      },
       "elementClasses": {
         "card": [
           "bg-orange-500"
@@ -154,7 +167,10 @@
       "name": "VS Code",
       "description": "Superb lightweight & extensible IDE",
       "url": "https://code.visualstudio.com/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/visualstudiocode.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "visualstudiocode"
+      },
       "elementClasses": {
         "card": [
           "bg-[#2277dd]"
@@ -176,7 +192,10 @@
       "name": "IntelliJ",
       "description": "My go-to IDE for Java development",
       "url": "https://www.jetbrains.com/idea/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/intellijidea.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "intellijidea"
+      },
       "elementClasses": {
         "card": [
           "bg-[#bb4499]"
@@ -198,7 +217,10 @@
       "name": "Spring",
       "description": "Great Java framework",
       "url": "https://spring.io/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/spring.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "spring"
+      },
       "elementClasses": {
         "card": [
           "bg-[#33aa00]"
@@ -220,7 +242,10 @@
       "name": "Maven",
       "description": "Robust tool for managing Java projects",
       "url": "https://maven.apache.org/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/apachemaven.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "apachemaven"
+      },
       "elementClasses": {
         "card": [
           "bg-[#ffcccc]"
@@ -242,7 +267,10 @@
       "name": "Apache2",
       "description": "Solid & standard web server solution",
       "url": "https://httpd.apache.org/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/apache.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "apache"
+      },
       "elementClasses": {
         "card": [
           "bg-white"
@@ -264,7 +292,10 @@
       "name": "AWS",
       "description": "Amazon\"s cloud platform",
       "url": "https://aws.amazon.com/",
-      "iconSrc": "https://cdn.jsdelivr.net/npm/simple-icons@v7/icons/amazonaws.svg",
+      "icon": {
+        "source": "simple-icons",
+        "name": "amazonaws"
+      },
       "elementClasses": {
         "card": [
           "bg-[#ffbb00]"
