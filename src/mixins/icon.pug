@@ -1,0 +1,7 @@
+mixin icon(instanceData)
+  if (instanceData.source === 'simple-icons')
+    -
+      const v = `v${instanceData.version || '7'}`;
+    img.icon(src=`https://cdn.jsdelivr.net/npm/simple-icons@${v}/icons/${instanceData.name}.svg`
+    alt=name aria-hidden='true'
+    class!=attributes.class)
