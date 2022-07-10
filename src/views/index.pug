@@ -118,5 +118,5 @@ html(lang='en')
             | and
             |
             a(class='external' href='https://tailwindcss.com') TailwindCSS
-          p.build Latest website iteration built on #{new Date().toUTCString()}
-          p.license Code #[a(class='external' href='/LICENSE' type='text/plain') licensed under MIT]
+          include ../includes/buildinfo.pug
+          p.license Code #[a(class='external' href='/LICENSE' type='text/plain') licensed under MIT].
