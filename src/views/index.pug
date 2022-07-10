@@ -2,6 +2,10 @@ include ../mixins/simple-icon.pug
 
 -
   const data = require('../data.json');
+  const pageTitle = `Benjamin Guillermo La Madrid Bañados`;
+  const pageUrl = `https://bglamadrid.github.io/index.html`;
+  const pageThumb = `https://bglamadrid.github.io/favicon.ico`;
+  const pageDescription = 'Bilingual developer based in Chile';
 
 doctype html
 html(lang='en')
@@ -16,15 +20,33 @@ html(lang='en')
 
     include ../includes/googlefonts.pug
 
-    title Benjamin La Madrid
+    title=pageTitle
+
+    meta(name='title' content=pageTitle)
+    meta(name='description' content=pageDescription)
+
+    //- Open Graph / Facebook
+    meta(property='og:type' content='website')
+    meta(property='og:url' content=pageUrl)
+    meta(property='og:title' content=pageTitle)
+    meta(property='og:description' content=pageDescription)
+    meta(property='og:image' content=pageThumb)
+
+    //- Twitter
+    meta(property='twitter:card' content='summary_large_image')
+    meta(property='twitter:url' content=pageUrl)
+    meta(property='twitter:title' content=pageTitle)
+    meta(property='twitter:description' content=pageDescription)
+    meta(property='twitter:image' content=pageThumb)
+
   body.text-center(class='bg-[#c799e6] text-[#2a2a2a] dark:bg-[#451145] dark:text-white')
     //- .langpicker
     //-   b Site language: English#[br]
     //-   a(href='index.es.html') Ver sitio en Español
     main(class='container mx-auto grid grid-cols-1 gap-x-4 gap-y-2 justify-items-center md:gap-6')
       header(class='grid grid-cols-1 gap-4 shadow rounded max-w-screen-lg mt-4 mx-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
-        h1(class='font-bold text-2xl mt-4 mx-4') Benjamin Guillermo La Madrid Bañados
-        p(class='mx-4') Bilingual developer based in Chile
+        h1(class='font-bold text-2xl mt-4 mx-4')=pageTitle
+        p(class='mx-4')=pageDescription
         nav(class='flex flex-col w-50 mb-4 mx-auto text-left md:w-full md:flex-row md:justify-evenly')
           a.github(class='grid grid-flow-col items-center gap-x-3'
           href='https://github.com/bglamadrid')
