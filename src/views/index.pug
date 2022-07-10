@@ -48,14 +48,12 @@ html(lang='en')
         h1(class='font-bold text-2xl mt-4 mx-4')=pageTitle
         p(class='mx-4')=pageDescription
         nav(class='flex flex-col w-50 mb-4 mx-auto text-left md:w-full md:flex-row md:justify-evenly')
-          a.github(class='grid grid-flow-col items-center gap-x-3'
-          href='https://github.com/bglamadrid')
-            +simple-icon('github')(class='w-8 dark:invert')
-            span GitHub Profile
-          a.linkedin(class='grid grid-flow-col items-center gap-x-3'
-          href='https://www.linkedin.com/in/benjaminlamadrid')
-            +simple-icon('linkedin')(class='w-8 dark:invert')
-            span LinkedIn Profile
+          each socialLink, shortName in data.socialLinks
+            a(class='grid grid-flow-col items-center gap-x-3 ' + shortName
+            href=socialLink.url)
+              if (socialLink.icon.source === 'simple-icons')
+                +simple-icon(socialLink.icon.name)(class='w-8 dark:invert')
+              span=socialLink.description
       section#bio(class='shadow rounded max-w-screen-lg mx-4 md:w-full')
         .section(class='grid grid-cols-1 gap-4.justify-items-center bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
           h2(class='font-bold text-xl mt-4 mx-4') 😁 About me

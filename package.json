@@ -1,6 +1,6 @@
 {
   "name": "bglamadrid.github.io",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "bglamadrid's static website",
   "private": true,
   "scripts": {
