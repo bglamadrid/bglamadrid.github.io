@@ -1,4 +1,4 @@
-include ../mixins/simple-icon.pug
+include ../mixins/icon.pug
 
 -
   const data = require('../data.json');
@@ -51,8 +51,8 @@ html(lang='en')
           each socialLink, shortName in data.socialLinks
             a(class='grid grid-flow-col items-center gap-x-3 ' + shortName
             href=socialLink.url)
-              if (socialLink.icon.source === 'simple-icons')
-                +simple-icon(socialLink.icon.name)(class='w-8 dark:invert')
+              if (socialLink.icon)
+                +icon(socialLink.icon)(class='w-8 dark:invert')
               span=socialLink.description
       section#bio(class='shadow rounded max-w-screen-lg mx-4 md:w-full')
         .section(class='grid grid-cols-1 gap-4.justify-items-center bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
@@ -85,8 +85,8 @@ html(lang='en')
               a(class='block shadow rounded px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
               href=tech.url
               target='_blank' rel='noopener')
-                if (tech.icon.source === 'simple-icons')
-                  +simple-icon(tech.icon.name, tech.icon.version || '7')(class='block w-12 mt-8 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
+                if (tech.icon)
+                  +icon(tech.icon)(class='block w-12 mt-8 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
                 h3(class='font-bold ' + tech.elementClasses.name.join(' '))=tech.name
                 p(class='mb-4 ' + tech.elementClasses.description.join(' '))=tech.description
       footer(class='grid grid-cols-1 gap-4 shadow rounded max-w-screen-lg mx-4 mb-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full')
