@@ -20,7 +20,9 @@
   "projects": {
     "agencia33": {
       "name": "Agencia 33",
-      "description": "My small digital marketing & software development business.",
+      "description": [
+        "My small digital marketing & software development business."
+      ],
       "url": "https://agencia33.cl",
       "elementClasses": {
         "card": [
@@ -39,11 +41,31 @@
     },
     "trebol": {
       "name": "Trebol (spanish for 'Clover')",
-      "description": "An eCommerce solution with an user-friendly web interface",
+      "description": [
+        "An eCommerce solution with an user-friendly web interface"
+      ],
       "url": "https://trebol-ecommerce.github.io/ngx-trebol-frontend",
       "elementClasses": {
         "card": [
           "bg-[#1f5214]"
+        ],
+        "name": [
+          "text-white"
+        ],
+        "description": [
+          "text-white"
+        ]
+      }
+    },
+    "portfolio": {
+      "name": "This site",
+      "description": [
+        "Currently undergoing an upgrade from a <i>static website</i> to a <a class='external' href='https://jamstack.org/what-is-jamstack/'>Jamstack</a>.",
+        "<b>Now using <a class='external' href='https://tailwindcss.com'>TailwindCSS</a>!</b>"
+      ],
+      "elementClasses": {
+        "card": [
+          "bg-indigo-700"
         ],
         "name": [
           "text-white"
