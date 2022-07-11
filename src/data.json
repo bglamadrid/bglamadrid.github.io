@@ -29,13 +29,11 @@
           "bg-[#0ebf04]"
         ],
         "name": [
-          "text-black",
-          "decoration-black",
-          "hover:decoration-neutral-800",
-          "active:decoration-neutral-700"
+          "text-white",
+          "decoration-white"
         ],
         "description": [
-          "text-black"
+          "text-white"
         ]
       }
     },
