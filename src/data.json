@@ -75,9 +75,7 @@
           "bg-[#dd5533]"
         ],
         "name": [
-          "text-white",
-          "hover:text-slate-100",
-          "active:text-white"
+          "text-white"
         ],
         "description": [
           "text-white"
@@ -100,9 +98,7 @@
           "bg-gray-700"
         ],
         "name": [
-          "text-white",
-          "hover:text-slate-100",
-          "active:text-white"
+          "text-white"
         ],
         "description": [
           "text-white"
@@ -125,9 +121,7 @@
           "bg-[#bb3344]"
         ],
         "name": [
-          "text-white",
-          "hover:text-slate-100",
-          "active:text-white"
+          "text-white"
         ],
         "description": [
           "text-white"
@@ -151,9 +145,7 @@
           "bg-orange-500"
         ],
         "name": [
-          "text-white",
-          "hover:text-slate-100",
-          "active:text-white"
+          "text-white"
         ],
         "description": [
           "text-white"
@@ -176,9 +168,7 @@
           "bg-[#2277dd]"
         ],
         "name": [
-          "text-white",
-          "hover:text-slate-100",
-          "active:text-white"
+          "text-white"
         ],
         "description": [
           "text-white"
@@ -201,9 +191,7 @@
           "bg-[#bb4499]"
         ],
         "name": [
-          "text-white",
-          "hover:text-slate-100",
-          "active:text-white"
+          "text-white"
         ],
         "description": [
           "text-white"
@@ -226,9 +214,7 @@
           "bg-[#33aa00]"
         ],
         "name": [
-          "text-white",
-          "hover:text-slate-100",
-          "active:text-white"
+          "text-white"
         ],
         "description": [
           "text-white"
@@ -251,9 +237,7 @@
           "bg-[#ffcccc]"
         ],
         "name": [
-          "text-black",
-          "hover:text-slate-800",
-          "active:text-black"
+          "text-black"
         ],
         "description": [
           "text-black"
@@ -276,9 +260,7 @@
           "bg-white"
         ],
         "name": [
-          "text-black",
-          "hover:text-slate-800",
-          "active:text-black"
+          "text-black"
         ],
         "description": [
           "text-black"
@@ -301,9 +283,7 @@
           "bg-[#ffbb00]"
         ],
         "name": [
-          "text-black",
-          "hover:text-slate-800",
-          "active:text-black"
+          "text-black"
         ],
         "description": [
           "text-black"
