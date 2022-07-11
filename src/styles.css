@@ -4,10 +4,6 @@
 
 @layer components {
   a.external {
-    @apply underline underline-offset-2 decoration-dotted decoration-gray-400 hover:decoration-gray-300 active:decoration-white;
+    @apply underline underline-offset-2 decoration-dotted;
   }
-}
-
-#projects .agencia33.project {
-  text-shadow: 1px 1px 0 black;
 }
