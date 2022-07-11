@@ -1,3 +1,5 @@
+const path = require('path');
+const PugPlugin = require('pug-plugin');
 const config = require('./webpack.config');
 
 module.exports = Object.assign(
@@ -9,7 +11,10 @@ module.exports = Object.assign(
       static: './dist',
     },
     output: {
-      filename: 'scripts/[name].[contenthash:8].js'
+      filename: 'scripts/[name].[contenthash:8].js',
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: '/',
+      clean: true
     },
     plugins: [
       new PugPlugin({
