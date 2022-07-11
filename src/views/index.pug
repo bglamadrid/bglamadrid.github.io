@@ -49,7 +49,7 @@ html(lang='en')
         p(class='mx-4')=pageDescription
         nav(class='flex flex-col w-50 mb-4 mx-auto text-left md:w-full md:flex-row md:justify-evenly')
           each socialLink, shortName in data.socialLinks
-            a(class='grid grid-flow-col items-center gap-x-3 ' + shortName
+            a(class='grid grid-flow-col items-center gap-x-3 mb-3 md:mb-0 ' + shortName
             href=socialLink.url)
               if (socialLink.icon)
                 +icon(socialLink.icon)(class='w-8 dark:invert')
