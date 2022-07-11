@@ -27,15 +27,13 @@
           "bg-[#0ebf04]"
         ],
         "name": [
-          "text-white",
-          "hover:text-slate-100",
-          "active:text-white"
+          "text-black",
+          "decoration-black",
+          "hover:decoration-neutral-800",
+          "active:decoration-neutral-700"
         ],
         "description": [
-          "text-white"
-        ],
-        "icon": [
-          "invert"
+          "text-black"
         ]
       }
     },
@@ -48,15 +46,10 @@
           "bg-[#1f5214]"
         ],
         "name": [
-          "text-white",
-          "hover:text-slate-100",
-          "active:text-white"
+          "text-white"
         ],
         "description": [
           "text-white"
-        ],
-        "icon": [
-          "invert"
         ]
       }
     }
