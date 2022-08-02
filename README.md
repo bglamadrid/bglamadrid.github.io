@@ -2,7 +2,7 @@
 
 My website/portfolio. A personal laboratory of sorts.
 
-It used to be a static website, written entirely on pure HTML and CSS. I got to learn a lot by initially refusing to employ any extra tooling into it. Web standards are a thing, and CSS today is quite interesting and featureful on its own.
+It used to be a static website, written entirely on pure HTML and CSS. By initially refusing to employ any extra tooling, I got to learn a lot from modern Web standards, and specially, modern CSS.
 
 But eventually I decided to migrate to a more developer-friendly environment, which is what you see here today: a simple Node.JS [Jamstack](https://jamstack.org/what-is-jamstack) mainly composed by:
 
@@ -12,7 +12,7 @@ But eventually I decided to migrate to a more developer-friendly environment, wh
 - [PostCSS](https://postcss.org/) along with its [Preset Env plugin pack](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) and a [Browserlist](https://github.com/browserslist/browserslist) file to help optimize & polyfill styles (I mostly care about making sure that Safari renders things correctly).
 - [Husky](https://typicode.github.io/husky) enforcing the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
 
-The original project structure is preserved in the `static` branch, which is the one I push to, by using [GitHub Pages](https://github.com/tschaub/gh-pages).
+This project's original file structure is still preserved in the `static` branch, and at the same time, that branch is now the target of new deployments (a task accomplished by using [GitHub Pages](https://github.com/tschaub/gh-pages)).
 
 # Getting started
 
