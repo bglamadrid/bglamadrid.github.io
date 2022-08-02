@@ -1,11 +1,16 @@
+include ../mixins/metatags/self.pug
+include ../mixins/metatags/facebook.pug
+include ../mixins/metatags/twitter.pug
 include ../mixins/icon.pug
 
 -
   const data = require('../data.json');
-  const pageTitle = `Benjamin Guillermo La Madrid Bañados`;
-  const pageUrl = `https://bglamadrid.github.io/index.html`;
-  const pageThumb = `https://bglamadrid.github.io/favicon.ico`;
-  const pageDescription = 'Bilingual developer based in Chile';
+  const pageMetadata = {
+    url: 'https://bglamadrid.github.io/index.html',
+    title: 'Benjamin Guillermo La Madrid Bañados',
+    description: 'Bilingual developer based in Chile',
+    image: 'https://bglamadrid.github.io/favicon.ico'
+  };
 
 doctype html
 html(lang='en')
@@ -15,38 +20,22 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
     link(href=require('../favicon.ico') rel='icon' type='image/x-icon')
-
     link(href=require('../styles.css') rel='stylesheet')
 
     include ../includes/googlefonts.pug
 
-    title=pageTitle
-
-    meta(name='title' content=pageTitle)
-    meta(name='description' content=pageDescription)
-
-    //- Open Graph / Facebook
-    meta(property='og:type' content='website')
-    meta(property='og:url' content=pageUrl)
-    meta(property='og:title' content=pageTitle)
-    meta(property='og:description' content=pageDescription)
-    meta(property='og:image' content=pageThumb)
-
-    //- Twitter
-    meta(property='twitter:card' content='summary_large_image')
-    meta(property='twitter:url' content=pageUrl)
-    meta(property='twitter:title' content=pageTitle)
-    meta(property='twitter:description' content=pageDescription)
-    meta(property='twitter:image' content=pageThumb)
-
+    title=pageMetadata.title
+    +metatags-self(pageMetadata)
+    +metatags-facebook(pageMetadata)
+    +metatags-twitter(pageMetadata)
   body.text-center(class='bg-[#c799e6] text-[#2a2a2a] dark:bg-[#451145] dark:text-white')
     //- .langpicker
     //-   b Site language: English#[br]
     //-   a(href='index.es.html') Ver sitio en Español
     header#top(class='scroll-mt-4 px-2')
       .container(class='grid grid-cols-1 gap-y-4 justify-items-center max-w-screen-lg mx-auto mt-4 mb-2 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full md:mb-4')
-        h1(class='font-bold text-2xl mt-4 mx-4')=pageTitle
-        p(class='mx-4')=pageDescription
+        h1(class='font-bold text-2xl mt-4 mx-4')=pageMetadata.title
+        p(class='mx-4')=pageMetadata.description
         nav(class='flex flex-col w-50 mb-4 mx-auto text-left md:w-full md:flex-row md:justify-evenly')
           each socialLink, shortName in data.socialLinks
             a(class='grid grid-flow-col items-center gap-x-3 mb-3 md:mb-0 ' + shortName
