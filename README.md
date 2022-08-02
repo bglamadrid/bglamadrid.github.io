@@ -14,11 +14,13 @@ But eventually I decided to migrate to a more developer-friendly environment, wh
 
 This project's original file structure is still preserved in the `static` branch, and at the same time, that branch is now the target of new deployments (a task accomplished by using [GitHub Pages](https://github.com/tschaub/gh-pages)).
 
+
 # Getting started
 
 - `npm run build` will build the production-ready static site on `/dist` directory
 - `npm run dev` will initiate the webpack-dev-server on port 80
 - `npm run watch` will build the site automatically whenever a change is made (but will not embed a webserver)
+
 
 # To-Do
 
