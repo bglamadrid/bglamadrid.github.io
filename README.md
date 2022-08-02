@@ -12,6 +12,8 @@ But eventually I decided to migrate to a more developer-friendly environment, wh
 - [PostCSS](https://postcss.org/) along with its [Preset Env plugin pack](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) and a [Browserlist](https://github.com/browserslist/browserslist) file to help optimize & polyfill styles (I mostly care about making sure that Safari renders things correctly).
 - [Husky](https://typicode.github.io/husky) enforcing the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
 
+After fiddling and experimenting so much, this project eventually gave birth to the [Pugtail](https://github.com/bglamadrid/pugtail) template.
+
 This project's original file structure is still preserved in the `static` branch, and at the same time, that branch is now the target of new deployments (a task accomplished by using [GitHub Pages](https://github.com/tschaub/gh-pages)).
 
 
