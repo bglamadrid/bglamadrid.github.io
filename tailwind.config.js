@@ -14,7 +14,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addBase, addUtilities, theme }) {
+    plugin(function ({ addBase, addComponents, theme }) {
       addBase({
         '*': { textAlign: 'inherit' },
         'body': { textAlign: 'center' },
@@ -22,7 +22,18 @@ module.exports = {
         'h2': { fontSize: theme('fontSize.2xl') },
         'h3': { fontSize: theme('fontSize.xl') },
         'h4': { fontSize: theme('fontSize.lg') },
-      })
+      });
+      addComponents({
+        'main > * > .container': {
+          display: 'grid',
+          gap: theme('gap.4'),
+          justifyItems: 'center',
+          padding: theme('spacing.4'),
+          maxWidth: theme('maxWidth.screen-lg'),
+          boxShadow: theme('boxShadow.md'),
+          borderRadius: theme('borderRadius.DEFAULT'),
+        },
+      });
     })
   ],
 };

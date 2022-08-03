@@ -32,20 +32,20 @@ html(lang='en')
     //- .langpicker
     //-   b Site language: English#[br]
     //-   a(href='index.es.html') Ver sitio en Español
-    header#top(class='px-2')
-      .container(class='grid gap-y-4 justify-items-center max-w-screen-lg mx-auto mt-2 mb-2 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:mb-4 md:p-8')
-        h1(class='font-bold text-2xl')=pageMetadata.title
-        p=pageMetadata.description
-        nav(class='flex flex-col w-50 mx-auto text-left sm:w-full sm:flex-row sm:justify-evenly')
-          each socialLink, shortName in data.socialLinks
-            a(class='grid grid-flow-col items-center gap-x-3 mb-3 sm:mb-0 ' + shortName
-            href=socialLink.url)
-              if (socialLink.icon)
-                +icon(socialLink.icon)(class='w-8 dark:invert')
-              span=socialLink.description
     main(class='grid grid-cols-1')
+      header#top(class='px-2')
+        .container(class='mx-auto mt-2 mb-2 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:mb-4 md:p-8')
+          h1(class='font-bold text-2xl')=pageMetadata.title
+          p=pageMetadata.description
+          nav(class='flex flex-col w-50 mx-auto text-left sm:w-full sm:flex-row sm:justify-evenly')
+            each socialLink, shortName in data.socialLinks
+              a(class='grid grid-flow-col items-center gap-x-3 mb-3 sm:mb-0 ' + shortName
+              href=socialLink.url)
+                if (socialLink.icon)
+                  +icon(socialLink.icon)(class='w-8 dark:invert')
+                span=socialLink.description
       section#bio(class='px-2')
-        .container(class='grid gap-y-4 justify-items-center max-w-screen-lg mx-auto my-2 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
+        .container(class='mx-auto my-2 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
           h2(class='font-bold text-xl') 😁 About me
           p I'm a web and software developer! I love three things in life:
           ul(class='max-w-60 mx-auto pl-4 text-left list-disc sm:pl-0')
@@ -54,7 +54,7 @@ html(lang='en')
             li 🍻 good beers
           p(class='md:mx-16') At a young age I've gotten used to learn by doing and building things. I still do, actually. This site is proof of that.
       section#projects(class='px-2')
-        .container(class='grid gap-y-4 justify-items-center max-w-screen-lg mx-auto my-2 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
+        .container(class='mx-auto my-2 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
           h2(class='font-bold text-xl') 🚀 Ongoing projects
           .projects(class='grid gap-4 place-content-center md:grid-cols-3')
             each project, shortName in data.projects
@@ -68,7 +68,7 @@ html(lang='en')
                 each paragraph, index in project.description
                   p(class='mb-2 ' + project.elementClasses.description.join(' '))!=paragraph
       section#tech(class='px-2')
-        .container(class='grid gap-y-4 justify-items-center max-w-screen-lg mx-auto my-2 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
+        .container(class='mx-auto my-2 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
           h2(class='font-bold text-xl') 🔨 Favorite tools
           .tech(class='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-5 md:gap-y-8 lg:px-4')
             each tech, shortName in data.tech
@@ -79,36 +79,36 @@ html(lang='en')
                   +icon(tech.icon)(class='block w-12 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
                 h3(class='font-bold ' + tech.elementClasses.name.join(' '))=tech.name
                 p(class='my-auto ' + tech.elementClasses.description.join(' '))=tech.description
-    footer#bottom(class='px-2')
-      .container(class='grid grid-cols-1 gap-y-8 justify-items-center max-w-screen-lg mx-auto mt-2 mb-4 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white sm:gap-y-4 md:my-4 md:p-8')
-        .upper
-          p.simpleicons
-            | Beautiful brand icons as seen on
-            |
-            a(class='external' href='https://simpleicons.org') SimpleIcons.org
-          p.googlefonts
-            | Font
-            |
-            a(class='external' href='https://fonts.google.com/specimen/Ubuntu+Mono') Ubuntu Mono
-            |
-            | is loaded from
-            |
-            a(class='external' href='https://fonts.google.com') Google Fonts
-            |
-            | CDN
-        .middle
-          p.cookies This site DOES NOT use cookies and DOES NOT collect ANY personal information.
-        .lower(class='border-t-1 border-t-indigo-900')
-          p.stack
-            | Written using
-            |
-            a(class='external' href='https://webpack.js.org') Webpack
-            | ,
-            |
-            a(class='external' href='https://pugjs.org') Pug
-            |
-            | and
-            |
-            a(class='external' href='https://tailwindcss.com') TailwindCSS
-          include ../includes/buildinfo.pug
-          p.license Code #[a(class='external' href='/LICENSE' type='text/plain') licensed under MIT].
+      footer#bottom(class='px-2')
+        .container(class='mx-auto mt-2 mb-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white sm:gap-y-4 md:my-4 md:p-8')
+          .upper
+            p.simpleicons
+              | Beautiful brand icons as seen on
+              |
+              a(class='external' href='https://simpleicons.org') SimpleIcons.org
+            p.googlefonts
+              | Font
+              |
+              a(class='external' href='https://fonts.google.com/specimen/Ubuntu+Mono') Ubuntu Mono
+              |
+              | is loaded from
+              |
+              a(class='external' href='https://fonts.google.com') Google Fonts
+              |
+              | CDN
+          .middle
+            p.cookies This site DOES NOT use cookies and DOES NOT collect ANY personal information.
+          .lower(class='border-t-1 border-t-indigo-900')
+            p.stack
+              | Written using
+              |
+              a(class='external' href='https://webpack.js.org') Webpack
+              | ,
+              |
+              a(class='external' href='https://pugjs.org') Pug
+              |
+              | and
+              |
+              a(class='external' href='https://tailwindcss.com') TailwindCSS
+            include ../includes/buildinfo.pug
+            p.license Code #[a(class='external' href='/LICENSE' type='text/plain') licensed under MIT].
