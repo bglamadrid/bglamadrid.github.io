@@ -32,56 +32,56 @@ html(lang='en')
     //- .langpicker
     //-   b Site language: English#[br]
     //-   a(href='index.es.html') Ver sitio en Español
-    header#top(class='scroll-mt-4 px-2')
-      .container(class='grid grid-cols-1 gap-y-4 justify-items-center max-w-screen-lg mx-auto mt-4 mb-2 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full md:mb-4')
-        h1(class='font-bold text-2xl mt-4 mx-4')=pageMetadata.title
-        p(class='mx-4')=pageMetadata.description
-        nav(class='flex flex-col w-50 mb-4 mx-auto text-left md:w-full md:flex-row md:justify-evenly')
+    header#top(class='px-2')
+      .container(class='grid gap-y-4 justify-items-center max-w-screen-lg mx-auto mt-2 mb-2 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:mb-4 md:p-8')
+        h1(class='font-bold text-2xl')=pageMetadata.title
+        p=pageMetadata.description
+        nav(class='flex flex-col w-50 mx-auto text-left sm:w-full sm:flex-row sm:justify-evenly')
           each socialLink, shortName in data.socialLinks
-            a(class='grid grid-flow-col items-center gap-x-3 mb-3 md:mb-0 ' + shortName
+            a(class='grid grid-flow-col items-center gap-x-3 mb-3 sm:mb-0 ' + shortName
             href=socialLink.url)
               if (socialLink.icon)
                 +icon(socialLink.icon)(class='w-8 dark:invert')
               span=socialLink.description
     main(class='grid grid-cols-1')
-      section#bio(class='scroll-mt-4 px-2')
-        .container(class='grid grid-cols-1 gap-y-4 justify-items-center max-w-screen-lg mx-auto my-2 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full md:my-4')
-          h2(class='font-bold text-xl mt-4 mx-4') 😁 About me
-          p(class='mx-4') I'm a web and software developer! I love three things in life:
-          ul(class='w-60 mx-auto text-left list-disc')
+      section#bio(class='px-2')
+        .container(class='grid gap-y-4 justify-items-center max-w-screen-lg mx-auto my-2 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
+          h2(class='font-bold text-xl') 😁 About me
+          p I'm a web and software developer! I love three things in life:
+          ul(class='max-w-60 mx-auto pl-4 text-left list-disc sm:pl-0')
             li 🎤 singing,
             li 🎮 playing videogames, and
             li 🍻 good beers
-          p(class='mb-4 mx-4 md:mx-16') At a young age I've gotten used to learn by doing and building things. I still do, actually. This site is proof of that.
-      section#projects(class='scroll-mt-4 px-2')
-        .container(class='grid grid-cols-1 gap-y-4 justify-items-center max-w-screen-lg mx-auto my-2 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full md:my-4')
-          h2(class='font-bold text-xl mt-4 mx-4') 🚀 Ongoing projects
-          .projects(class='grid grid-cols-1 gap-4 mb-4 mx-4 md:grid-cols-3')
+          p(class='md:mx-16') At a young age I've gotten used to learn by doing and building things. I still do, actually. This site is proof of that.
+      section#projects(class='px-2')
+        .container(class='grid gap-y-4 justify-items-center max-w-screen-lg mx-auto my-2 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
+          h2(class='font-bold text-xl') 🚀 Ongoing projects
+          .projects(class='grid gap-4 place-content-center md:grid-cols-3')
             each project, shortName in data.projects
-              .project(class='shadow rounded py-2 px-4 ' + shortName + ' ' + project.elementClasses.card.join(' '))
-                h3(class='font-bold mt-4 mb-auto')
+              .project(class='shadow rounded p-4 ' + shortName + ' ' + project.elementClasses.card.join(' '))
+                h3(class='font-bold mb-auto')
                   if (project.url)
                     a(class='external ' + project.elementClasses.name.join(' ')
                     href=project.url)=project.name
                   else
                     =project.name
                 each paragraph, index in project.description
-                  p(class='mb-2 last-of-type:mb-4 ' + project.elementClasses.description.join(' '))!=paragraph
-      section#tech(class='scroll-mt-4 px-2')
-        .container(class='grid grid-cols-1 gap-y-4 justify-items-center max-w-screen-lg mx-auto my-2 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full md:my-4')
-          h2(class='font-bold text-xl mt-4 mx-4') 🔨 Favorite tools
-          .tech(class='grid grid-cols-2 gap-4 mb-4 mx-4 md:grid-cols-5 md:gap-6')
+                  p(class='mb-2 ' + project.elementClasses.description.join(' '))!=paragraph
+      section#tech(class='px-2')
+        .container(class='grid gap-y-4 justify-items-center max-w-screen-lg mx-auto my-2 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
+          h2(class='font-bold text-xl') 🔨 Favorite tools
+          .tech(class='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-5 md:gap-y-8 lg:px-4')
             each tech, shortName in data.tech
-              a(class='block shadow rounded px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
+              a(class='flex flex-col shadow rounded py-4 px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
               href=tech.url
               target='_blank' rel='noopener')
                 if (tech.icon)
-                  +icon(tech.icon)(class='block w-12 mt-8 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
+                  +icon(tech.icon)(class='block w-12 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
                 h3(class='font-bold ' + tech.elementClasses.name.join(' '))=tech.name
-                p(class='mb-4 ' + tech.elementClasses.description.join(' '))=tech.description
-    footer#bottom(class='scroll-mt-4 px-2')
-      .container(class='grid grid-cols-1 gap-y-4 justify-items-center max-w-screen-lg mx-auto mt-2 mb-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:w-full md:my-4')
-        .upper(class='mx-4 mt-4')
+                p(class='my-auto ' + tech.elementClasses.description.join(' '))=tech.description
+    footer#bottom(class='px-2')
+      .container(class='grid grid-cols-1 gap-y-8 justify-items-center max-w-screen-lg mx-auto mt-2 mb-4 p-4 shadow rounded bg-purple-300 text-black dark:bg-purple-900 dark:text-white sm:gap-y-4 md:my-4 md:p-8')
+        .upper
           p.simpleicons
             | Beautiful brand icons as seen on
             |
@@ -96,9 +96,9 @@ html(lang='en')
             a(class='external' href='https://fonts.google.com') Google Fonts
             |
             | CDN
-        .middle(class='mx-4')
+        .middle
           p.cookies This site DOES NOT use cookies and DOES NOT collect ANY personal information.
-        .lower(class='mx-4 mb-4 border-t-1 border-t-indigo-900')
+        .lower(class='border-t-1 border-t-indigo-900')
           p.stack
             | Written using
             |
