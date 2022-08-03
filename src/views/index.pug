@@ -99,16 +99,6 @@ html(lang='en')
           .middle
             p.cookies This site DOES NOT use cookies and DOES NOT collect ANY personal information.
           .lower(class='border-t-1 border-t-indigo-900')
-            p.stack
-              | Written using
-              |
-              a(class='external' href='https://webpack.js.org') Webpack
-              | ,
-              |
-              a(class='external' href='https://pugjs.org') Pug
-              |
-              | and
-              |
-              a(class='external' href='https://tailwindcss.com') TailwindCSS
+            include ../includes/stackinfo.pug
             include ../includes/buildinfo.pug
             p.license Code #[a(class='external' href='/LICENSE' type='text/plain') licensed under MIT].
