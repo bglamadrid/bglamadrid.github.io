@@ -76,7 +76,7 @@ html(lang='en')
               href=tech.url
               target='_blank' rel='noopener')
                 if (tech.icon)
-                  +icon(tech.icon)(class='block w-12 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
+                  +icon(tech.icon)(class='w-12 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
                 h3(class='font-bold ' + tech.elementClasses.name.join(' '))=tech.name
                 p(class='my-auto ' + tech.elementClasses.description.join(' '))=tech.description
       footer#bottom(class='px-2')
