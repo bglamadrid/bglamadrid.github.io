@@ -64,7 +64,7 @@ html(lang='en')
                     a(class='external ' + project.elementClasses.name.join(' ')
                     href=project.url)=project.name
                   else
-                    =project.name
+                    span(class=project.elementClasses.name.join(' '))=project.name
                 each paragraph, index in project.description
                   p(class='mb-2 ' + project.elementClasses.description.join(' '))!=paragraph
       section#tech(class='px-2')
