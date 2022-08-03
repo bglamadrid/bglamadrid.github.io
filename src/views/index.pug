@@ -70,7 +70,7 @@ html(lang='en')
       section#tech(class='px-2')
         .container(class='mx-auto my-2 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
           h2(class='font-bold text-xl') 🔨 Favorite tools
-          .tech(class='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-5 md:gap-y-8 lg:px-4')
+          .tech(class='grid grid-cols-2 gap-4 md:grid-cols-5 lg:px-4')
             each tech, shortName in data.tech
               a(class='flex flex-col shadow rounded py-4 px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
               href=tech.url
