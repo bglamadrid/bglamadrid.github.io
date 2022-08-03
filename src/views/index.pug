@@ -58,7 +58,7 @@ html(lang='en')
           h2(class='font-bold text-xl') 🚀 Ongoing projects
           .projects(class='grid gap-4 place-content-center md:grid-cols-3')
             each project, shortName in data.projects
-              .project(class='flex flex-col shadow rounded p-4 ' + shortName + ' ' + project.elementClasses.card.join(' '))
+              .project-card(class='flex flex-col shadow rounded p-4 ' + shortName + ' ' + project.elementClasses.card.join(' '))
                 h3(class='font-bold mb-2')
                   if (project.url)
                     a(class='external ' + project.elementClasses.name.join(' ')
@@ -72,7 +72,7 @@ html(lang='en')
           h2(class='font-bold text-xl') 🔨 Favorite tools
           .tech(class='grid grid-cols-2 gap-4 md:grid-cols-5 lg:px-4')
             each tech, shortName in data.tech
-              a(class='flex flex-col shadow rounded py-4 px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
+              a.tech-card(class='flex flex-col shadow rounded py-4 px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
               href=tech.url
               target='_blank' rel='noopener')
                 if (tech.icon)
