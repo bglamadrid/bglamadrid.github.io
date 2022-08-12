@@ -1,28 +1,31 @@
 import { forkJoin, from, fromEvent, merge, of, Subject } from 'rxjs';
-import { finalize, map, switchMap, takeUntil, tap, toArray } from 'rxjs/operators';
+import { filter, finalize, map, switchMap, takeUntil, tap, toArray } from 'rxjs/operators';
 import { iconSrc } from '../../lib/iconSrc';
 
-const areWeDone = new Subject<void>();
+const areWeDoneTransformingLayout = new Subject<void>();
 let currentIndex = 0;
 let pageSections: NodeListOf<Element>;
 
-function executeAHeavyLayoutShift() {
+fromEvent(document, 'DOMContentLoaded').pipe(
+  tap(() => { pageSections = document.querySelectorAll('main > *') as NodeListOf<Element>; }),
+  switchMap(() => changeDocumentLayout()),
+  takeUntil(areWeDoneTransformingLayout.asObservable())
+).subscribe();
+
+function changeDocumentLayout() {
   return merge(
     of(document.querySelector('body') as Element).pipe(
       map(body => {
-        const { element, buttons } = createArrows('fixed top-2 right-2 bottom-2 left-2 flex items-center place-content-between');
-        body.appendChild(element);
+        // construct nav buttons
+        const { element, buttons } = createArrowButtons('fixed top-2 right-2 bottom-2 left-2 flex items-center place-content-between');
+        body.appendChild(element); // container element
         return buttons;
       }),
       switchMap(buttons => forkJoin([
-        ...buttons.map(b => fromEvent(b, 'click').pipe(
-          tap(() => {
-            let targetIndex = onArrowButtonClick(b);
-            if (targetIndex !== currentIndex) {
-              currentIndex = targetIndex;
-              slideToCurrentSection();
-            }
-          })
+        ...buttons.map(b => fromEvent(b, 'click').pipe( // when a nav button is clicked,
+          map(() => figureSectionIndexFromClickedButton(b)),
+          filter(targetIndex => (!Number.isNaN(targetIndex) && targetIndex !== currentIndex)), // and the target section is valid
+          tap(slideToCurrentSection) // navigate to that section
         ))
       ]))
     ),
@@ -43,31 +46,30 @@ function executeAHeavyLayoutShift() {
     )
   ).pipe(
     finalize(() => {
-      areWeDone.next();
-      areWeDone.complete();
+      areWeDoneTransformingLayout.next();
+      areWeDoneTransformingLayout.complete();
     })
   );
 }
 
-function onArrowButtonClick(b: HTMLButtonElement) {
-  let targetIndex = currentIndex;
+function figureSectionIndexFromClickedButton(b: HTMLButtonElement): number {
   if (b.classList.contains('left')) {
     if (currentIndex > 0) {
-      targetIndex--;
+      return (currentIndex - 1);
     } else {
-      targetIndex = pageSections.length - 1;
+      return pageSections.length - 1;
     }
   } else if (b.classList.contains('right')) {
     if (currentIndex < pageSections.length - 1) {
-      targetIndex++;
+      return currentIndex + 1;
     } else {
-      targetIndex = 0;
+      return 0;
     }
   }
-  return targetIndex;
+  return NaN;
 }
 
-function createArrows(classes = '') {
+function createArrowButtons(classes = '') {
   const element = document.createElement('div');
   const arrowDirections: { [key: number]: string } = {
     0: 'left',
@@ -92,13 +94,8 @@ function createArrows(classes = '') {
   };
 }
 
-function slideToCurrentSection() {
+function slideToCurrentSection(targetIndex: number): void {
+  currentIndex = targetIndex;
   pageSections.forEach(elem => elem.classList.add('invisible'));
   pageSections[currentIndex].classList.remove('invisible');
 }
-
-fromEvent(document, 'DOMContentLoaded').pipe(
-  tap(() => { pageSections = document.querySelectorAll('main > *') as NodeListOf<Element>; }),
-  switchMap(() => executeAHeavyLayoutShift()),
-  takeUntil(areWeDone.asObservable())
-).subscribe();
