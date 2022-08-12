@@ -13,7 +13,10 @@ module.exports = {
     clean: true
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js'],
+    alias: {
+      'Scripts': path.join(__dirname, '/src/scripts'),
+    }
   },
   plugins: [
     new PugPlugin({

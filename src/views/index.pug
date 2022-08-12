@@ -22,6 +22,13 @@ html(lang='en')
     link(href=require('../favicon.ico') rel='icon' type='image/x-icon')
     link(href=require('../styles.css') rel='stylesheet')
 
+    script(src=require('~Scripts/index/layout.ts'))
+    noscript
+      style.
+        main {
+          visibility: visible !important;
+        }
+
     include ../includes/googlefonts.pug
 
     title=pageMetadata.title
@@ -32,7 +39,7 @@ html(lang='en')
     //- .langpicker
     //-   b Site language: English#[br]
     //-   a(href='index.es.html') Ver sitio en Español
-    main(class='grid grid-cols-1')
+    main(class='grid grid-cols-1 invisible')
       header#top(class='px-2')
         .container(class='mx-auto mt-2 mb-2 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:mb-4 md:p-8')
           h1(class='font-bold text-2xl')=pageMetadata.title
