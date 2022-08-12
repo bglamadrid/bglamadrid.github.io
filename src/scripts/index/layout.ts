@@ -1,5 +1,5 @@
-import { forkJoin, from, fromEvent, merge, of, Subject } from 'rxjs';
-import { filter, finalize, map, switchMap, takeUntil, tap, toArray } from 'rxjs/operators';
+import { forkJoin, from, fromEvent, merge, of, Subject, timer } from 'rxjs';
+import { elementAt, filter, finalize, map, switchMap, takeUntil, tap, toArray } from 'rxjs/operators';
 import { iconSrc } from '../../lib/iconSrc';
 
 const areWeDoneTransformingLayout = new Subject<void>();
@@ -23,9 +23,12 @@ function changeDocumentLayout() {
       }),
       switchMap(buttons => forkJoin([
         ...buttons.map(b => fromEvent(b, 'click').pipe( // when a nav button is clicked,
-          map(() => figureSectionIndexFromClickedButton(b)),
-          filter(targetIndex => (!Number.isNaN(targetIndex) && targetIndex !== currentIndex)), // and the target section is valid
-          tap(slideToCurrentSection) // navigate to that section
+          map(() => onNavigation(b) as SectionNavigationEvent),
+          tap(navigation => {
+            if (!Number.isNaN(navigation.targetIndex) && navigation.targetIndex !== currentIndex) {
+              navigateToSection(navigation);
+            }
+          })
         ))
       ]))
     ),
@@ -52,21 +55,18 @@ function changeDocumentLayout() {
   );
 }
 
-function figureSectionIndexFromClickedButton(b: HTMLButtonElement): number {
-  if (b.classList.contains('left')) {
-    if (currentIndex > 0) {
-      return (currentIndex - 1);
-    } else {
-      return pageSections.length - 1;
-    }
-  } else if (b.classList.contains('right')) {
-    if (currentIndex < pageSections.length - 1) {
-      return currentIndex + 1;
-    } else {
-      return 0;
-    }
+function onNavigation(button: HTMLButtonElement): SectionNavigationEvent | undefined {
+  if (button.classList.contains('left')) {
+    return {
+      direction: 'left',
+      targetIndex: (currentIndex > 0) ? (currentIndex - 1) : (pageSections.length - 1)
+    };
+  } else if (button.classList.contains('right')) {
+    return {
+      direction: 'right',
+      targetIndex: (currentIndex < pageSections.length - 1) ? (currentIndex + 1) : 0
+    };
   }
-  return NaN;
 }
 
 function createArrowButtons(classes = '') {
@@ -96,8 +96,34 @@ function createArrowButtons(classes = '') {
   };
 }
 
-function slideToCurrentSection(targetIndex: number): void {
-  currentIndex = targetIndex;
+function navigateToSection(ev: SectionNavigationEvent): void {
   pageSections.forEach(elem => elem.classList.add('invisible'));
-  pageSections[currentIndex].classList.remove('invisible');
+  const previousSection = pageSections[currentIndex];
+  const targetSection = pageSections[ev.targetIndex];
+  const previousSectionAnimClass = 'animate__' + (ev.direction === 'left' ? 'fadeOutRight' : 'fadeOutLeft');
+  const targetSectionAnimClass = 'animate__' + (ev.direction === 'left' ? 'fadeInLeft' : 'fadeInRight');
+  [previousSection, targetSection].forEach(elem => {
+    elem.classList.remove('invisible');
+    elem.classList.add('animate__animated');
+    elem.classList.add('animate__faster');
+  });
+  previousSection.classList.add(previousSectionAnimClass);
+  targetSection.classList.add(targetSectionAnimClass);
+  timer(400).pipe(
+    tap(() => {
+      [previousSection, targetSection].forEach(elem => {
+        elem.classList.remove('animate__animated');
+        elem.classList.remove('animate__faster');
+      });
+      previousSection.classList.remove(previousSectionAnimClass);
+      targetSection.classList.remove(targetSectionAnimClass);
+      previousSection.classList.add('invisible');
+      currentIndex = ev.targetIndex;
+    })
+  ).subscribe();
+}
+
+interface SectionNavigationEvent {
+  direction: 'left' | 'right';
+  targetIndex: number;
 }
