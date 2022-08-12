@@ -80,9 +80,11 @@ function createArrowButtons(classes = '') {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'p-2 bg-[rgba(0,0,0,0.2)] ' + arrowDirections[i];
+    button.title = arrowDirections[i];
     const arrow = document.createElement('img');
     arrow.className = 'w-8 dark:invert';
     arrow.src = iconSrc({ source: 'fontawesome', name: `chevron-${arrowDirections[i]}` });
+    arrow.alt = arrowDirections[i];
     button.appendChild(arrow);
     buttons.push(button);
     element.appendChild(button);
