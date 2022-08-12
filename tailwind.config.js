@@ -5,6 +5,7 @@ module.exports = {
   content: {
     files: [
       './src/views/**/*.pug',
+      './src/scripts/index/layout.ts',
       './src/data.json'
     ]
   },
