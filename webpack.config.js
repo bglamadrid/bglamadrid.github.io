@@ -12,6 +12,9 @@ module.exports = {
     publicPath: '/',
     clean: true
   },
+  resolve: {
+    extensions: ['.ts', '.js']
+  },
   plugins: [
     new PugPlugin({
       modules: [
@@ -23,6 +26,10 @@ module.exports = {
   ],
   module: {
     rules: [
+      {
+        test: /\.ts$/,
+        loader: 'ts-loader'
+      },
       {
         test: /\.pug$/,
         loader: PugPlugin.loader,

@@ -1,6 +1,6 @@
 {
   "name": "bglamadrid.github.io",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "bglamadrid's static website",
   "private": true,
   "scripts": {
@@ -41,7 +41,8 @@
   "dependencies": {
     "@splidejs/splide": "^4.0.7",
     "animate.css": "^4.1.1",
-    "rxjs": "^7.5.5"
+    "rxjs": "^7.5.5",
+    "tslib": "^2.4.0"
   },
   "browserslist": [
     "last 3 versions, >2%, not dead, Firefox ESR"
