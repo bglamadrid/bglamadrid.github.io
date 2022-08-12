@@ -11,6 +11,7 @@ But eventually I decided to migrate to a more developer-friendly environment, wh
 - [TailwindCSS](https://tailwindcss.com) as the design framework (also sparing me one hell of CSS files).
 - [PostCSS](https://postcss.org/) along with its [Preset Env plugin pack](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env) and a [Browserlist](https://github.com/browserslist/browserslist) file to help optimize & polyfill styles (I mostly care about making sure that Safari renders things correctly).
 - [Husky](https://typicode.github.io/husky) enforcing the [Conventional Commits specification](https://www.conventionalcommits.org/en/v1.0.0/).
+- [TypeScript](https://www.typescriptlang.org) as a means to write _better_ client-side JavaScript, along [tslib](https://github.com/Microsoft/tslib).
 
 After fiddling and experimenting so much, this project eventually gave birth to the [Pugtail](https://github.com/bglamadrid/pugtail) template.
 
