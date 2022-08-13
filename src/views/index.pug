@@ -24,11 +24,6 @@ html(lang='en')
     link(href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' rel='stylesheet')
 
     script(src=require('~Scripts/index/layout.ts'))
-    noscript
-      style.
-        main {
-          visibility: visible !important;
-        }
 
     include ../includes/googlefonts.pug
 
@@ -40,7 +35,7 @@ html(lang='en')
     //- .langpicker
     //-   b Site language: English#[br]
     //-   a(href='index.es.html') Ver sitio en Español
-    main(class='grid grid-cols-1 invisible')
+    main
       header#top(class='px-2')
         .container(class='mx-auto mt-2 mb-2 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:mb-4 md:p-8')
           h1(class='font-bold text-2xl')=pageMetadata.title
