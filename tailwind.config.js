@@ -14,7 +14,7 @@ module.exports = {
   theme: {
     fontFamily: {
       // sourced from `/src/includes/googlefonts.pug`
-      sans: ['Ubuntu Mono', 'sans-serif'],
+      sans: ['FantasqueSansMono Nerd Font', 'sans-serif'],
     },
     extend: {
       height: {
@@ -40,8 +40,9 @@ module.exports = {
         'main > * > .container': {
           display: 'grid',
           gap: theme('gap.4'),
+          marginLeft: 'auto',
+          marginRight: 'auto',
           justifyItems: 'center',
-          padding: theme('spacing.4'),
           maxWidth: theme('maxWidth.screen-lg'),
           boxShadow: theme('boxShadow.md'),
           borderRadius: theme('borderRadius.DEFAULT'),
