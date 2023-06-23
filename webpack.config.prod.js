@@ -5,7 +5,7 @@ const { NormalModuleReplacementPlugin } = require('webpack');
 
 module.exports = {
   ...baseConfig,
-  mode: 'development',
+  mode: 'production',
   devtool: 'inline-source-map',
   devServer: {
     static: './dist',
@@ -18,7 +18,7 @@ module.exports = {
   },
   plugins: [
     new PugPlugin({
-      extractCss: {
+      css: {
         filename: 'styles/[name].[contenthash:8].css'
       }
     }),
