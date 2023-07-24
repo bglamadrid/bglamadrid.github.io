@@ -2,7 +2,8 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    index: './src/views/index.pug'
+    index: './src/views/index.pug',
+    bio: './src/views/bio.pug'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],

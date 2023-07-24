@@ -14,7 +14,15 @@ module.exports = {
   theme: {
     fontFamily: {
       // sourced from `/src/includes/googlefonts.pug`
-      sans: ['FantasqueSansMono Nerd Font', 'sans-serif'],
+      sans: [
+        'Ubuntu',
+        ...defaultTheme.fontFamily.sans
+      ],
+      mono: [
+        'Ubuntu Mono',
+        ...defaultTheme.fontFamily.mono
+      ],
+      heading: ['Fira Sans']
     },
     extend: {
       height: {
@@ -31,10 +39,27 @@ module.exports = {
         '*': { textAlign: 'inherit' },
         'body': { textAlign: 'center' },
         'section:target': { scrollMarginTop: theme('height.header') },
-        'h1': { fontSize: theme('fontSize.4xl') },
-        'h2': { fontSize: theme('fontSize.2xl') },
-        'h3': { fontSize: theme('fontSize.xl') },
-        'h4': { fontSize: theme('fontSize.lg') },
+        'h1': {
+          fontFamily: theme('fontFamily.heading'),
+          fontSize: theme('fontSize.2xl'),
+          fontWeight: 'bold',
+          textTransform: 'uppercase'
+        },
+        'h2': {
+          fontFamily: theme('fontFamily.heading'),
+          fontSize: theme('fontSize.xl'),
+          fontWeight: 'bold',
+          textTransform: 'uppercase'
+        },
+        'h3': {
+          fontFamily: theme('fontFamily.heading'),
+          fontSize: theme('fontSize.lg'),
+          fontWeight: 'bold',
+        },
+        'h4': {
+          fontFamily: theme('fontFamily.heading'),
+          fontSize: theme('fontSize.md')
+        },
       });
       addComponents({
         'main > * > .container': {
@@ -43,8 +68,6 @@ module.exports = {
           marginLeft: 'auto',
           marginRight: 'auto',
           justifyItems: 'center',
-          maxWidth: theme('maxWidth.screen-lg'),
-          boxShadow: theme('boxShadow.md'),
           borderRadius: theme('borderRadius.DEFAULT'),
         },
       });

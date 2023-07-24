@@ -19,6 +19,7 @@
   },
   "projects": {
     "agencia33": {
+      "hidden": true,
       "name": "Agencia 33",
       "description": [
         "My small digital advertising business."
@@ -40,10 +41,10 @@
     "pugtail": {
       "name": "Pugtail",
       "description": [
-        "A <a class='external' href='https://jamstack.org/what-is-jamstack/'>Jamstack</a> project template",
-        "Based on <a class='external' href='https://pugjs.org'>Pug</a> & <a class='external' href='https://tailwindcss.com'>TailwindCSS</a>.",
-        "This site is built with such a stack."
+        "A #[a(class='external' href='https://jamstack.org/what-is-jamstack/') Jamstack] project template based on #[a(class='external' href='https://pugjs.org') Pug] & #[a(class='external' href='https://tailwindcss.com') TailwindCSS].",
+        "This site is built using it."
       ],
+      "url": "https://github.com/bglamadrid/pugtail",
       "elementClasses": {
         "card": [
           "bg-indigo-700"
@@ -65,7 +66,7 @@
       "url": "https://trebol-ecommerce.github.io/ngx-trebol-frontend",
       "elementClasses": {
         "card": [
-          "bg-[#1f5214]"
+          "bg-[#207014]"
         ],
         "name": [
           "text-white"

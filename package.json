@@ -1,11 +1,11 @@
 {
   "name": "bglamadrid.github.io",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "bglamadrid's static website",
   "private": true,
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
-    "dev": "webpack serve --config webpack.config.dev.js --port 80",
+    "dev": "webpack serve --config webpack.config.dev.js --port 4080",
     "watch": "webpack --watch --config webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
@@ -46,5 +46,6 @@
   },
   "browserslist": [
     "last 3 versions, >2%, not dead, Firefox ESR"
-  ]
+  ],
+  "sideEffects": false
 }

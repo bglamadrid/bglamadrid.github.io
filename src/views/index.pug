@@ -7,10 +7,11 @@ include ../mixins/icon.pug
   const data = require('../data.json');
   const pageMetadata = {
     url: 'https://bglamadrid.github.io/index.html',
-    title: 'Benjamin Guillermo La Madrid Bañados',
+    title: 'Benjamin La Madrid',
     description: 'Bilingual developer based in Chile',
     image: 'https://bglamadrid.github.io/favicon.ico'
   };
+  const PUG = require('pug');
 
 doctype html
 html(lang='en')
@@ -28,90 +29,77 @@ html(lang='en')
     +metatags-self(pageMetadata)
     +metatags-facebook(pageMetadata)
     +metatags-twitter(pageMetadata)
-  body.text-center(class='bg-gradient-to-b from-[#c799e6] to-[#451145] text-[#2a2a2a] dark:from-[#350035] dark:to-[#200020] dark:text-white')
+  body.text-center(class='bg-gradient-to-b from-[#c799e6] to-[#111145] text-[#2a2a2a] dark:from-[#211177] dark:to-[#190020] dark:text-white')
     //- .langpicker
     //-   b Site language: English#[br]
     //-   a(href='index.es.html') Ver sitio en Español
     main(class='grid grid-cols-1')
       header#top(class='px-2')
-        .container(class='my-2 p-0 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:mb-4')
+        .container(class='max-w-screen-lgmy-2 p-0 text-black dark:text-blue-100 md:mb-4')
           .presentation(class='m-4')
-            h1(class='font-bold text-2xl')=pageMetadata.title
+            h1=pageMetadata.title
             p=pageMetadata.description
-          nav(class='justify-self-stretch flex flex-nowrap text-center w-full justify-evenly')
+          nav(class='justify-self-stretch flex sm:gap-4 text-center justify-between sm:justify-center w-full')
             each socialLink, shortName in data.socialLinks
-              a(class='flex-grow grid grid-flow-col place-items-center place-content-center p-4 gap-x-3 bg-gradient-to-b from-purple-600 to-purple-800 hover:to-purple-900 rounded-b border-t-2 border-r-2 first:border-l-2  border-purple-700 ' + shortName
+              a(class='flex-grow sm:flex-grow-0 sm:mx-4 inline-grid grid-flow-col place-items-center place-content-center p-2 sm:px-8 gap-x-3 dark:text-white bg-slate-300 hover:bg-blue-400 dark:bg-slate-900 dark:hover:bg-black first:rounded-l last:rounded-r sm:rounded first:border-l-4 sm:border-l-4 border-r-4 border-y-4 border-slate-500 hover:border-purple-800 dark:hover:border-purple-400 duration-100' + shortName
               href=socialLink.url)
                 if (socialLink.icon)
                   +icon(socialLink.icon)(class='w-8 dark:invert')
-                span=socialLink.description
+                span(class='uppercase')=socialLink.description
       section#bio(class='px-2')
-        .container(class='my-2 p-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
-          h2(class='font-bold text-xl') 😁 About me
-          p I'm a web and software developer and I like to code with a bit of fashion.
-            | I mostly specialize in making web applications with Java and Angular.
-          p But besides code, I also love 🎤 Singing, 🎮 Videogames and 🐶 Blanca, a lively 5yo. jack russell terrier pet girl!
-          //noscript #[p.separator -----------------------------]
-          // TODO por js
-          // TODO 1. [div.more] se debe ocultar
-          // TODO 2. el boton debajo debe ser creado dinamicamente
-          // TODO 3. al dar a clic este boton, se debe alternar entre mostrar y ocultar a [div.more]
-          .more(class='grid gap-4 max-w-xl')
-            p Since I was young I took a liking to learn by doing and creating things.
-            p When I was 10 I was given an Intel Pentium IV computer where I had a blast playing several games on Windows XP.
-              | I was specially delighted with the sandbox and slapstick of the early 3D GTA franchise.
-              | At some point I even wanted to create a webpage about the series, to showcase my knowledge of the many bits and bolts that every game had to offer.
-              | And I did learn how to write HTML, there was a site called #[a(class='underline text-blue-600' href='https://comocreartuweb.com') comocreartuweb.com] that had a nice spanish course on the matter.
-              | Forward time some years, and due to my interest in games I ended up learning to script mods for #[a(class='underline text-blue-600' href='https://mtasa.com') multi theft auto] 😬
-              | using their #[a(class='underline text-blue-600' href='https://lua.org') lua] engine.
-            p Although I didn't make anything that stood the test of time, it did make me all the more interested in how computer logic operates.
-              | So I took a short career and graduated in a technical school while I do several kinds of jobs for most of its running time.
+        .container(class='max-w-screen-md my-2 p-4 text-black dark:text-purple-100 md:my-4 md:p-8')
+          h2 😁 About me
+          p.
+            I'm a web and software developer.
+            I like to code with a bit of fashion, and while there is a range of things I'm good at,
+            I specialize in developing web applications using Spring Boot and Angular.
+          p.
+            When possible, I prioritize
+            designing system interfaces that follow the #[abbr(class='italic' title='Keep It Simple Stupid') KISS] principle,
+            and writing #[a(class='external' href='https://conventionalcommits.org') Conventional Commits]. I've found these to be the most useful considerations to keep in mind for a neat and tidy codebase.
       section#projects(class='px-2')
-        .container(class='my-2 p-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
-          h2(class='font-bold text-xl') 🚀 Ongoing projects
-          .projects(class='grid gap-4 place-content-center md:grid-cols-3')
-            each project, shortName in data.projects
-              .project-card(class='flex flex-col shadow rounded p-4 ' + shortName + ' ' + project.elementClasses.card.join(' '))
-                h3(class='font-bold mb-2')
-                  if (project.url)
-                    a(class='external ' + project.elementClasses.name.join(' ')
-                    href=project.url)=project.name
-                  else
-                    span(class=project.elementClasses.name.join(' '))=project.name
-                each paragraph, index in project.description
-                  p(class='my-auto ' + project.elementClasses.description.join(' '))!=paragraph
-      section#tech(class='px-2')
-        .container(class='my-2 p-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white md:my-4 md:p-8')
-          h2(class='font-bold text-xl') 🔨 Favorite tools
-          .tech(class='grid grid-cols-2 gap-4 md:grid-cols-5 lg:px-4')
-            each tech, shortName in data.tech
-              a.tech-card(class='flex flex-col shadow rounded py-4 px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
-              href=tech.url
-              target='_blank' rel='noopener')
-                if (tech.icon)
-                  +icon(tech.icon)(class='w-12 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
-                h3(class='font-bold ' + tech.elementClasses.name.join(' '))=tech.name
-                p(class='my-auto ' + tech.elementClasses.description.join(' '))=tech.description
+        .container(class='max-w-screen-lg my-2 p-4 text-black dark:text-white md:my-4 md:p-8')
+          h2 🚀 Ongoing projects
+          .projects(class='flex gap-4 justify-evenly')
+            each proj, shortName in data.projects
+              unless proj.hidden
+                .project-card(class='basis-2/5 flex flex-col justify-between shadow rounded p-4' + ` ${proj.elementClasses.card.join(' ')} ${shortName}`)
+                  h3(class='mb-2')
+                    if (proj.url)
+                      a(class='external ' + proj.elementClasses.name.join(' ')
+                      href=proj.url)=proj.name
+                    else
+                      span(class=proj.elementClasses.name.join(' '))=proj.name
+                  each paragraph, index in proj.description
+                    !=PUG.render(`p(class='my-auto ' + ${proj.elementClasses.description.join(' ')}) ${paragraph}`)
+      //- section#tech(class='px-2')
+      //-   .container(class='max-w-screen-lgmy-2 p-4 text-black dark:text-white md:my-4 md:p-8')
+      //-     h2 🔨 Favorite tools
+      //-     .tech(class='grid grid-cols-2 gap-4 md:grid-cols-5 lg:px-4')
+      //-       each tech, shortName in data.tech
+      //-         a.tech-card(class='flex flex-col shadow rounded py-4 px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
+      //-         href=tech.url
+      //-         target='_blank' rel='noopener')
+      //-           if (tech.icon)
+      //-             +icon(tech.icon)(class='w-12 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
+      //-           h3(class=tech.elementClasses.name.join(' '))=tech.name
+      //-           p(class='my-auto ' + tech.elementClasses.description.join(' '))=tech.description
       footer#bottom(class='px-2')
-        .container(class='mt-2 mb-4 p-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-white sm:gap-y-4 md:my-4 md:p-8')
+        .container(class='max-w-screen-lg mt-2 mb-4 p-4 text-black dark:text-white sm:gap-y-4 md:my-4 md:p-8')
           .upper
-            p.simpleicons
-              | Beautiful brand icons as seen on
+            p.simpleicons Beautiful brand icons as seen on
               |
-              a(class='external' href='https://simpleicons.org') SimpleIcons.org
-            p.googlefonts
-              | Font
+              | #[a(class='external' href='https://simpleicons.org') SimpleIcons.org]
+            p.googlefonts Fonts
               |
-              a(class='external' href='https://fonts.google.com/specimen/Share+Tech+Mono') Share Tech Mono
-              |
-              | is loaded from
-              |
-              a(class='external' href='https://fonts.google.com') Google Fonts
-              |
-              | CDN
+              | #[a(class='external' href='https://fonts.google.com/specimen/Ubuntu') Ubuntu],
+              | #[a(class='external' href='https://fonts.google.com/specimen/Ubuntu+Mono') Ubuntu Mono] and
+              | #[a(class='external' href='https://fonts.google.com/specimen/Fira+Sans') Fira Sans]
+              | hosted by
+              | #[a(class='external' href='https://fonts.google.com') Google Fonts] CDN
           .middle
             p.cookies This site DOES NOT use cookies and DOES NOT collect ANY personal information.
-          .lower(class='border-t-1 border-t-indigo-900')
+          .lower
             include ../includes/stackinfo.pug
             include ../includes/buildinfo.pug
             p.license Code #[a(class='external' href='/LICENSE' type='text/plain') licensed under MIT].
