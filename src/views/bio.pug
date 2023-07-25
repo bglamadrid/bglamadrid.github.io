@@ -28,25 +28,25 @@ html(lang='en')
     +metatags-self(pageMetadata)
     +metatags-facebook(pageMetadata)
     +metatags-twitter(pageMetadata)
-  body.text-center(class='bg-gradient-to-b from-[#c799e6] to-[#111145] text-[#2a2a2a] dark:from-[#111177] dark:to-[#000020] dark:text-white')
+  body(class='text-center bg-gradient-to-b from-[#a08edf] to-[#4242a3] dark:from-[#211177] dark:to-[#190020] dark:text-white')
     //- .langpicker
     //-   b Site language: English#[br]
     //-   a(href='index.es.html') Ver sitio en Español
     main(class='grid grid-cols-1')
       header#top(class='px-2')
-        .container(class='my-2 p-0 text-black dark:text-blue-100 md:mb-4')
+        .container(class='my-2 p-0 md:mb-4')
           .presentation(class='m-4')
             h1(class='font-bold text-2xl')=pageMetadata.title
             p=pageMetadata.description
           nav(class='justify-self-stretch flex sm:gap-4 text-center justify-between sm:justify-center w-full')
             each socialLink, shortName in data.socialLinks
-              a(class='flex-grow sm:flex-grow-0 sm:mx-4 inline-grid grid-flow-col place-items-center place-content-center p-2 sm:px-8 gap-x-3 dark:text-orange-100 bg-slate-300 hover:bg-blue-400 dark:bg-slate-900 dark:hover:bg-black first:rounded-l last:rounded-r sm:rounded first:border-l-4 sm:border-l-4 border-r-4 border-y-4 border-slate-500 hover:border-purple-800 dark:hover:border-purple-400 duration-100 ' + shortName
+              a(class='flex-grow sm:flex-grow-0 sm:mx-4 inline-grid grid-flow-col place-items-center place-content-center p-2 sm:px-8 gap-x-3 dark:text-white bg-slate-300 hover:bg-blue-400 dark:bg-slate-900 dark:hover:bg-black first:rounded-l last:rounded-r sm:rounded first:border-l-4 sm:border-l-4 border-r-4 border-y-4 border-slate-500 hover:border-purple-800 dark:hover:border-purple-400 duration-100' + shortName
               href=socialLink.url)
                 if (socialLink.icon)
                   +icon(socialLink.icon)(class='w-8 dark:invert')
                 span(class='uppercase')=socialLink.description
       section#bio(class='px-2')
-        .container(class='my-2 p-4 bg-purple-300 text-black dark:bg-purple-900 dark:text-purple-100 md:my-4 md:p-8 shadow-md')
+        .container(class='my-2 p-4 md:my-4 md:p-8 shadow-md')
           h2(class='font-bold text-xl uppercase') 😁 More about me
           .more(class='grid gap-4 max-w-xl')
             p Since I was young I took a liking to learn by doing and creating things.
@@ -60,8 +60,8 @@ html(lang='en')
             p Although I didn't make anything that stood the test of time, it did make me all the more interested in how computer logic operates.
               |
               | So I took a short career and graduated in a technical school while I do several kinds of jobs for most of its running time.
-      footer#bottom(class='px-2')
-        .container(class='max-w-screen-lg mt-2 mb-4 p-4 text-black dark:text-white sm:gap-y-4 md:my-4 md:p-8')
+      footer#bottom(class='px-2 text-white')
+        .container(class='max-w-screen-lg mt-2 mb-4 p-4 sm:gap-y-4 md:my-4 md:p-8')
           .upper
             include ../includes/credits.pug
           .middle
