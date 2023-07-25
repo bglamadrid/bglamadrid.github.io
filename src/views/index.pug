@@ -87,16 +87,7 @@ html(lang='en')
       footer#bottom(class='px-2 text-white')
         .container(class='max-w-screen-lg mt-2 mb-4 p-4 sm:gap-y-4 md:my-4 md:p-8')
           .upper
-            p.simpleicons Beautiful brand icons as seen on
-              |
-              | #[a(class='external' href='https://simpleicons.org') SimpleIcons.org]
-            p.googlefonts Fonts
-              |
-              | #[a(class='external' href='https://fonts.google.com/specimen/Ubuntu') Ubuntu],
-              | #[a(class='external' href='https://fonts.google.com/specimen/Ubuntu+Mono') Ubuntu Mono] and
-              | #[a(class='external' href='https://fonts.google.com/specimen/Fira+Sans') Fira Sans]
-              | hosted by
-              | #[a(class='external' href='https://fonts.google.com') Google Fonts] CDN
+            include ../includes/credits.pug
           .middle
             p.cookies This site DOES NOT use cookies and DOES NOT collect ANY personal information.
           .lower
