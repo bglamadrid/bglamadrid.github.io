@@ -29,7 +29,7 @@ html(lang='en')
     +metatags-self(pageMetadata)
     +metatags-facebook(pageMetadata)
     +metatags-twitter(pageMetadata)
-  body.text-center(class='bg-gradient-to-b from-[#c799e6] to-[#111145] text-[#2a2a2a] dark:from-[#211177] dark:to-[#190020] dark:text-white')
+  body(class='text-center bg-gradient-to-b from-[#a08edf] to-[#4242a3] dark:from-[#211177] dark:to-[#190020] dark:text-white')
     //- .langpicker
     //-   b Site language: English#[br]
     //-   a(href='index.es.html') Ver sitio en Español
@@ -47,7 +47,7 @@ html(lang='en')
                   +icon(socialLink.icon)(class='w-8 dark:invert')
                 span(class='uppercase')=socialLink.description
       section#bio(class='px-2')
-        .container(class='max-w-screen-md my-2 p-4 text-black dark:text-purple-100 md:my-4 md:p-8')
+        .container(class='max-w-screen-md my-2 p-4 md:my-4 md:p-8')
           h2 😁 About me
           p.
             I'm a web and software developer.
@@ -58,7 +58,7 @@ html(lang='en')
             designing system interfaces that follow the #[abbr(class='italic' title='Keep It Simple Stupid') KISS] principle,
             and writing #[a(class='external' href='https://conventionalcommits.org') Conventional Commits]. I've found these to be the most useful considerations to keep in mind for a neat and tidy codebase.
       section#projects(class='px-2')
-        .container(class='max-w-screen-lg my-2 p-4 text-black dark:text-white md:my-4 md:p-8')
+        .container(class='max-w-screen-lg my-2 p-4 md:my-4 md:p-8')
           h2 🚀 Ongoing projects
           .projects(class='flex gap-4 justify-evenly')
             each proj, shortName in data.projects
@@ -73,7 +73,7 @@ html(lang='en')
                   each paragraph, index in proj.description
                     !=PUG.render(`p(class='my-auto ${proj.elementClasses.description.join(' ')}') ${paragraph}`)
       //- section#tech(class='px-2')
-      //-   .container(class='max-w-screen-lgmy-2 p-4 text-black dark:text-white md:my-4 md:p-8')
+      //-   .container(class='max-w-screen-lgmy-2 p-4 md:my-4 md:p-8')
       //-     h2 🔨 Favorite tools
       //-     .tech(class='grid grid-cols-2 gap-4 md:grid-cols-5 lg:px-4')
       //-       each tech, shortName in data.tech
@@ -84,8 +84,8 @@ html(lang='en')
       //-             +icon(tech.icon)(class='w-12 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
       //-           h3(class=tech.elementClasses.name.join(' '))=tech.name
       //-           p(class='my-auto ' + tech.elementClasses.description.join(' '))=tech.description
-      footer#bottom(class='px-2')
-        .container(class='max-w-screen-lg mt-2 mb-4 p-4 text-black dark:text-white sm:gap-y-4 md:my-4 md:p-8')
+      footer#bottom(class='px-2 text-white')
+        .container(class='max-w-screen-lg mt-2 mb-4 p-4 sm:gap-y-4 md:my-4 md:p-8')
           .upper
             p.simpleicons Beautiful brand icons as seen on
               |
