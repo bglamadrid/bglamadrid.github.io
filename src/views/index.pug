@@ -71,7 +71,7 @@ html(lang='en')
                     else
                       span(class=proj.elementClasses.name.join(' '))=proj.name
                   each paragraph, index in proj.description
-                    !=PUG.render(`p(class='my-auto ' + ${proj.elementClasses.description.join(' ')}) ${paragraph}`)
+                    !=PUG.render(`p(class='my-auto ${proj.elementClasses.description.join(' ')}') ${paragraph}`)
       //- section#tech(class='px-2')
       //-   .container(class='max-w-screen-lgmy-2 p-4 text-black dark:text-white md:my-4 md:p-8')
       //-     h2 🔨 Favorite tools
