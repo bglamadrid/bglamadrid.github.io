@@ -26,16 +26,9 @@
       ],
       "url": "https://www.agencia33.cl",
       "elementClasses": {
-        "card": [
-          "bg-[#0ebf04]"
-        ],
-        "name": [
-          "text-white",
-          "decoration-white"
-        ],
-        "description": [
-          "text-white"
-        ]
+        "card": "bg-[#0ebf04]",
+        "name": "text-white decoration-white",
+        "description": "text-white"
       }
     },
     "pugtail": {
@@ -46,15 +39,9 @@
       ],
       "url": "https://github.com/bglamadrid/pugtail",
       "elementClasses": {
-        "card": [
-          "bg-indigo-700"
-        ],
-        "name": [
-          "text-white"
-        ],
-        "description": [
-          "text-white"
-        ]
+        "card": "bg-indigo-700",
+        "name": "text-white",
+        "description": "text-white"
       }
     },
     "trebol": {
@@ -65,15 +52,9 @@
       ],
       "url": "https://trebol-ecommerce.github.io/ngx-trebol-frontend",
       "elementClasses": {
-        "card": [
-          "bg-[#207014]"
-        ],
-        "name": [
-          "text-white"
-        ],
-        "description": [
-          "text-white"
-        ]
+        "card": "bg-[#207014]",
+        "name": "text-white",
+        "description": "text-white"
       }
     }
   },
@@ -87,18 +68,10 @@
         "name": "git"
       },
       "elementClasses": {
-        "card": [
-          "bg-[#dd5533]"
-        ],
-        "name": [
-          "text-white"
-        ],
-        "description": [
-          "text-white"
-        ],
-        "icon": [
-          "invert"
-        ]
+        "card": "bg-[#dd5533]",
+        "name": "text-white",
+        "description": "text-white",
+        "icon": "invert"
       }
     },
     "github": {
@@ -110,18 +83,10 @@
         "name": "github"
       },
       "elementClasses": {
-        "card": [
-          "bg-gray-700"
-        ],
-        "name": [
-          "text-white"
-        ],
-        "description": [
-          "text-white"
-        ],
-        "icon": [
-          "invert"
-        ]
+        "card": "bg-gray-700",
+        "name": "text-white",
+        "description": "text-white",
+        "icon": "invert"
       }
     },
     "angular": {
@@ -133,18 +98,10 @@
         "name": "angular"
       },
       "elementClasses": {
-        "card": [
-          "bg-[#bb3344]"
-        ],
-        "name": [
-          "text-white"
-        ],
-        "description": [
-          "text-white"
-        ],
-        "icon": [
-          "invert"
-        ]
+        "card": "bg-[#bb3344]",
+        "name": "text-white",
+        "description": "text-white",
+        "icon": "invert"
       }
     },
     "java": {
@@ -157,18 +114,10 @@
         "version": "6"
       },
       "elementClasses": {
-        "card": [
-          "bg-orange-500"
-        ],
-        "name": [
-          "text-white"
-        ],
-        "description": [
-          "text-white"
-        ],
-        "icon": [
-          "invert"
-        ]
+        "card": "bg-orange-500",
+        "name": "text-white",
+        "description": "text-white",
+        "icon": "invert"
       }
     },
     "vscode": {
@@ -180,18 +129,10 @@
         "name": "visualstudiocode"
       },
       "elementClasses": {
-        "card": [
-          "bg-[#2277dd]"
-        ],
-        "name": [
-          "text-white"
-        ],
-        "description": [
-          "text-white"
-        ],
-        "icon": [
-          "invert"
-        ]
+        "card": "bg-[#2277dd]",
+        "name": "text-white",
+        "description": "text-white",
+        "icon": "invert"
       }
     },
     "intellij": {
@@ -203,18 +144,10 @@
         "name": "intellijidea"
       },
       "elementClasses": {
-        "card": [
-          "bg-[#bb4499]"
-        ],
-        "name": [
-          "text-white"
-        ],
-        "description": [
-          "text-white"
-        ],
-        "icon": [
-          "invert"
-        ]
+        "card": "bg-[#bb4499]",
+        "name": "text-white",
+        "description": "text-white",
+        "icon": "invert"
       }
     },
     "spring": {
@@ -226,18 +159,10 @@
         "name": "spring"
       },
       "elementClasses": {
-        "card": [
-          "bg-[#33aa00]"
-        ],
-        "name": [
-          "text-white"
-        ],
-        "description": [
-          "text-white"
-        ],
-        "icon": [
-          "invert"
-        ]
+        "card": "bg-[#33aa00]",
+        "name": "text-white",
+        "description": "text-white",
+        "icon": "invert"
       }
     },
     "maven": {
@@ -249,18 +174,10 @@
         "name": "apachemaven"
       },
       "elementClasses": {
-        "card": [
-          "bg-[#ffcccc]"
-        ],
-        "name": [
-          "text-black"
-        ],
-        "description": [
-          "text-black"
-        ],
-        "icon": [
-          "invert-0"
-        ]
+        "card": "bg-[#ffcccc]",
+        "name": "text-black",
+        "description": "text-black",
+        "icon": "invert-0"
       }
     },
     "apache2": {
@@ -272,18 +189,10 @@
         "name": "apache"
       },
       "elementClasses": {
-        "card": [
-          "bg-white"
-        ],
-        "name": [
-          "text-black"
-        ],
-        "description": [
-          "text-black"
-        ],
-        "icon": [
-          "invert-0"
-        ]
+        "card": "bg-white",
+        "name": "text-black",
+        "description": "text-black",
+        "icon": "invert-0"
       }
     },
     "aws": {
@@ -295,18 +204,10 @@
         "name": "amazonaws"
       },
       "elementClasses": {
-        "card": [
-          "bg-[#ffbb00]"
-        ],
-        "name": [
-          "text-black"
-        ],
-        "description": [
-          "text-black"
-        ],
-        "icon": [
-          "invert-0"
-        ]
+        "card": "bg-[#ffbb00]",
+        "name": "text-black",
+        "description": "text-black",
+        "icon": "invert-0"
       }
     }
   }

@@ -63,27 +63,27 @@ html(lang='en')
           .projects(class='flex gap-4 justify-evenly')
             each proj, shortName in data.projects
               unless proj.hidden
-                .project-card(class='basis-2/5 flex flex-col justify-between shadow rounded p-4' + ` ${proj.elementClasses.card.join(' ')} ${shortName}`)
+                .project-card(class='basis-2/5 flex flex-col justify-between shadow rounded p-4' + ` ${proj.elementClasses.card} ${shortName}`)
                   h3(class='mb-2')
                     if (proj.url)
-                      a(class='external ' + proj.elementClasses.name.join(' ')
+                      a(class='external ' + proj.elementClasses.name
                       href=proj.url)=proj.name
                     else
-                      span(class=proj.elementClasses.name.join(' '))=proj.name
+                      span(class=proj.elementClasses.name)=proj.name
                   each paragraph, index in proj.description
-                    !=PUG.render(`p(class='my-auto ${proj.elementClasses.description.join(' ')}') ${paragraph}`)
+                    !=PUG.render(`p(class='my-auto ${proj.elementClasses.description}') ${paragraph}`)
       //- section#tech(class='px-2')
       //-   .container(class='max-w-screen-lgmy-2 p-4 md:my-4 md:p-8')
-      //-     h2 🔨 Favorite tools
+      //-     h2(class='text-white') 🔨 Favorite tools
       //-     .tech(class='grid grid-cols-2 gap-4 md:grid-cols-5 lg:px-4')
       //-       each tech, shortName in data.tech
-      //-         a.tech-card(class='flex flex-col shadow rounded py-4 px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card.join(' ')
+      //-         a.tech-card(class='flex flex-col shadow rounded py-4 px-2 md:px-4 ' + shortName + ' ' + tech.elementClasses.card
       //-         href=tech.url
       //-         target='_blank' rel='noopener')
       //-           if (tech.icon)
-      //-             +icon(tech.icon)(class='w-12 mb-4 mx-auto ' + tech.elementClasses.icon.join(' '))
-      //-           h3(class=tech.elementClasses.name.join(' '))=tech.name
-      //-           p(class='my-auto ' + tech.elementClasses.description.join(' '))=tech.description
+      //-             +icon(tech.icon)(class='w-12 mb-4 mx-auto ' + tech.elementClasses.icon)
+      //-           h3(class=tech.elementClasses.name)=tech.name
+      //-           p(class='my-auto ' + tech.elementClasses.description)=tech.description
       footer#bottom(class='px-2 text-white')
         .container(class='max-w-screen-lg mt-2 mb-4 p-4 sm:gap-y-4 md:my-4 md:p-8')
           .upper
