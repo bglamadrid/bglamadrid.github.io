@@ -24,7 +24,7 @@
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "css-loader": "^6.7.1",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.31",
     "postcss-loader": "^7.0.0",
     "postcss-preset-env": "^7.7.2",
     "gh-pages": "^4.0.0",
