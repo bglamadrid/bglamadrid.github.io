@@ -24,7 +24,7 @@
         "I've been delaying a bit my projects as I've recently been through a lot of things"
       ],
       "elementClasses": {
-        "card": "bg-gradient-to-b from-orange-600 to-red-950 md:basis-3/5",
+        "card": "bg-gradient-to-b from-orange-600 to-red-950",
         "name": "text-white",
         "description": "text-white"
       }
