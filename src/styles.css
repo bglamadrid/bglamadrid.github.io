@@ -4,7 +4,7 @@
 
 @layer components {
   a.external {
-    @apply underline underline-offset-2 decoration-dotted duration-100;
+    @apply underline underline-offset-2 decoration-dotted duration-500 hover:text-yellow-300;
   }
 }
 
