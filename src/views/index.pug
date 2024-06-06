@@ -51,19 +51,18 @@ html(lang='en')
           h2 😁 About me
           p.
             I'm a web and software developer.
-            I like to code with a bit of fashion, and while there is a range of things I'm good at,
-            I specialize in developing web applications using Spring Boot and Angular.
-          p.
-            When possible, I prioritize
-            designing system interfaces that follow the #[abbr(class='italic' title='Keep It Simple Stupid') KISS] principle,
-            and writing #[a(class='external' href='https://conventionalcommits.org') Conventional Commits]. I've found these to be the most useful considerations to keep in mind for a neat and tidy codebase.
+            There is a range of things I'm good at, but I specialize in developing web applications using Spring Boot and Angular.
+          //- p.
+          //-  When possible, I prioritize
+          //-  designing system interfaces that follow the #[abbr(class='italic' title='Keep It Simple Stupid') KISS] principle,
+          //-  and writing #[a(class='external' href='https://conventionalcommits.org') Conventional Commits]. I've found these to be the most useful considerations to keep in mind for a neat and tidy codebase.
       section#projects(class='px-2')
         .container(class='max-w-screen-lg my-2 p-4 md:my-4 md:p-8')
           h2 🚀 Ongoing projects
           .projects(class='flex gap-4 justify-evenly')
             each proj, shortName in data.projects
               unless proj.hidden
-                .project-card(class='basis-2/5 flex flex-col justify-between shadow rounded p-4' + ` ${proj.elementClasses.card} ${shortName}`)
+                .project-card(class=`flex flex-col justify-between shadow rounded p-4 ${proj.elementClasses.card} ${shortName}`)
                   h3(class='mb-2')
                     if (proj.url)
                       a(class='external ' + proj.elementClasses.name

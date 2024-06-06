@@ -18,6 +18,17 @@
     }
   },
   "projects": {
+    "excuse": {
+      "name": "On Hiatus",
+      "description": [
+        "I've been delaying a bit my projects as I've recently been through a lot of things"
+      ],
+      "elementClasses": {
+        "card": "bg-gradient-to-b from-orange-600 to-red-950 md:basis-3/5",
+        "name": "text-white",
+        "description": "text-white"
+      }
+    },
     "agencia33": {
       "hidden": true,
       "name": "Agencia 33",
@@ -32,6 +43,7 @@
       }
     },
     "pugtail": {
+      "hidden": true,
       "name": "Pugtail",
       "description": [
         "A #[a(class='external' href='https://jamstack.org/what-is-jamstack/') Jamstack] project template based on #[a(class='external' href='https://pugjs.org') Pug] & #[a(class='external' href='https://tailwindcss.com') TailwindCSS].",
@@ -45,6 +57,7 @@
       }
     },
     "trebol": {
+      "hidden": true,
       "name": "Trebol (spanish 'Clover')",
       "description": [
         "An eCommerce solution with an user-friendly web interface.",
